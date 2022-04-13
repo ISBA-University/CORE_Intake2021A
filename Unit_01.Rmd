@@ -517,11 +517,27 @@ class: left
 
 # Varieties of Capitalism
 
-```{r, echo=FALSE,out.width = "100%"}
-knitr::include_url("https://www.researchgate.net/profile/Charles-Edquist-2/publication/271074148/figure/tbl1/AS:668513236709376@1536397384073/Major-features-of-LME-and-CME_W640.jpg",height = "550px")
-```
 
-.quelle[Quelle: [Edquist (2012).](https://www.researchgate.net/publication/271074148_Knowledge-intensive_Entrepreneurship_National_Systems_of_Innovation_and_European_Varieties_of_Capitalism_A_Conceptual_Framework)]
+.panelset[
+.panel[.panel-name[VoC]
+```{r, echo=FALSE,out.width = "100%"}
+knitr::include_url("https://www.researchgate.net/profile/Charles-Edquist-2/publication/271074148/figure/tbl1/AS:668513236709376@1536397384073/Major-features-of-LME-and-CME_W640.jpg",height = "480px")
+```
+.quellePan[Quelle: [Edquist (2012).](https://www.researchgate.net/publication/271074148_Knowledge-intensive_Entrepreneurship_National_Systems_of_Innovation_and_European_Varieties_of_Capitalism_A_Conceptual_Framework)]
+]
+.panel[.panel-name[D als Ordnungslabor]
+* Freie kapitalistische Marktwirtschaft bzw. Nachtwächterstaat (19. Jahrhundert)
+
+* Organisierte kapitalistische Verbandswirtschaft (Weimarer Republik)
+
+*	Kapitalistische Zentralverwaltungswirtschaft (Endphase 3. Reich)
+
+* Sozialistische Zentralverwaltungswirtschaft (DDR)
+
+* Gebundene kapitalistische Marktwirtschaft bzw. Soziale Marktwirtschaft (BRD)
+]
+]
+
 
 
 ---
@@ -754,6 +770,46 @@ class: left
 <iframe width="800" height="450" src="https://www.youtube.com/embed/G5cJUV5rcH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ]
 ]
+
+
+
+???
+
+* Subsistenzwirtschaft (Autarkie):
+  * Greta verwendet 40% ihrer Zeit auf die Apfelproduktion ($0,4*1250=500$ Äpfel), entsprechend kann sie noch 60% in Weizenanbau investieren ($0,6*50=30$)
+  * Carlos verwendet 30% auf Äpfel ($0,3*1000=300$ Äpfel) und 70% auf Weizen ($0,7*20=14$)
+
+
+* Tauschwirtschaft
+  * Spezialisierung gemäß relativer Vorteile
+  * Hier: Greta hat bei beiden Gütern absolute Vorteile, Carlos hat bei Weizen die geringeren Opportunitätskosten
+  * Greta spezialisiert sich auf Äpfel, Carlos auf Weizen
+  
+* Szenario 1: 40 Äpfel können gegen 1 Tonne Weizen getauscht werden
+    * bspw. will Greta 15 Tonnen Weizen eintauschen und kann dafür 600 Äpfel (von Carlos) bekommen
+    * Durch Spezialisierung und Handel stellen sich beide besser:
+      * Greta: 600 vs. 500 Äpfel und 35 vs. 30 Tonnen Weizen
+      * Carlos: 400 vs. 300 Äpfel und 15 vs. 14 Tonnen Weizen
+      * Insgesamt: 1000 vs. 800 Äpfel und 50 vs. 44 Tonnen Weizen
+    
+
+* Szenario 2 (EX 1.10, Teil 1): nur noch 35 Äpfel gegen eine Tonne Weizen
+  * Greta will 16 Tonnen Weizen gegen $16*35=560$ Äpfel eintauschen. 
+  * Carlos hat dann entsprechend 16 Tonnen Weizen und $1000-560=440$ Äpfel
+  * Gegenüber der Subsistenz haben also beide immer noch mehr
+    * Greta 560 vs. 500 Äpfel und 34 vs. 30 Tonnen Weizen
+    * Carlos 440 vs. 300 Äpfel und 16 vs. 14 Tonnen Weizen
+
+* Szenario 3 (EX 1.10, Teil 2): nur noch 20 Äpfel gegen eine Tonne Weizen
+  * Greta bekommt für ihre 16 Tonnen Weizen nur noch $16*20=320$ Äpfel. Damit hat sie zwar mehr Weizen (34 vs. 30) als in der Autarkie, aber weniger Äpfel (320 vs. 500).
+  * Carlos hat von beidem mehr als in der Autarkie (16 vs. 14 Tonnen Weizen), 680 $(=1000-320)$ Äpfel.
+  
+* Gains from Trade
+  * Potenziell alle besser gestellt (Kuchen insgesamt größer)
+  * Aber einzelne können dennoch schlechter gestellt werden (Verteilungsproblem, Distribution)
+
+* Die Verteilungswirkungen hängen offensichtlich von den Preisen ab. Wie sich diese Preise bilden (20, 35, 40) werden wir im Verlauf des Semesters noch analysieren
+
 
 
 
