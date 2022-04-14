@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>VO Mikroökonomie</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Prof. Dr. Jörg Schoder" />
+    <meta name="date" content="2022-04-11" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <link rel="stylesheet" href="schoder_theme.css" type="text/css" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: title-slide
+
+
+
+<style>.panelset{--panel-tab-font-family: inherit;}</style>
+
+
+
+# VO Mikroökonomie
+
+
+
+## Intake 2021 A  
+
+### Prof. Dr. Jörg Schoder
+
+
+# CORE - The Economy: Unit 3
+---
+
+layout: true
+
+&lt;div class="my-footer"&gt;&lt;/div&gt;       
+
+
+---
+name: Motivation
+class: left
+
+# John Maynard Keynes und die Früchte des Wachstums
+
+.pull-left[
+&lt;iframe src="https://www.wiwo.de/images/john-maynard-keynes-der-brite-forderte-eine-aktive-rolle-des-staates-in-wirtschaftskrisen/4881664/1-format7001.jpg" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
+]
+
+.pull-right[
+.center[
+"What can we reasonably expect the level of our economic life to be a
+hundred years hence? [..]
+
+Three-hour shifts or a fifteen-hour week may put off the
+problem for a great while. For three hours a day is quite enough to satisfy the old Adam in most of us! [..]
+
+Thus for the first time since his creation man will be faced with his real, his permanent problem-how to use his freedom from pressing economic cares, how to occupy the leisure, which science and compound interest will have won for him, to live wisely and agreeably and well."
+]
+
+
+.quelle[J.M. Keynes (1930): [Economic Possibilities for our
+Grandchildren](http://www.econ.yale.edu/smith/econ116a/keynes1.pdf)]
+]
+
+???
+
+Many have given voice to a shorter working week. Keynes predicted in 1930 that were productivity to keep rising in the way that it was in his era, and in fact has, then by 2030 there would be higher incomes and a 15 hour working week leaving plenty of time for meaningful leisure.
+
+
+
+---
+name: Gliederung
+class: inverse, left, middle
+# Was lernen wir?
+
+## Inhaltliche Leitfragen
+
+In Einheit 1 und 2 wurde die Bedeutung des technologischen Fortschritts für die langfristige Entwicklung des Wohlstands deutlich.
+
+.blockquote[
+1. Wie kann der Produktivitätsgewinn infolge technologischer Fortschritte genutzt werden bzw. wie wurde er historisch genutzt? 
+2. Warum ist die Prognose von J.M. Keynes nicht eingetreten?  
+]
+
+## Ökonomische Methoden und Konzepte 
+
+.blockquote[
+1. Technologie und Marginale Rate der Transformation
+2. Präferenzen und Marginale Rate der Substitution
+3. Optimale Entscheidung unter Nebenbedingungen
+]
+
+
+
+---
+name: MikroMakro
+clasS: left
+
+# Mikro- vs. Makroökonomik
+
+.panelset[
+.panel[.panel-name[Mikro]
+&lt;img src="images/unit3/mikro_wordcloud.png" width="60%" style="display: block; margin: auto;" /&gt;
+.quellePan[Bildquelle: 
+[Universität Regensburg](https://www.uni-regensburg.de/wirtschaftswissenschaften/vwl-roider/home/index.html).]
+]
+.panel[.panel-name[Makro]
+&lt;img src="images/unit3/makro_wordcloud.png" width="60%" style="display: block; margin: auto;" /&gt;
+.quellePan[Bildquelle: shutterstock.]
+]]
+
+???
+
+  |Mikro | Makro
+---|------|---------
+Ausgangspunkt: | einzelnes Subjekt/Haushalt | zweifacher Aggregationsprozess (Vereinfachung vs. Infoverlust)
+Hauptinteressen:| Allokation und Distribution|Bestimmungsgründe und Entwicklung Globalgrößen
+|Erklärung individueller Entscheidungen
+Wichtige Zweige| Entscheidungstheorie, Preistheorie/Werttheorie, Wettbewerbstheorie, Verhaltensökonomik, Finanzmarkttheorie | Wachstumstheorie,Konjunkturtheorie, Geldtheorie, Beschäftigungstheorie,Handelstheorie,Finanzmarkttheorie
+
+Auf Folie vermerken:
+**Mikro und Makro als sich ergänzende *Methoden* - Wahl der Methode abhängig vom Erkenntnisinteresse**
+
+
+---
+name: Makro
+class: inverse, center, middle
+
+# Teil 1: Makroökonomische Perspektive
+
+.blockquote[Kleine Fortschritte, große Effekte: Die 69er-Regel]
+
+.blockquote[Verwendungsmöglichkeiten von Produktivitätsfortschritten]
+
+
+
+---
+name: WachstumProd
+class: left
+
+# Keynes' Idee aus mathematischer Sicht
+
+.blockquote[
+"Productivity growth isn’t everything, but in the long run it’s almost
+everything."
+.tr[
+— (Paul Krugman)
+]]
+
+--
+
+* Geringer Änderungsraten haben langfristig große Niveau-Effekte:
+
+--
+
+  * Die 69er (bzw. 70er oder 72er Regel):
+`$$\mbox{Anzahl der Jahre bis zur Verdoppelung}\approx\frac{69}{\mbox{jährliche Wachstumsrate}}$$`
+  * Zur Erinnerung: `$$\ln(2)\approx 0,6931$$` und `$$\lim_{p\to 0}\left(1+\frac{p}{100}\right)=\frac{p}{100}$$`
+
+---
+name: Milch
+class: left
+
+# Beispiele für Produktivitätsfortschritte
+
+.panelset[
+.panel[.panel-name[Milchproduktion]
+&lt;img src="images/unit3/Milchproduktion.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+.quellePan[Quelle: [Bundesinformationszentrum Landwirtschaft](https://www.landwirtschaft.de/landwirtschaft-verstehen/haetten-sies-gewusst/tierhaltung/wie-viel-milch-geben-schafe-und-ziegen).]
+]
+.panel[.panel-name[Stromproduktion]
+&lt;img src="images/unit3/Stromproduktion.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+.quellePan[Quelle: [Statista](https://de.statista.com/infografik/25321/verhaeltnis-von-beschaeftigten-und-bruttostromerzeugung-im-bereich-der-erneuerbaren-energien/?utm_source=Statista+Newsletters&amp;utm_campaign=811bba16b4-All_InfographTicker_daily_DE_AM_KW28_2021_Mi_COPY_&amp;utm_medium=email&amp;utm_term=0_662f7ed75e-811bba16b4-314535141).]
+]
+]
+
+
+
+
+
+
+
+
+---
+name: Mikro-Makro
+class: left
+
+# BIP pro Kopf und Produktivität
+
+
+* Produktivität, Arbeitsmarkt und Präferenzen entscheiden über die
+Entwicklung des BIP pro Kopf
+
+
+`$$\frac{\mbox{BIP}}{\mbox{Bevölkerung}}=         \underbrace{\frac{\mbox{BIP}}{\mbox{Arbeitsstunden}}}_{\mbox{Produktivität}} \cdot \underbrace{\frac{\mbox{Arbeitsstunden}}{\mbox{Bevölkerung}}}_{\mbox{Arbeitsmarkt &amp; Präferenzen}}$$`
+
+--
+
+* wobei:
+
+`$$\frac{\mbox{Arbeitsstunden}}{\mbox{Bevölkerung}}=
+		\underbrace{\frac{\mbox{Arbeitsstunden}}{\mbox{Erwerbstätige}}}_{\mbox{Präferenzen}}\cdot\underbrace{\frac{\mbox{Erwerbstätige}}{\mbox{Bevölkerung}}}_{\mbox{(Erwerbstätigenquote)}}$$`
+
+
+--
+
+* bzw.
+
+`$$\frac{\mbox{Erwerbstätige}}{\mbox{Bevölkerung}}=\underbrace{\frac{\mbox{Erwerbstätige}}{\mbox{Erwerbspersonen}}}_{\mbox{(1-Arbeitslosenquote)}}\cdot\underbrace{\frac{\mbox{Erwerbspersonen}}{\mbox{ Bevölkerung}}}_{\mbox{Partizipation}}$$`		
+
+
+
+---
+name: Produktivity
+class: left
+
+# Arithmetik des Produktivitätswachstums
+
+* (Arbeits-)Produktivität:
+
+`$$\begin{equation*}
+			y_t\equiv\frac{Y_t}{L_t},
+		\end{equation*}$$`
+		
+`$$\mbox{mit}~ Y_t: ~\mbox{BIP},~L_t:~\mbox{geleistete Arbeitsstunden}.$$`
+
+* Für das Produktivitätswachstum gilt:
+
+`$$\begin{eqnarray*}
+\frac{y_{t}}{y_{t-1}}=\frac{\frac{Y_t}{Y_{t-1}}}{\frac{L_t}{L_{t-1}}}=\frac{(1+g_{y,t})y_{t-1}}{y_{t-1}}&amp;=&amp;\frac{\frac{(1+g_{Y,t})Y_{t-1}}{Y_{t-1}}}{\frac{(1+g_{L,t})L_{t-1}}{L_{t-1}}}\\
+			(1+g_{y,t})&amp;=&amp;\frac{(1+g_{Y,t})}{(1+g_{L,t})}\\
+			\iff \ln(1+g_{y,t})&amp;=&amp;\ln(1+g_{Y,t})-\ln(1+g_{L,t})
+		\end{eqnarray*}$$`
+* `$$\mbox{Für kleine Wachstumsraten}~ g~\mbox{gilt wegen}~ \lim_{x\to 0}\left(1+g\right)=g~\mbox{näherungsweise}:$$`
+
+	`$$g_{y,t}\approx g_{Y,t}-g_{L,t}$$`
+
+???
+* Reminder: Wachstumsrate: Absolute Veränderung bezogen auf das Ausgangsniveau
+
+`$$\frac{y_{t}-y_{t-1}}{y_{t-1}}=\frac{y_t}{y_{t-1}}-\frac{y_{t-1}}{y_{t-1}}=\frac{y_t}{y_{t-1}}-1=g_{y,t}$$`
+
+* Wachstumsfaktor: Neues Niveau durch altes Niveau
+
+`$$\frac{y_t}{y_{t-1}}=g_{y,t}+1$$`
+
+---
+name: Empirie1
+clasS: left
+
+# Arbeit vs. Einkommen: Langfristige Entwicklungsrends
+
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-03-01.jpg" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
+
+???
+
+* Tatsächlich wurden die Produktivitätsfortschritte für beides genutzt: Mehr Produktion/Einkommen und mehr Freizeit.
+
+* [OECD-Daten](https://stats.oecd.org/Index.aspx?DataSetCode=ANHRS)
+
+    * Deutschland (2019: 1386 Stunden) vs. Griechenland (2019: 1949 Stunden)
+    * Schweiz (2019: 1557 Stunden), Norwegen (2019: 1384 Stunden), 
+    * geringste Arbeitsstunden (2019): Dänemark (1380)
+    * höchste Arbeitsstanden (2019): Mexiko (2137), in Europa: Griechenland!
+
+* Aber nach Keynes hätten die Arbeitsstunden deutlicher sinken müssen
+
+* Bevor wir nach Erklärungen dafür suchen, wollen wir noch einen etwas detaillierten Blick auf die Möglichkeiten zur Verwendung des Produktivitätswachstums werfen
+		
+---
+name: verwendungProd
+class: left
+
+# Wie kann das Produktivitätswachstum genutzt werden?
+
+* Aufschlüsselung der Produktivität
+
+`$$y=\frac{Y}{L}=\frac{Y}{L\cdot \frac{1}{N}\cdot N} = \frac{Y}{\frac{L}{E}\cdot \frac{E}{N}\cdot N},$$`
+`$$\mbox{mit}~ Y: ~\mbox{BIP},~L:~\mbox{geleistete Arbeitsstunden},~N:~\mbox{Bevölkerungszahl}~\mbox{und}\\~E:~\mbox{Zahl der Erwerbstätigen}.$$`
+
+--
+
+* Für die Wachstumsrate der Produktivität `\(g_y\)` gilt somit näherungsweise:
+
+`$$g_y\approx g_Y-g_L-g_E-g_N$$`
+
+--
+
+* Mithin kann das Produktivitätswachstum bei konstanter Bevölkerung `\((g_N=0)\)` genutzt werden für:
+
+--
+    * Steigerung des (absoluten) BIP
+--
+    * Reduktion der Arbeitsstunden (pro Erwerbstätigen)
+--
+    * Reduktion der Erwerbstätigenquote
+
+--
+
+* Demografischer Wandel?
+
+
+???
+
+
+`$$\frac{Y}{L}=\frac{Y}{L\cdot \frac{1}{N}\cdot N}=\frac{Y}{\frac{L}{E}\cdot\frac{E}{N}\cdot N}$$`
+
+
+
+
+`$$g_y\approx g_Y-g_{\mbox{Stunden pro Erw.}}-g_{\mbox{Erwerbstätigenquote}}-g_{\mbox{Bevölkerung}}$$`
+
+
+---
+name: Mikro
+class: inverse, center, middle
+
+
+# Teil 2: Mikroökonomische Perspektive
+
+## Warum lag Keynes daneben?
+
+Einführung in die Theorie der Rationalen Wahl (Rational Choice)
+
+
+
+???
+Use a model of individual choice to explain the differences in work hours across countries and over time
+
+Zur Beantwortung steigen wir in die mikroökonomische Analyse ein. Wir betrachten ein einfaches Modell, das vielfältige Anwendungsmöglichkeiten (aber auch Grenzen) hat. Beides wollen wir im Rahmen der Vorlesung herausarbeiten
+
+
+---
+name: 
+class: left
+
+# Einfaches Entscheidungsmodell der Mikroökonomik
+
+![](Unit_03_files/figure-html/unnamed-chunk-7-1.png)&lt;!-- --&gt;
+
+--
+
+* Anwendungen im Bereich der Haushaltstheorie:
+
+--
+    * Entscheidung zwischen Freizeit und Arbeit (Einkommenserzielung)
+
+--
+    * Entscheidung zwischen Konsumbündeln
+
+--
+    * Intertemporale Konsumentscheidung (Konsum vs. Sparen)
+
+--
+
+* Anwendung in der Produktionstheorie: Entscheidung über das optimale Faktoreinsatzverhältnis (Kapital vs. Arbeit)
+
+
+???
+* Beispiel in Unit 3: Students choose how many hours to study, which affects their grade (GPA). 
+* We assume a positive relationship between GPA and the number of hours studied (evidence that this is true, ceteris paribus). 
+
+* Foliensatz wechseln!!!
+
+
+
+
+
+
+---
+name: Alternativen
+class: inverse, center, middle
+
+## Budgetmenge vs. Transformationskurve
+
+.blockquote[Gruppendiskussion
+
+Warum haben die Opportunitätskosten von Alexei keinen linearen Verlauf?
+]
+
+
+---
+name: OpportunityCose
+class: left
+
+# Opportunitätskosten
+
+&lt;iframe src="https://www.core-econ.org/the-economy/book/text/03.html#figure-3-10a" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
+
+
+???
+* Konsumentscheidung zwischen zwei Bündeln: Opportunitätskosten entsprechen dem Preisverhältnis (Preisverhältnis = MRT). Die Budgetgerade ist somit die lineare Transformationskurve (in welchem Verhältnis können die beiden Güter getauscht werden?)
+
+* Bei Alexei entsprechen die Opportunitätskosten der Freizeit dem Punkteverlust im Test
+
+* Weil das Grenzprodukt des Lernens abnehmend ist, verläuft der Punkteverlust nicht linear. Entsprechend hat er eine nach außen gewölbte (konkave) Transformationskurve
+
+
+---
+name: OptimalDec
+class: left
+
+# Arbeits-Freizeit-Entscheidung
+
+&lt;iframe src="https://www.core-econ.org/the-economy/book/text/03.html#figure-3-15" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
+
+
+???
+
+* MRT im Fall von Alexei: Opportunitätskosten der Freizeit: Lohn
+
+* abnehmendes Grenzprodukt der Arbeit vs. konstanter Lohnsatz (hier letzteres)
+
+
+---
+name: EE-SE
+class: left
+
+# Optimale Entscheidung und Keynes' Prognose 
+
+
+&lt;iframe src="https://www.core-econ.org/the-economy/book/text/03.html#figure-3-19b" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
+
+???
+
+* Wechsel Foliensatz!!!
+
+
+---
+name: RepAgents
+class: left
+
+# Repräsentative Agenten-Modelle
+
+
+&lt;iframe src="https://www.core-econ.org/the-economy/book/text/03.html#figure-3-20" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
+
+???
+
+* Anwendung auf die Interpretation historischer Daten
+* Repräsentative Agenten-Modelle unterstellen, dass alle identische Präferenzen haben - unterschiedliche Entscheidungen können also nur durch unterschiedliche ökonomische Situationen der Agenten resultieren.
+* Moderne Modelle arbeiten mit Heterogenen Agenten
+
+
+
+---
+name:
+class: left
+
+# Warum lag Keynes daneben? (Leijonhufvud, 2008)
+
+## Antworten im Modell der Rationalen Wahl(entscheidung)
+
+* Unterschätzt: Substitutionseffekt gestiegener Arbeitslöhne
+
+--
+* Überschätzt: Bedeutungsgewinn inferiorer Güter
+   * Zwar wurden mehr und mehr Konsumgüter zu inferioren Gütern, jedoch blieben
+   * Gesundheit (und Wohnen) normale Güter
+
+--
+* Außerdem: Konsum ist nicht das einzige Motiv für Arbeit und Einkommenserzielung
+
+    * Alternativer Zweck von Arbeit und Einkommen: Prestige (Peer Groups)
+
+    * Arbeit als Selbtzweck? Arbeit vs. **Muse** vs. Freizeit (Trade-off?)
+
+
+
+
+???
+
+* Unterschätzt/Überschätzt/Motive: Alles andere ist nicht konstant (c.p.), hier: die Präferenzen haben sich verändert
+* Viele Konsumgüter wurden inferior: Anteil des Ausgaben für Nahrung, Kleidung am Einkommen sind kontinuierlich gesunken
+* Gesundheit als normales Gut: Anteil der Gesundheitsausgaben am Einkommen in den Industrieländern stieg kontinuierlich
+  * Mithin müsste man eigentlich im Gesundheitssektor arbeiten
+  * Aber wie werden die Einkommen im Gesundheitssektor verteilt? Ärzte und Pharma haben die beste Lobby
+* Muse: Tätigkeit ist Selbstzweck
+
+* David Graeber: [Bullshit-Jobs](https://www.moment.at/sites/default/files/styles/portrait/public/2020-09/20200903-david-graeber.jpg?itok=5_cpGOzG)
+
+  * Graeber: Arbeit als politisches Instrument, das aus dem Puritanismus hervorgegangen ist: die Menschen sind im Hamsterrad und begehren nicht auf
+  * Bedeutung der Ungleichheit und der Bodenpolitik
+
+
+---
+name: ZwFazit
+class: inverse, center, middle
+
+# Zusammenfassung und Ausblick
+
+
+---
+name: ZwFazit
+class: left
+
+# Zusammenfassung
+
+1. Grundlegendes Entscheidungsmodell der Mikroökonomik: Optimierung unter Nebenbedingungen
+
+   * **Beste** Wahl bei gegebenen **Präferenzen** 
+   * unter Berücksichtigung der (Nebenbedingung der) **verfügbaren Alternativen** (feasible frontier)
+   * Im Optimum gilt: **MRS=MRT**
+   
+2. Anwendung des Modells auf die Frage der Arbeitsangebotsentscheidung. Gesamteffekt als Summe von...
+
+   * Einkommens- und
+   * Subsitutionseffekt
+    
+3. Modellkritik?
+
+
+
+---
+name: Modellkritik
+class: inverse,center,middle
+
+# Modellkritik
+
+
+---
+name: PauseSimpsons
+class: center
+
+background-size: 75%
+background-image: url(https://media1.giphy.com/media/3o6UBiAQ9Ws8UWdmqA/giphy.gif?cid=ecf05e47ro6hu5pfdss2uwd9nop2vjqk8pybb8v4ydqywav7&amp;rid=giphy.gif&amp;ct=g)
+
+---
+name: PauseMurray
+class: center
+
+
+&lt;iframe src="https://giphy.com/embed/11F0d3IVhQbreE" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;&lt;p&gt;&lt;a href="https://giphy.com/gifs/bill-murray-pointing-you-got-this-11F0d3IVhQbreE"&gt;via GIPHY&lt;/a&gt;&lt;/p&gt;
+
+---
+name: Prefs
+class: left
+
+# Konsistente Präferenzen?
+
+.panelset[
+.panel[.panel-name[Vollständigkeit]
+&lt;iframe src="images/unit3/beverages_(pixabay).png" width="90%" height="450px" data-external="1"&gt;&lt;/iframe&gt;
+
+&lt;br&gt;
+
+.quellePan[Bildquelle: [pixabay.com](pixabay.com)]
+]
+.panel[.panel-name[Transitivität]
+&lt;iframe src="images/unit3/smartphone_framing_(pixabay).png" width="90%" height="450px" data-external="1"&gt;&lt;/iframe&gt;
+
+&lt;br&gt;
+
+.quellePan[Bildquelle: [pixabay.com](pixabay.com)]
+]
+]
+
+
+  
+---
+name: Condorcet und Agenda-Setting
+class: left
+
+# Exkurs: Condorcet-Paradox und Agenda-Setting
+
+&lt;img src="Unit_03_files/figure-html/unnamed-chunk-14-1.png" style="display: block; margin: auto;" /&gt;
+
+.quelle[Eigene Darstellung.]
+
+???
+
+[Quelle:](https://www.econlib.org/condorcets-brexit/)
+
+No group reaches 50% of the electorate, but they can be close, and one group can be very small. The chart depicts these alternatives with ordinal utility indices on the vertical axis (a higher number representing a more preferred option):
+
+Präferenzen der Gruppe
+
+A: `$$H\succ S\succ V$$`
+B: `$$S\succ V\succ H$$`
+C: `$$V\succ H\succ S$$`
+
+
+
+---
+name: framing
+class: left
+
+# Ausblick: Verhaltensökonomik
+
+&lt;div style="max-width:854px"&gt;&lt;div style="position:relative;height:0;padding-bottom:56.25%"&gt;&lt;iframe src="https://embed.ted.com/talks/dan_ariely_are_we_in_control_of_our_own_decisions" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
+
+
+???
+Minute 12:16: Economist Abo
+
+
+
+---
+name: Ausblick 
+class: left
+
+# Ausblick
+
+In Unit 4 erwartet uns:
+
+  * Modelle individueller Entscheidungen, die zusätzliche wichtige Faktoren berücksichtigen
+  
+  * Bedeutung sozialer Interaktionen für individuelle Entscheidungen
+  
+  * Effekte individueller Handlungen auf kollektive/soziale Ergebnisse
+  
+
+
+
+
+
+&lt;!-- name: ArbeitszeitInter --&gt;
+&lt;!-- class: left --&gt;
+
+&lt;!-- # Internationale Entwicklungen der Arbeitsstunden --&gt;
+
+&lt;!-- ```{r, echo=FALSE} --&gt;
+&lt;!-- knitr::include_url("https://personal.lse.ac.uk/minns/Huberman_Minns_EEH_2007.pdf",height = "550px") --&gt;
+&lt;!-- ``` --&gt;
+
+
+
+&lt;!-- ??? --&gt;
+
+&lt;!-- Tabelle 3, Seite 11 --&gt;
+
+&lt;!-- Aktuelle Entwicklungen --&gt;
+
+&lt;!-- [OECD-Daten](https://stats.oecd.org/Index.aspx?DataSetCode=ANHRS) --&gt;
+
+&lt;!-- Deutschland (2019: 1386 Stunden) vs. Griechenland (2019: 1949 Stunden) --&gt;
+&lt;!-- Schweiz (2019: 1557 Stunden), Norwegen (2019: 1384 Stunden),  --&gt;
+
+&lt;!-- geringste Arbeitsstunden (2019): Dänemark (1380) --&gt;
+&lt;!-- höchste Arbeitsstanden (2019): Mexiko (2137), dann schon Griechenland! --&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+<style>
+.logo {
+  background-image: url(isba_Logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  width: 100px;
+  height: 60px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+    ':not(.inverse)' +
+    ':not(.hide-logo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="logo"></div>';
+  });
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

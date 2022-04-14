@@ -1,0 +1,395 @@
+---
+title: "VO Mikroökonomie"
+subtitle: "Intake 2020 B"
+author: "Prof. Dr. Jörg Schoder"
+institute: "ISBA" 
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: 
+        - default
+        - schoder_theme.css
+        - xaringan-themer.css
+    includes:
+      after_body: insert-logo.html
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+    seal: false
+    
+---
+class: title-slide
+
+```{r xaringan-themer, include=FALSE}
+library(xaringanthemer)
+style_xaringan(text_color = "#232461",inverse_text_color = "#FFFFFF",inverse_background_color = "#232461", title_slide_background_color = "#232461",header_background_color = "#232461",header_color = "#FFFFFF",header_h1_font_size = "32px",
+  header_h2_font_size = "26px",link_color="#d84116",
+  header_h3_font_size = "20px",text_slide_number_color = "#232461",text_slide_number_font_size = "0.5em")
+```
+
+```{r xaringanExtra, echo=FALSE}
+xaringanExtra::use_xaringan_extra(c("tile_view","scribble","panelset","tachyons"))
+xaringanExtra::style_panelset_tabs(font_family = "inherit")
+#xaringanExtra::use_search(show_icon = TRUE)
+#weitere: "share_again","animate_css", "webcam","freezeframe","clipboard","fit_screen","extra-styles" 
+xaringanExtra::use_editable(expires = 1)
+``` 
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(tinytex)
+library(tidyverse)
+library(kableExtra)
+library(fontawesome)
+```
+
+
+# VO Mikroökonomie
+
+
+
+## Intake 2020B  
+
+### Prof. Dr. Jörg Schoder
+
+
+# CORE Unit 8 (Analyse eines Wettbewerbsmarktes)
+
+
+
+---
+
+layout: true
+
+<div class="my-footer"></div>       
+
+
+
+---
+name: Lernziele
+class: inverse, left, middle
+# Was lernen wir?
+
+
+## Ökonomische Methoden und Konzepte 
+
+.blockquote[.small[
+1. Wettbewerbsmarkt
+2. Komparative Statik
+3. Elastizität und Inzidenz (bspw. Steuern)
+]
+]
+
+???
+
+The purpose of our economic analysis is not to model the manager’s thought process, but to understand the outcome, and its relationship to the firm’s cost and consumer demand
+
+
+
+---
+name: NE
+class: left
+
+# Nachfrage: Grenznutzen und Zahlungsbereitschaft
+
+.panelset[
+.panel[.panel-name[Individuell]
+```{tikz,echo=FALSE}
+{\sffamily
+	\begin{tikzpicture}[scale=.16,thick]
+			\usetikzlibrary{calc}   %allows coordinate calculations.	
+			%RC-Diagram	
+			\draw[-stealth] (0,0) -- (17,0) node[below, text centered] {$x_1$};	
+			\draw[-stealth] (0,0) -- (0,10) node[left,text centered] {$x_2$};
+
+		%Ausgangssituation
+			\draw[red,line width=.1em] (0,8) -- (12,0) node[font=\tiny,below right] {$\frac{m}{p_1}$};
+			\draw[blue] (1.6,9.2)  to [out=275,in=170] (9.3,3.6) node {};
+			\draw[fill] (3.8,5.5) circle [radius=.15] node[below] {};
+			\draw[dotted] (3.8,5.5) -- (3.8,0);
+			\draw[red,line width=.1em] (0,8) -- (8,0) node[font=\tiny,below right] {$\frac{m}{\hat{p}_1}$};
+			\draw[blue] (1,9.1)  to [out=275,in=168] (9,2.3) node {};
+			\draw[fill] (2.9,5.1) circle [radius=.15] node[below] {};
+			\draw[dotted] (2.9,5.1) -- (2.9,0);
+			
+			% Weitere Preiserhöhung	
+			\draw[red,line width=.1em] (0,8) -- (4,0) node[font=\tiny,below right] {$\frac{m}{\tilde{p}_1}$};
+			\draw[blue] (.5,8.7)  to [out=272,in=173] (8.5,.65) node {};
+			\draw[fill] (1.5,4.9) circle [radius=.15] node[below] {};
+			\draw[dotted] (1.5,4.9) -- (1.5,0);
+
+			\path[draw,green,rounded corners=1mm]  (.8,4.8) -- (1.5,4.9) -- (2.9,5.1) -- (3.8,5.5) -- (5.5,6.3);
+			\draw (5.7,6.3) node[font=\tiny,right,black,align=left] {Preis-Konsum-Kurve};
+	
+			% Verbindungslinien dotted			
+			\draw[dotted] (1.5,0) -- (1.5,-12) ;
+			\draw[dotted] (2.9,0) -- (2.9,-12) ;
+			\draw[dotted] (3.8,0) -- (3.8,-12);	
+			
+			%Unteres Diagramm
+			\draw[-stealth] (0,-12) -- (17,-12) node[font=\tiny,below, text width=1.5cm,text height =6pt, text centered] {$x_1$};
+			\draw[-stealth] (0,-12) -- (0,-2) node[font=\tiny,above left,text height =6pt,text centered] {\textbf{Preis} $p_1$};
+			
+			\draw[dotted] (0,-3) node[font=\tiny,left] {$\tilde{p}_1$} -- (1.5,-3);
+			\draw[fill] (1.5,-3) circle [radius=.15];
+			\draw[dotted] (0,-7.5) node[font=\tiny,left] {$\hat{p}_1$}  -- (2.9,-7.5);
+			\draw[fill] (2.9,-7.5) circle [radius=.15];
+			\draw[dotted] (0,-9) node[font=\tiny,left] {$p_1$}  -- (3.8,-9);
+			\draw[fill] (3.8,-9) circle [radius=.15];
+			
+			
+			\draw[rounded corners=5mm] (1.2,-1.7) .. controls (1.5,-3) .. (2.9,-7.5)
+			.. controls (3.8,-9) .. (4.5,-10) .. controls (6.5,-10.5) .. (11,-11.2);
+			\draw (5.7,-5.7) node[font=\tiny,right,black,align=left] {(Inverse) Nachfragekurve};
+		\end{tikzpicture}
+}
+```
+]
+.panel[.panel-name[Marktnachfrage]
+
+Horizontale Aggregation
+
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('images/unit7/NE_agg.png',height='430px')
+```
+]
+.panel[.panel-name[Empirisch]
+
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-07-03.svg',height='480px')
+```
+]
+]
+
+
+
+
+
+???
+* Zahlungsbereitschaft (WTP)
+
+
+
+---
+name: IndivAT
+class: left
+
+# Angebot
+
+
+.panelset[
+.panel[.panel-name[Individuell]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-06-d.svg',height='480px')
+```
+]
+.panel[.panel-name[Marktangebot]
+
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-07-d.svg',height='480px')
+```
+]
+.panel[.panel-name[Empirie (1)]
+
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.tagesspiegel.de/wirtschaft/gute-geschaefte-dank-covid-19-wenn-sogar-autokonzerne-atemschutzmasken-produzieren/25666520.html',height='480px')
+```
+]
+.panel[.panel-name[Empirie (2)]
+
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.focus.de/finanzen/boerse/kein-schnaeppchen-trigema-chef-grupp-reagiert-auf-maskenpreis-kritik_id_11887211.html',height='480px')
+```
+]
+]
+
+
+---
+name: ATNE
+class: left
+
+# Markträumung und Marktgleichgewicht
+
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-08.svg',height='550px')
+```
+
+
+
+
+---
+name: Wohlfahrt
+class: left
+
+# Wohlfahrt im perfekten Wettbewerbsmarkt
+
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-09-a-d.svg',height='550px')
+```
+
+???
+
+* Pareto-Effizienz
+
+
+* Fairness: Relativ Elastische Marktseite erhält den größeren Anteil an den Tauschgewinnen
+
+
+* Kritik:
+  * The Pareto efficiency of a competitive equilibrium allocation is often interpreted as a powerful argument in favour of markets as a means of allocating resources. But we need to be careful not to exaggerate the value of this result:
+  * The allocation may not be Pareto efficient: We might not have taken everything into account.
+There are other important considerations: Fairness, for example.
+Price-takers are hard to find in real life: It is not as easy as you might think to find behaviour consistent with our simple model of the bread market (as we will see in Section 8.9).
+
+
+
+---
+name: PerfComp
+class: inverse, center,middle
+
+# Perfekter Wettbewerb
+
+
+---
+name: PriceRange
+class: left
+
+# Perfekter Wettbewerbsmarkt
+
+.panelset[
+.panel[.panel-name[Modell]
+
+* Annahmen
+    * viele Anbieter und viele Kunden (keine Absprachen)
+    * vollständige Information (Preise und Qualitäten bekannt)
+    * homogene Güter 
+
+* Implikationen/Vorhersagen
+    * `r fa("arrow-alt-circle-right")` Arbitrage und einheitlicher Marktpreis (**law of one price**).
+    * `r fa("arrow-alt-circle-right")` Markträumung (Walrasianischer Auktionator)
+    * `r fa("arrow-alt-circle-right")` Preisnehmerverhalten 
+    * `r fa("arrow-alt-circle-right")` Wohlfahrtsmaximierung ("unsichtbare Hand")
+]
+.panel[.panel-name[Diagramm]
+.center[
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-18-f.svg',height='470px')
+```
+]
+]
+]
+
+
+???
+* viele Anbieter/Nachfrager: keine Absprachen möglich
+* homogene Güter: Alleiniges Kriterium für ständig neu zu schließende Werk- und Tauschverträge ist der Preis.
+
+* Preisnehmer `r fa("arrow-alt-circle-right")` Mengenanpasser
+
+* Markträumung und Walrasianischer Auktionator
+
+
+---
+name: Diskussion
+class: left
+
+# Perfekter Wettbewerb (?)
+
+
+<iframe width="900" height="500" src="https://www.youtube.com/embed/5hJF8zNJg5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+* Bedeutung von Marktzugangsbarrieren aus Sicht...
+  * ...von Unternehmen
+  * ...der Gesellschaft
+
+???
+
+* Rolle von Marktzugangsschranken
+
+
+
+
+
+---
+name: Analysen
+class: inverse, center, middle
+
+# Analysen
+
+
+
+---
+name: KompStat
+class: left
+
+# Komparative Statik
+
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-12-e.svg',height='550px')
+```
+
+
+---
+name: Inzidenz
+class: left
+
+# Inzidenz
+
+.panelset[
+.panel[.panel-name[Individuell]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-14-d.svg',height='470px')
+```
+]
+.panel[.panel-name[Markt]
+
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-15-d.svg',height='470px')
+```
+]
+]
+
+
+
+---
+name: Lenkung
+class: left
+
+# Lenkungswirkung vs. Steueraufkommen
+
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-16-c.svg',height='470px')
+```
+
+
+---
+name: FazitAusblick
+class: inverse, center, middle
+
+# Fazit und Ausblick
+
+
+---
+name: Fazit
+class: left
+
+# Fazit
+
+1. Unternehmen versuchen Wettbewerb zu vermeiden
+  * Absprachen (Kartelle) bei begrenzter Anzahl von Unternehmen
+  * Produktdifferenzierung und Nischenstrategien
+  
+2. In Wettbewerbsmärkten gelingt den Unternehmen dies nicht
+  * Arbitrage und Preisnehmerverhalten
+  * Preis=Grenzkosten-Regel
+  * Wettbewerb hat positive Effekte für die Konsumenten (Wohlfahrtsmaximierung)
+  
+3. Perfekter Wettbewerb als 
+    * idealisiertes Konzept,
+    * nützliches Analysetool
+
+
+
+
