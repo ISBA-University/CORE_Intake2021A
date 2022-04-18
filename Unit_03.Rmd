@@ -51,11 +51,14 @@ library(tidyverse)
 
 
 # CORE - The Economy: Unit 3
----
 
+---
 layout: true
 
 <div class="my-footer"></div>       
+
+<div style="position: absolute;left:400px;bottom:10px;color:ISBAblue;font-size:9px">`r r2symbols::sym('copyright')``r rmarkdown::metadata$author`</div>
+
 
 
 ---
@@ -148,6 +151,40 @@ Wichtige Zweige| Entscheidungstheorie, Preistheorie/Werttheorie, Wettbewerbstheo
 
 Auf Folie vermerken:
 **Mikro und Makro als sich ergänzende *Methoden* - Wahl der Methode abhängig vom Erkenntnisinteresse**
+
+
+
+---
+name: MethInd
+clas: left
+
+# Methodologischer Individualismus
+
+.panelset[
+.panel[.panel-name[Methode]
+.blockquote[
+Das wissenschaftstheoretische Konzept des methodologischen Individualismus führt soziale Phänomene (Prozesse, Institutionen etc.) auf das Verhalten der beteiligten Individuen (als kleinste Einheiten bzw. Grundbestandteile der sozialen Welt) zurück. Kurz: Das Ganze wird als Summe der Einzelteile gesehen und erklärt.
+]
+]
+.panel[.panel-name[Mikro]
+Rationalverhalten
+einfache Aggregration
+
+]
+.panel[.panel-name[Makro]
+* doppelter Aggregationsprozess
+
+]]
+
+
+???
+
+* Beispiel Unternehmung: Es gibt keine Ziele oder Strategien des Unternehmens sondern nur individuelle Ziele und Strategien der Menschen im Unternehmen.
+* Obs! Methodologischer Kollektivismus: Das Ganze ist mehr als die Summe der Einzelteile (Holismus).
+* Erklärung individueller Handlungen in der Wirtschaftstheorie und **Annahme "rationalen Verhaltens"** der Wirtschaftssubjekte	
+* methodologischer vs. normativer Individualismus
+
+
 
 
 ---

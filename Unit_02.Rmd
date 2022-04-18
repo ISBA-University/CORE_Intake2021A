@@ -152,7 +152,6 @@ Eine (ökonomische) Produktionsfunktion beschreibt den Zusammenhang zwischen Fak
 	{\sffamily\tiny
 		\begin{tikzpicture}[scale=.2,thick]
 			\usetikzlibrary{calc,intersections}   %allows coordinate calculations.
-			
 			\draw[-stealth] (0,0) -- (15,0) node {};
 			\node[thick,below,scale=0.8]  at (7.5,-.7) {Faktoreinsatzmenge (X)}; 
 			\draw[-stealth] (0,0) -- (0,10) node[left] {};
@@ -164,8 +163,8 @@ Eine (ökonomische) Produktionsfunktion beschreibt den Zusammenhang zwischen Fak
 }
 ```
 
-
 .quelle[Abbildung: Eigene Darstellung.]
+
 
 --
 * Ein Produktionsfaktor?
@@ -391,6 +390,23 @@ knitr::include_url("https://www.wiwo.de/images/john-maynard-keynes-der-brite-for
 .quelle[J.M. Keynes]
 ]
 
+
+---
+class: left
+
+# Methodik ökonomischer Theorien
+
+```{r, echo=FALSE, fig.align='center',out.width='100%'}
+knitr::include_url("images/unit2/Methodik_VWL1.png",height = "550px")
+```
+
+.quelle[Eigene Darstellung.]
+
+
+
+
+
+
 ---
 class: left
 
@@ -430,7 +446,7 @@ class: left
 
 --
 
-* Wert der Abstraktion und Methode der abnehmenden Abstraktion (vgl. Grundlagen VWL)
+* Wert der Abstraktion und Methode der abnehmenden Abstraktion 
 
 --
 
@@ -441,6 +457,20 @@ class: left
 * Bewertung der Eignung von Modellen
   
 
+
+
+???
+
+* Warum Modelle?	
+    * Realität ist zu komplex, sodass Abstraktion (per Annahmen) notwendig ist.
+		* Modelle bieten die Möglichkeit die Realität in vereinfachter Weise darzustellen.
+		* Modelle sind wichtig um reale Fragestellungen beleuchten und diese besser	verstehen zu             können.
+		* Es können so Gesetzmäßigkeiten und Wirkungszusammenhänge identifiziert werden.
+* Abnehmende Abstration:
+    * zuerst maximale Abstraktion, um möglichst einfaches Modell zu bekommen, das wir leicht             verstehen können.
+		* dann Schritt für Schritt "`Details"' hinzufügen, um uns an die Realität anzunähern.
+		
+		
 
 ---
 class: left
@@ -488,6 +518,71 @@ knitr::include_url("https://www.core-econ.org/the-economy/book/images/web/figure
   * Finally he conducted **experiments** with the model **to discover the effects** of changes in economic conditions: for example, if the supply of one of the goods increased, what would happen to its price? What would happen to the prices of all of the other goods? 
   
 * ceteris paribus vs. allg. Ggw.
+
+
+
+---
+name: Sozialphysik
+class: left
+
+
+# Ökonomik als Sozialphysik?
+
+.panelset[
+.panel[.panel-name[Interview]
+```{r, echo=FALSE,out.width = "100%"}
+knitr::include_url("https://www.faz.net/aktuell/gesellschaft/oekonomie-ist-eigentlich-keine-wissenschaft-11418489.html
+",height = "550px")
+```
+]
+.panel[.panel-name[Zitat]
+.blockquote[
+"Wie gesagt, **ohne die Möglichkeit des Experiments** funktioniert das nicht so ohne weiteres. Darauf scheint es heute aber gar nicht mehr anzukommen. Das hat wohl damit zu tun, dass Wirtschaftswissenschaftler als Politikberater und in den Medien höchst präsent sind und dort vor allem **Eindruck schinden** müssen. Und **dabei hilft die Mathematik**. Ihre Verwendung gilt an sich schon als Qualitätsmerkmal. Mit ihr wird eine Exaktheit und Wissenschaftlichkeit vorgespiegelt, die überhaupt nicht vorhanden ist. **Wenn die ökonomischen Modelle von ihren Annahmen her nicht zutreffen** und sich an der Realität gar nicht überprüfen lassen, **hilft** für den Wahrheitsgehalt der Resultate **noch so viel Mathematik nicht weiter**."
+.tr[
+— (Ortlieb 2010)
+]
+]
+]]
+
+
+???
+
+* Die mathematische Naturwissenschaft hat aufgrund ihres unbestreitbaren Erfolges die Funktion einer Leitwissenschaft übernommen, so dass in der Zeit um 1900 herum in vielen
+	anderen Wissenschaften versucht wurde, ihre Methoden zu adaptieren, auch in der Ökonomie.\newline * Idee: Übertragung der Exaktheit der Mathematik auf die eigene Wissenschaft...
+
+
+---
+name: Experimente
+class: left
+
+# Exkurs: Experimente in den Wirtschaftswissenschaften
+
+
+.panelset[
+.panel[.panel-name[Nobelpreis 2019]
+```{r, echo=FALSE,out.width = "100%"}
+knitr::include_url("Nobel_2019.png",height = "550px")
+```
+]
+.panel[.panel-name[Arten von Experimenten]
+* Labor-Experimente
+
+* Natürliche Experimente
+]
+]
+
+
+???
+
+* Nobelpreis 2019 an Banerjee, Duflo und Kremer
+
+* Im allgemeinen Sprachgebrauch als Nobelpreis für Wirtschaftswissenschaften oder Wirtschaftsnobelpreis bezeichnet; eine offizielle deutsche Bezeichnung existiert nicht.
+		* Der Preis ist aus verschiedenen Gründen umstritten. 
+		    * Insbesondere die annähernde Gleichstellung mit den Nobelpreisen wirft die Frage auf, ob
+		      der Preis im Sinne Nobels ist und 
+		    * ob es angemessen ist, den Wirtschaftswissenschaften eine solche herausragende Stellung zu           geben.
+		    * Ein vorgebrachtes Argument ist, der Preis sei nicht im Sinne Nobels, da dieser eine                Abneigung gegen die Wirtschaftswissenschaft gehegt habe
+
 
 ---
 name: EX-ModelDesign
@@ -548,6 +643,10 @@ class: left
 .tr[
 — (Milton Friedman zitiert nach [Hetzel 2007, S. 8](https://www.richmondfed.org/-/media/richmondfedorg/publications/research/economic_quarterly/2007/winter/pdf/hetzel.pdf)).
 ]]
+
+
+
+
 
 ---
 name: KeyConcepts
@@ -634,18 +733,27 @@ class: left
 # Erklärungen der Industriellen Revolution
 
 * Aufklärung und wissenschaftliche/technische Revolution
-
+    
+--
 * Politische und kulturelle Charakteristika von Völkern/Nationen
+
     * Liberalismus
+    
     * Max Weber: Die protestantische Ethik und der Geist des Kapitalismus
 
+--
 * Reichtum an Ressourcen (Kohle) und Zugang zu Kolonien
-    
+
+--    
 * Koinzidenz vergleichsweise hoher Arbeitskosten und lokal günstiger Energiequellen
 
 
 ???
 wissenschaftliche/technische Revolution: Invention vs. Innovation
+
+
+
+
 
 
 ---
@@ -742,36 +850,6 @@ knitr::include_url("https://www.core-econ.org/the-economy/book/text/02.html#exer
 3. Alternative Werte
 ]
 .panel[.panel-name[R Code]
-```{r Ex-2-3new,echo=TRUE, message=FALSE, fig.show='hide'}
-labor<-seq(0, 10,length.out=21) #Arbeit
-cost<-c(60,90,30) #Gesamtkosten
-#Erzeugen tibble mit Datenpunkten
-data<-map_df(cost, ~ tibble(coal=./5-2*labor, x=labor, cost=.))
-data<-data %>% 
-        rename(labor=x)
-#Erstellen plot
-p <- ggplot(data, aes(x=labor, y=coal, color=as.factor(cost))) 
-p <- p + geom_line()
-p <- p + coord_cartesian(ylim=c(0, 20))
-p <- p + guides(color=guide_legend(title='Isokostenlinie')) 
-p <- p + scale_color_discrete(labels=lapply(sprintf(r'($K=%d-2\cdot L$)', cost/5), TeX)) 
-p <- p + theme_classic() 
-p <- p + theme(legend.position = c(.95, .95),
-               legend.justification = c("right", "top"),
-               legend.box.just="right",legend.margin=margin(6,6,6,6),
-               axis.line=element_line(arrow = arrow(type='closed',
-               length = unit(10,'pt')),lineend='square'))
-p <- p + scale_x_continuous(name='Arbeit (L)',breaks=c(seq(0,10,2)),limits=c(0,12),expand=c(0,0)) 
-p <- p + scale_y_continuous(name='Kohle (K)',limits = c(0,20),
-                            breaks = c(seq(0,19,2)),expand=c(0,0))
-```
-]
-.panel[.panel-name[Plot]
-```{r Ex-2-3plot, echo=FALSE,warning=FALSE,fig.cap="",fig.align='center', out.width = '50%'}
-p
-```
-]
-.panel[.panel-name[Alt. Code]
 ```{r Ex-2-3,echo=TRUE, message=FALSE, fig.show='hide'}
 labor<-0:9 #Arbeit
 #Gleichungen der Isokostenlinien
@@ -797,7 +875,7 @@ p<-p+scale_y_continuous(name="Kohle (K)",limits=c(0,20),breaks = c(seq(-14,19,2)
      scale_color_manual(values = c('red','blue','green','black'))
 ```
 ]
-.panel[.panel-name[Alt. Plot]
+.panel[.panel-name[Plot]
 ```{r, echo=FALSE,warning=FALSE,fig.cap="",fig.align='center', out.width = '50%'}
 p
 ```
@@ -839,6 +917,22 @@ One of the first sectors to undergo technological change was textiles
     By the late 19th century, a single spinning mule operated by a very small number of people could replace more than 1,000 spinsters
     These machines were powered by water wheels and later coal-powered steam engines instead of using human labour
 
+
+---
+class: left
+
+# Invention vs. Innovation: ein aktuelles Beispiel
+
+```{r, echo=FALSE,out.width = "100%"}
+knitr::include_url("https://www.tagesschau.de/wirtschaft/technologie/interview-daum-101.html",height = "520px")
+```
+
+???
+
+CEO von DaimlerTrucks:Es braucht drei Voraussetzungen, damit das erfolgreich wird
+  * ein gutes Angebot von der Industrie
+  * eine Infrastruktur (Ladesäulen bzw. Wasserstofferzeugung)
+  * "und das dritte ist natürlich die Kostenparität"
 
 
 ---
