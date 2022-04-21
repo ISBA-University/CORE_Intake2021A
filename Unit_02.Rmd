@@ -369,6 +369,9 @@ class: inverse, center,middle
 
 ## Ökonomische Modellbildung
 
+
+
+
 ---
 class: left
 
@@ -392,18 +395,16 @@ knitr::include_url("https://www.wiwo.de/images/john-maynard-keynes-der-brite-for
 
 
 ---
+name: Meth-chart
 class: left
 
-# Methodik ökonomischer Theorien
+# Ökonomische Theoriebildung
 
 ```{r, echo=FALSE, fig.align='center',out.width='100%'}
 knitr::include_url("images/unit2/Methodik_VWL1.png",height = "550px")
 ```
 
 .quelle[Eigene Darstellung.]
-
-
-
 
 
 
@@ -446,7 +447,7 @@ class: left
 
 --
 
-* Wert der Abstraktion und Methode der abnehmenden Abstraktion 
+* Wert der Abstraktion und Methode der abnehmenden Abstraktion (vgl. Grundlagen VWL)
 
 --
 
@@ -455,24 +456,12 @@ class: left
 --
 
 * Bewertung der Eignung von Modellen
-  
 
 
 
-???
-
-* Warum Modelle?	
-    * Realität ist zu komplex, sodass Abstraktion (per Annahmen) notwendig ist.
-		* Modelle bieten die Möglichkeit die Realität in vereinfachter Weise darzustellen.
-		* Modelle sind wichtig um reale Fragestellungen beleuchten und diese besser	verstehen zu             können.
-		* Es können so Gesetzmäßigkeiten und Wirkungszusammenhänge identifiziert werden.
-* Abnehmende Abstration:
-    * zuerst maximale Abstraktion, um möglichst einfaches Modell zu bekommen, das wir leicht             verstehen können.
-		* dann Schritt für Schritt "`Details"' hinzufügen, um uns an die Realität anzunähern.
-		
-		
 
 ---
+name: Meth
 class: left
 
 # Vorgehensweise
@@ -490,6 +479,16 @@ class: left
 --
 
 4. Analysen der Effekte von Veränderungen ökonomischer Größen
+
+???
+* Warum Modelle?
+* Realität ist zu komplex, sodass Abstraktion (per Annahmen) notwendig ist.
+   * Modelle bieten die Möglichkeit die Realität in vereinfachter Weise darzustellen.
+   * Modelle sind wichtig um reale Fragestellungen beleuchten und diese besser	verstehen zu können.
+   * Es können so Gesetzmäßigkeiten und Wirkungszusammenhänge identifiziert werden.
+* Abnehmende Abstration:
+   * zuerst maximale Abstraktion, um möglichst einfaches Modell zu bekommen, das wir leicht verstehen können.
+   * dann Schritt für Schritt "Details" hinzufügen, um uns an die Realität anzunähern.
 
 
 
@@ -525,30 +524,29 @@ knitr::include_url("https://www.core-econ.org/the-economy/book/images/web/figure
 name: Sozialphysik
 class: left
 
-
 # Ökonomik als Sozialphysik?
 
 .panelset[
 .panel[.panel-name[Interview]
 ```{r, echo=FALSE,out.width = "100%"}
-knitr::include_url("https://www.faz.net/aktuell/gesellschaft/oekonomie-ist-eigentlich-keine-wissenschaft-11418489.html
-",height = "550px")
+knitr::include_url("https://www.faz.net/aktuell/gesellschaft/oekonomie-ist-eigentlich-keine-wissenschaft-11418489.html",height = "480px")
 ```
 ]
 .panel[.panel-name[Zitat]
 .blockquote[
 "Wie gesagt, **ohne die Möglichkeit des Experiments** funktioniert das nicht so ohne weiteres. Darauf scheint es heute aber gar nicht mehr anzukommen. Das hat wohl damit zu tun, dass Wirtschaftswissenschaftler als Politikberater und in den Medien höchst präsent sind und dort vor allem **Eindruck schinden** müssen. Und **dabei hilft die Mathematik**. Ihre Verwendung gilt an sich schon als Qualitätsmerkmal. Mit ihr wird eine Exaktheit und Wissenschaftlichkeit vorgespiegelt, die überhaupt nicht vorhanden ist. **Wenn die ökonomischen Modelle von ihren Annahmen her nicht zutreffen** und sich an der Realität gar nicht überprüfen lassen, **hilft** für den Wahrheitsgehalt der Resultate **noch so viel Mathematik nicht weiter**."
 .tr[
-— (Ortlieb 2010)
+— (Ortlieb 2010)]
 ]
 ]
-]]
+]
 
 
 ???
 
-* Die mathematische Naturwissenschaft hat aufgrund ihres unbestreitbaren Erfolges die Funktion einer Leitwissenschaft übernommen, so dass in der Zeit um 1900 herum in vielen
+* Die mathematische Naturwissenschaft hat aufgrund ihres unbestreitbaren Erfolges die Funktion einer **Leitwissenschaft übernommen, so dass in der Zeit um 1900 herum in vielen
 	anderen Wissenschaften versucht wurde, ihre Methoden zu adaptieren, auch in der Ökonomie.\newline * Idee: Übertragung der Exaktheit der Mathematik auf die eigene Wissenschaft...
+
 
 
 ---
@@ -561,7 +559,7 @@ class: left
 .panelset[
 .panel[.panel-name[Nobelpreis 2019]
 ```{r, echo=FALSE,out.width = "100%"}
-knitr::include_url("Nobel_2019.png",height = "550px")
+knitr::include_url("images/unit2/Nobel_2019.PNG",height = "480px")
 ```
 ]
 .panel[.panel-name[Arten von Experimenten]
@@ -580,8 +578,8 @@ knitr::include_url("Nobel_2019.png",height = "550px")
 		* Der Preis ist aus verschiedenen Gründen umstritten. 
 		    * Insbesondere die annähernde Gleichstellung mit den Nobelpreisen wirft die Frage auf, ob
 		      der Preis im Sinne Nobels ist und 
-		    * ob es angemessen ist, den Wirtschaftswissenschaften eine solche herausragende Stellung zu           geben.
-		    * Ein vorgebrachtes Argument ist, der Preis sei nicht im Sinne Nobels, da dieser eine                Abneigung gegen die Wirtschaftswissenschaft gehegt habe
+		    * ob es angemessen ist, den Wirtschaftswissenschaften eine solche herausragende Stellung zu geben.
+		    * Ein vorgebrachtes Argument ist, der Preis sei nicht im Sinne Nobels, da dieser eine Abneigung gegen die                   Wirtschaftswissenschaft gehegt habe
 
 
 ---
@@ -591,14 +589,11 @@ class: left
 # Diskussion: Modelle in den Wirtschaftswissenschaften
 .panelset[
 .panel[.panel-name[Aufgabe 2.1]
-
 ```{r EX-2-1,echo=FALSE, message=FALSE}
 knitr::include_url("https://www.core-econ.org/the-economy/book/text/02.html#economic-models")
 ```
 ]
-
 .panel[.panel-name[S-Bahn-Karte]
-
 ```{r, echo=FALSE,fig.cap="S-Bahn-Netz Berlin",fig.align='center', out.width = '100%'}
 knitr::include_url("https://sbahn.berlin/liniennetz/")
 ```
@@ -624,6 +619,8 @@ make them usable.
 * Models are **designed for the questions one would like to answer**.
 Irrelevant information is left out.
 * The **purpose of the public transport and railway model** is to answer the question: what is the **best way to get from A to B using public transport services**? Hence information that does not improve the quality of the answer to this specific question is left out.
+
+
 
 ---
 name: ModelEval
@@ -675,6 +672,7 @@ class: left
     * Definition: Vorteil bzw. Nutzen einer wirtschaftlichen Entscheidung im Vergleich zur nächstbesten Alternative (engl.: fallback option)
 
     * bildet in der ökonomischen Theorie die Grundlage von Entscheidungen
+
 
 
 ---
@@ -744,7 +742,7 @@ class: left
 --
 * Reichtum an Ressourcen (Kohle) und Zugang zu Kolonien
 
---    
+--
 * Koinzidenz vergleichsweise hoher Arbeitskosten und lokal günstiger Energiequellen
 
 
@@ -802,10 +800,11 @@ knitr::include_url("https://www.core-econ.org/the-economy/book/images/web/figure
 ]
 ]
 
-
-
 ???
 * Produktionspläne
+
+* Herstellung von 100m Tuch mit unterschiedlichen Kombinationen von Arbeit und Kohle möglich
+
 * Dominanz
 
   * **A dominates C**:  Clearly, technology A dominates the C-technology: the same amount of cloth can be produced using A with fewer inputs of labour and energy. This means that, whenever A is available, you would never use C.
@@ -824,12 +823,18 @@ class: left
 ```{r, echo=FALSE,out.width = "100%"}
 knitr::include_url("https://www.core-econ.org/the-economy/book/images/web/figure-02-05-g.svg",height = "550px")
 ```   
+
+
 ???
-Firms aim to maximise their profit, which means producing cloth at the least possible cost.
+* Firms aim to maximise their profit, which means producing cloth at the least possible cost.
 
-This is why the firms’ choice of technology depends on economic information about relative prices of inputs.
+* Ausgangssituation: Arbeitskosten: 10, Kohle 20
 
-Herleitung Isokostenlinie
+* Herleitung Isokostenlinie
+
+* This is why the firms’ choice of technology depends on economic information about relative prices of inputs.
+
+
 
 
 ---
@@ -886,7 +891,7 @@ p
 
 * Students should note, that only positive values of L are economically sensible, and that the new isocost lines are much steeper than under the previous relative prices.
 
-* If this more technical material is discussed in the lecture, this is a very good exercise for an in-class ‘think and compare with your neighbour’ exercise. This way one can break up a long front-led lecture.
+* If this more technical material is discussed in the lecture, this is a very good exercise for an in-class "think and compare with your neighbour" exercise. This way one can break up a long front-led lecture.
 
 
 
@@ -901,14 +906,13 @@ knitr::include_url("https://www.core-econ.org/the-economy/book/images/web/figure
 ```   
 
 ???
+* Veränderung der Kosten: Kohle 10, Arbeit 5
 
-* **B now costs more than A**
+* **B now costs more than A**  
 
   * Technology was labour-intensive before the Industrial Revolution (technology B).
 
   * Increase in wages relative to price of coal in Britain create the incentive to innovate more capital-intensive technologies (technology A).
-
-
 
 At the new relative prices, the B-technology is on the isocost line MN, where the cost is 50 pound. Switching to technology A will be cheaper.
 
@@ -916,6 +920,7 @@ One of the first sectors to undergo technological change was textiles
     Before the Industrial Revolution, making clothes for the household were time-consuming tasks
     By the late 19th century, a single spinning mule operated by a very small number of people could replace more than 1,000 spinsters
     These machines were powered by water wheels and later coal-powered steam engines instead of using human labour
+
 
 
 ---
@@ -933,6 +938,8 @@ CEO von DaimlerTrucks:Es braucht drei Voraussetzungen, damit das erfolgreich wir
   * ein gutes Angebot von der Industrie
   * eine Infrastruktur (Ladesäulen bzw. Wasserstofferzeugung)
   * "und das dritte ist natürlich die Kostenparität"
+
+
 
 
 ---
