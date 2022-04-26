@@ -138,7 +138,64 @@ knitr::include_graphics("images/unit3/mikro_wordcloud.png")
 knitr::include_graphics("images/unit3/makro_wordcloud.png")
 ```
 .quellePan[Bildquelle: shutterstock.]
-]]
+]
+.panel[.panel-name[Perspektiven]
+<table>
+<thead>
+  <tr>
+    <th></th>
+    <th class="align-right">Mikro</th>
+    <th class="align-right">Makro</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Ausgangspunkt:</td>
+    <td>einzelnes Subjekt/Haushalt </td>
+    <td>zweifacher Aggregationsprozess (Vereinfachung vs. Infoverlust)</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Hauptinteressen:</td>
+    <td> Allokation und Distribution</td>
+    <td>Bestimmungsgründe und Entwicklung Globalgrößen</td>
+  </tr>
+  <tr>
+    <td>Erklärung individueller Entscheidungen</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td rowspan="5">Wichtige Zweige:</td>
+    <td>Entscheidungstheorie</td>
+    <td>Wachstumstheorie</td>
+  </tr>
+  <tr>
+    <td>Preis-/Werttheorie</td>
+    <td>Konjunkturtheorie</td>
+  </tr>
+  <tr>
+    <td>Wettbewerbstheorie</td>
+    <td>Beschäftigungstheorie</td>
+  </tr>
+  <tr>
+    <td>Informationsökonomik</td>
+    <td>Handelstheorie</td>
+  </tr>
+  <tr>
+    <td>Verhaltensökonomik</td>
+    <td>Geldtheorie</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="2" style="text-align:center;">Finanzmarkttheorie</td>
+  </tr>
+</tbody>
+</table>
+
+
+
+
+]
+]
 
 ???
 
@@ -153,36 +210,6 @@ Auf Folie vermerken:
 **Mikro und Makro als sich ergänzende *Methoden* - Wahl der Methode abhängig vom Erkenntnisinteresse**
 
 
-
----
-name: MethInd
-clas: left
-
-# Methodologischer Individualismus
-
-.panelset[
-.panel[.panel-name[Methode]
-.blockquote[
-Das wissenschaftstheoretische Konzept des methodologischen Individualismus führt soziale Phänomene (Prozesse, Institutionen etc.) auf das Verhalten der beteiligten Individuen (als kleinste Einheiten bzw. Grundbestandteile der sozialen Welt) zurück. Kurz: Das Ganze wird als Summe der Einzelteile gesehen und erklärt.
-]
-]
-.panel[.panel-name[Mikro]
-Rationalverhalten
-einfache Aggregration
-
-]
-.panel[.panel-name[Makro]
-* doppelter Aggregationsprozess
-
-]]
-
-
-???
-
-* Beispiel Unternehmung: Es gibt keine Ziele oder Strategien des Unternehmens sondern nur individuelle Ziele und Strategien der Menschen im Unternehmen.
-* Obs! Methodologischer Kollektivismus: Das Ganze ist mehr als die Summe der Einzelteile (Holismus).
-* Erklärung individueller Handlungen in der Wirtschaftstheorie und **Annahme "rationalen Verhaltens"** der Wirtschaftssubjekte	
-* methodologischer vs. normativer Individualismus
 
 
 
@@ -214,7 +241,7 @@ everything."
 
 --
 
-* Geringer Änderungsraten haben langfristig große Niveau-Effekte:
+* Geringe Änderungsraten haben langfristig große Niveau-Effekte:
 
 --
 
@@ -321,9 +348,19 @@ clasS: left
 
 # Arbeit vs. Einkommen: Langfristige Entwicklungsrends
 
+
+.panelset[
+.panel[.panel-name[Längsschnitt]
 ```{r, echo=FALSE,out.width = "100%"}
-knitr::include_url("https://www.core-econ.org/the-economy/book/images/web/figure-03-01.jpg",height = "550px")
+knitr::include_url("https://ourworldindata.org/grapher/annual-hours-of-work-and-income-18702016",height = "480px")
 ```
+]
+.panel[.panel-name[Querschnitt]
+```{r, echo=FALSE,out.width = "100%"}
+knitr::include_url("https://ourworldindata.org/grapher/annual-hours-of-free-time-per-worker-and-income",height = "480px")
+```
+]
+]
 
 ???
 
@@ -393,7 +430,7 @@ class: inverse, center, middle
 
 ## Warum lag Keynes daneben?
 
-Einführung in die Theorie der Rationalen Wahl (Rational Choice)
+.blockquote[Einführung in die Theorie der Rationalen Wahl (Rational Choice)]
 
 
 
@@ -403,8 +440,80 @@ Use a model of individual choice to explain the differences in work hours across
 Zur Beantwortung steigen wir in die mikroökonomische Analyse ein. Wir betrachten ein einfaches Modell, das vielfältige Anwendungsmöglichkeiten (aber auch Grenzen) hat. Beides wollen wir im Rahmen der Vorlesung herausarbeiten
 
 
+
+
 ---
-name: 
+name: Methodologie
+class: left
+
+# Erkenntnistheoretischer Hintergrund
+
+.panelset[
+.panel[.panel-name[Methodologischer Individualismus]
+.pull-left[
+```{r, echo=FALSE,out.width = "100%"}
+knitr::include_url("images/unit3/skydiving_(pixabay)_tiny.png",height = "295px")
+```
+]
+.pull-right[
+.blockquote[
+Das wissenschaftstheoretische Konzept des methodologischen Individualismus führt soziale Phänomene (Prozesse, Institutionen etc.) auf das Verhalten der beteiligten Individuen (als kleinste Einheiten bzw. Grundbestandteile der sozialen Welt) zurück. Kurz: Das Ganze wird als Summe der Einzelteile gesehen und erklärt.
+]
+]
+]
+.panel[.panel-name[Homo Oeconomicus]
+.pull-left[
+```{r, echo=FALSE,out.width = "100%"}
+knitr::include_url("images/unit3/robot_(pixabay)_small.png",height = "405px")
+```
+]
+.pull-right[
+* Neoklassik als Ökonomisches Standardparadigma
+* Zentrale Annahme: der (zumindest in wirtschaftlichen Fragen) **uneingeschränkt rationale** *homo oeconomicus*
+* Diese **Annahme erlaubt** es, Handlungsentscheidungen mit (vereinfachenden) **mathematischen Modellen** abzubilden.
+]
+]
+.panel[.panel-name[Caveat]
+* Obs! Der *homo oeconomicus* ist weder positiv (als Menschenbild) noch normativ (als Ideal) zu interpretieren. 
+* Ziel: Erklärung gesellschaftlicher Makrophänomene in anonymen Gesellschaften (nicht einzelnes individuelles Verhalten). 
+*	Mithin: *methodologische Funktion* (Analysekonstrukt).
+
+.blockquote[Niemand im Vollbesitz seiner geistigen Kräfte möchte seine Tochter mit einem
+					'homo oeconomicus' verheiratet sehen, mit jemandem, der sämtliche Kosten
+					nachrechnet und stets nach dem Gegenwert fragt, der nie von verrückter Großzügigkeit
+					oder nicht berechnender Liebe heimgesucht ist, der nie aus einem
+					Gefühl innerer Identität handelt und der in der Tat keine innere Identität besitzt,
+					auch wenn er gelegentlich von sorgfältig kalkulierten Erwägungen über Wohlwollen
+					und Missgunst bewegt ist.
+					.tr[
+— (Boulding 1973, S. 12, zitiert nach Bofinger 2010, S. 80)
+]
+]
+]
+]
+
+???
+
+* Panel 1: Methodologischer Individualismus
+    * Beispiel Unternehmung: Es gibt keine Ziele oder Strategien des Unternehmens sondern nur individuelle Ziele und Strategien der Menschen im Unternehmen.
+    * Obs! Methodologischer Kollektivismus: Das Ganze ist mehr als die Summe der Einzelteile (Holismus).
+    * Erklärung individueller Handlungen in der Wirtschaftstheorie und **Annahme "rationalen Verhaltens"** der Wirtschaftssubjekte	
+    * methodologischer vs. normativer Individualismus
+
+* Panel 2: Standard-Paradigma
+    * Der *homo oeconomicus* ist (zumindest in wirtschaftlichen Fragen) uneingeschränkt rational und wird durch folgende Eigenschaften definiert:
+    * ausschließlich *eigeninteressiert*: kein Neid, keine Schadenfreude, sondern *gegenseitig desinteressierte Vernünftigkeit* (Kirchgässner 1991, S. 47), Quelle: Franz (2004)
+  $\Rightarrow$ Handlungsmotive: Nutzenmaximierung (Haushalte) bzw. Gewinnmaximierung (Unternehmen) 
+  	* hat sämtliche entscheidungsrelevanten Informationen (Alternativen und Konsequenzen) $\Rightarrow$ vollkommene Markttransparenz
+  	* kann die Informationen auch im Zusammenhang mit sehr komplexen Entscheidungsprozessen verarbeiten und somit bei verschiedenen Handlungsalternativen immer eine konsistente Rangfolge in Bezug auf den Nutzen ermitteln, Quelle Bofinger (2010, S. 80)
+
+* Panel 3:
+    * Ziel: Erklärung gesellschaftlicher Makrophänomene in anonymen Gesellschaften (nicht einzelnes individuelles Verhalten), Franz, 2004
+
+
+
+---
+name: RCT-Modell 
 class: left
 
 # Einfaches Entscheidungsmodell der Mikroökonomik
@@ -448,13 +557,16 @@ class: left
 * Anwendungen im Bereich der Haushaltstheorie:
 
 --
-    * Entscheidung zwischen Freizeit und Arbeit (Einkommenserzielung)
+
+  * Entscheidung zwischen Freizeit und Arbeit (Einkommenserzielung)
 
 --
-    * Entscheidung zwischen Konsumbündeln
+
+  * Entscheidung zwischen Konsumbündeln
 
 --
-    * Intertemporale Konsumentscheidung (Konsum vs. Sparen)
+
+  * Intertemporale Konsumentscheidung (Konsum vs. Sparen)
 
 --
 
@@ -467,35 +579,35 @@ class: left
 
 * Foliensatz wechseln!!!
 
+* Gary Becker: Familie, Gesellschaft, Politik
+  * Diskriminierung
+	* Kriminalität
+	* Suchtverhalten
+	* Politik
+	* Humankapital (Ausbildungsentscheidung)
+	* Heimarbeit
+	* Partnerwahl und Familie
+	* Organhandel
 
 
 
-
-
----
-name: Alternativen
-class: inverse, center, middle
-
-## Budgetmenge vs. Transformationskurve
-
-.blockquote[Gruppendiskussion
-
-Warum haben die Opportunitätskosten von Alexei keinen linearen Verlauf?
-]
 
 
 ---
 name: OpportunityCose
 class: left
 
-# Opportunitätskosten
+# Feasible Set und Opportunitätskosten
 
 ```{r, echo=FALSE,out.width = "100%"}
-knitr::include_url("https://www.core-econ.org/the-economy/book/text/03.html#figure-3-10a",height = "550px")
+knitr::include_url("https://www.core-econ.org/the-economy/book/text/03.html#figure-3-9i",height = "550px")
 ```
 
 
 ???
+
+* Gruppendiskussion: Warum haben die Opportunitätskosten von Alexei keinen linearen Verlauf?
+
 * Konsumentscheidung zwischen zwei Bündeln: Opportunitätskosten entsprechen dem Preisverhältnis (Preisverhältnis = MRT). Die Budgetgerade ist somit die lineare Transformationskurve (in welchem Verhältnis können die beiden Güter getauscht werden?)
 
 * Bei Alexei entsprechen die Opportunitätskosten der Freizeit dem Punkteverlust im Test
@@ -507,12 +619,20 @@ knitr::include_url("https://www.core-econ.org/the-economy/book/text/03.html#figu
 name: OptimalDec
 class: left
 
-# Arbeits-Freizeit-Entscheidung
+# Präferenzen und Optimale Entscheidung
 
+.panelset[
+.panel[.panel-name[abnehmendes Grenzprodukt]
 ```{r, echo=FALSE,out.width = "100%"}
-knitr::include_url("https://www.core-econ.org/the-economy/book/text/03.html#figure-3-15",height = "550px")
+knitr::include_url("https://www.core-econ.org/the-economy/book/text/03.html#figure-3-10ag",height = "480px")
 ```
-
+]
+.panel[.panel-name[konstantes Grenzprodukt]
+```{r, echo=FALSE,out.width = "100%"}
+knitr::include_url("https://www.core-econ.org/the-economy/book/text/03.html#figure-3-15d",height = "480px")
+```
+]
+]
 
 ???
 
@@ -521,15 +641,41 @@ knitr::include_url("https://www.core-econ.org/the-economy/book/text/03.html#figu
 * abnehmendes Grenzprodukt der Arbeit vs. konstanter Lohnsatz (hier letzteres)
 
 
+
 ---
 name: EE-SE
 class: left
 
-# Optimale Entscheidung und Keynes' Prognose 
+# Einkommens-Effekt für unterschiedliche Präferenzen
+
+.panelset[
+.panel[.panel-name[EE>0]
+```{r, echo=FALSE,out.width = "100%"}
+knitr::include_url("https://www.core-econ.org/the-economy/book/images/web/figure-03-17.svg",height = "480px")
+```
+]
+.panel[.panel-name[EE=0]
+```{r, echo=FALSE,out.width = "100%"}
+knitr::include_url("https://www.core-econ.org/the-economy/book/images/web/figure-03-18.svg",height = "480px")
+```
+]
+]
+
+
+???
+
+* Freizeit-Nachfrage = 24-Arbeitszeit
+* We assume that for most goods the **income effect** will be either positive or zero, but **not negative**: if your income increased, you would not choose to have less of something that you valued.
+
+
+---
+class: left
+
+# Einkommens- vs. Substitutionseffekt & Keynes' Prognose 
 
 
 ```{r, echo=FALSE,out.width = "100%"}
-knitr::include_url("https://www.core-econ.org/the-economy/book/text/03.html#figure-3-19b",height = "550px")
+knitr::include_url("https://www.core-econ.org/the-economy/book/text/03.html#figure-3-19bf",height = "550px")
 ```
 
 ???
@@ -545,7 +691,7 @@ class: left
 
 
 ```{r, echo=FALSE,out.width = "100%"}
-knitr::include_url("https://www.core-econ.org/the-economy/book/text/03.html#figure-3-20",height = "550px")
+knitr::include_url("https://www.core-econ.org/the-economy/book/text/03.html#figure-3-20e",height = "550px")
 ```
 
 ???
@@ -568,7 +714,9 @@ class: left
 
 --
 * Überschätzt: Bedeutungsgewinn inferiorer Güter
+
    * Zwar wurden mehr und mehr Konsumgüter zu inferioren Gütern, jedoch blieben
+
    * Gesundheit (und Wohnen) normale Güter
 
 --
@@ -596,39 +744,30 @@ class: left
   * Bedeutung der Ungleichheit und der Bodenpolitik
 
 
----
-name: ZwFazit
-class: inverse, center, middle
 
-# Zusammenfassung und Ausblick
 
 
 ---
 name: ZwFazit
 class: left
 
-# Zusammenfassung
+# Zwischenfazit
 
 1. Grundlegendes Entscheidungsmodell der Mikroökonomik: Optimierung unter Nebenbedingungen
 
    * **Beste** Wahl bei gegebenen **Präferenzen** 
    * unter Berücksichtigung der (Nebenbedingung der) **verfügbaren Alternativen** (feasible frontier)
    * Im Optimum gilt: **MRS=MRT**
-   
+
+--
 2. Anwendung des Modells auf die Frage der Arbeitsangebotsentscheidung. Gesamteffekt als Summe von...
 
    * Einkommens- und
    * Subsitutionseffekt
-    
+
+--
+
 3. Modellkritik?
-
-
-
----
-name: Modellkritik
-class: inverse,center,middle
-
-# Modellkritik
 
 
 ---
@@ -639,17 +778,74 @@ background-size: 75%
 background-image: url(https://media1.giphy.com/media/3o6UBiAQ9Ws8UWdmqA/giphy.gif?cid=ecf05e47ro6hu5pfdss2uwd9nop2vjqk8pybb8v4ydqywav7&rid=giphy.gif&ct=g)
 
 
+---
+name: Modellkritik
+class: inverse,center,middle
+
+# Modellkritik
+
+
+.blockquote[Kritik der Annahmen]
+
+.blockquote[Kritik der Aussagen/Vorhersagen]
+
+.blockquote[Verhaltensökonomische Befunde]
+
+
+
+---
+name: Annahmen
+class: left
+
+# Zentrale Annahmen der Rational Choice Theorie
+
+## Baustein 1: Feasible Set und Opportunitätskosten
+
+.blockquote[
+* relative Preise vs. 
+* Marginale Rate der Transformation
+* Arbeitsstunden beliebig variierbar?
+]
+
+--
+
+## Baustein 2: Präferenzen
+
+.blockquote[
+* Konsistente (vollständige sowie transitive) und stabile Präferenzen 
+* Kulturelle Einflüsse?
+]
+
+--
+
+## Optimum
+
+.blockquote[
+* MRT=MRS? Entscheiden wir so?
+]
+
+???
+
+* MRT und Messproblematik
+* Framing als bedeutender SIF mit großer Relevanz für Marketing-Fragen
+
+* MRT=MRS: Entscheiden wir wirklich so?
+  * M. Friedman: Trial&Error führt im Zeitverlauf zur Selektion rationaler Entscheidungen
+  * Aber: Verhaltensökonomische Befunde
+
+* Kultur - Weber: Kapitalismus und protestantische Ethik  
+
 
 ---
 name: Prefs
 class: left
 
-# Konsistente Präferenzen?
+# Vollständige, transitive und stabile Präferenzen?
 
 .panelset[
 .panel[.panel-name[Vollständigkeit]
 ```{r, echo=FALSE,out.width = "90%",fig.align='center'}
-knitr::include_url('images/unit3/beverages_(pixabay).png',height = '450px')
+knitr::include_url('images/unit3/beverages_(pixabay).png',height = '460px')
 ```
 
 <br>
@@ -657,24 +853,93 @@ knitr::include_url('images/unit3/beverages_(pixabay).png',height = '450px')
 .quellePan[Bildquelle: [pixabay.com](pixabay.com)]
 ]
 .panel[.panel-name[Transitivität]
-```{r ,echo=FALSE, message=FALSE,out.width='90%',fig.align='center'}
-knitr::include_url('images/unit3/smartphone_framing_(pixabay).png',height = '450px')
+.pull-left[
+```{r, echo=FALSE,out.width = "85%",fig.align='center'}
+knitr::include_url('images/unit3/shades_of_grey.png',height = '418px')
 ```
-
-<br>
-
-.quellePan[Bildquelle: [pixabay.com](pixabay.com)]
+]
+.pull-right[
+Heinz ist großer Fußballfan. Beim Bier nach dem Training erzählt er seinen Teamkollegen, dass...:
+* ...er den SC Freiburg lieber mag als den Karlsruher SC (KSC)
+* ...er den KSC lieber mag als den VFB Stuttgart
+* ...er den VFB genauso gut findet wie den BVB (Dortmund)
+* ...und er den BVB besser findet als den SC Freiburg
+]
+.panel[.panel-name[Stabilität]
+* Extrembeispiel Suchtverhalten
+* Wahlmöglichkeiten:
+  * x: eine Zigarette pro Tag rauchen
+  * y: vollständige Abstinenz (Ausgangssituation)
+  * z: schweres Rauchen (eine Packung pro Tag?)
+* Präferenzen in der Ausgangssituation: $x\succ y\succ z$
+Nach dem Beginn des Rauchens verändert sich die Präferenzrelation zu $z\succ x\succ y$
+	.center[
+		$\Rightarrow$ Intransitiv, wenn stabile Präferenzen unterstellt werden: $x\succ z\succ x$
+	]
+* Möglichkeit sich ändernder Präferenzen wichtig zur Analyse von Suchtverhalten
 ]
 ]
+]
 
 
-  
+
+???
+
+* **Stabilität:**
+    * Hintergrund: Wir wollen ökonomische Entscheidungen auf das Wirken ökonomischer Anreize zurückführen bzw. mit diesen Anreizen erklären und nicht einfach damit, dass sich möglicherweise die Präferenzen geändert haben.
+		* Aber es gibt viele Studien, die zeigen, dass Präferenzen sich im Verlauf eines Lebens verändern (bspw. Musikgeschmack)
+    * Ein Extrembeispiel ist Suchtverhalten, wobei sich die Frage stellt, ob ein Modells der rationalen Wahlhandlung hier zur Analyse geeignet ist. Ökonomen machen dies jedenfalls, und ganz abwegig ist es nicht, denn Entscheidungen zu einer Entziehungskur werden vermutlich durchaus rational getroffen (ich weiß ich sollte damit aufhören)
+      
+* **Vollständigkeit**
+	* Bei den meisten Gütern kennen wir nicht alle Eigenschaften, bspw. Joghurtsorten im Supermark oder Speisekarte im Thai-Restaurant.
+	* bzw. wissen wir nicht, wie die Eigenschaften eines Gutes zu unseren Bedürfnissen passt (schmeckt das Joghurt bzw. das Thai-Gericht bzw. haben wir möglicherweise Allergien auf Inhaltsstoffe?)
+	* Besonders schwierig ist die Bildung von Präferenzen bei Gütern, mit denen wir wenig Erfahrung haben (bspw. seltene Käufe, wie eine Immobilie oder die Wahl des Ehepartners bzw. Entscheidungen im Zusammenhang mit dem Klimawandel)
+	* Und klar, häufig treffen Menschen Entscheidungen, ohne sich über ihre Präferenzen im Klaren zu sein (intuitive und affektive Wahlhandlungen).
+	* Aufgrund unserer beschränkten Hirnkapazität ist es unmöglich, alle Alternativen miteinander zu vergleichen
+	* wenn wir also Vollständigkeit annehmen unterstellen wir implizit, dass keine Transaktionskosten (wie die gerade genannten Informationskosten) anfallen.
+	* **Jetzt wissen wir, warum der Homo Oeconomicus keine beschränkte Kapazität** -- es geht um die Modellierung rationaler Präferenzrelationen, die wiederum die Voraussetzung dafür sind, dass wir das Modell der rationalen Entscheidung überhaupt realisieren können.
+	
+* **Transitivität**
+	 * just perceptible differences (Beispiel: "Shades of Grey")
+	  * Tatsächlich gibt es noch eine Vielzahl interessanterer Beispiele, die wir uns noch bei der Modellkritik am Ende von Unit 3 anschauen möchten -- bspw. wie wir Verletzungen der Transitivität von Präferenzrelationen nutzen können, um die Verkaufszahlen zu steigern...
+
+  * Heinz inkonsistent
+    * Seine Präferenzrelation ist BVB $\succ$ KSC $\succ$ VFB $\sim$ BVB $\succ$ SC
+    * Daraus würde folgen: SC $\succ$ KSC $\land$ BVB $\succ$ SC $\implies$ BVB$\succ$ KSC
+    * Aber dies widerspricht: KSC $\succ$ VFB $\sim$ BVB
+
 ---
 name: Condorcet und Agenda-Setting
 class: left
 
 # Exkurs: Condorcet-Paradox und Agenda-Setting
 
+.panelset[
+.panel[.panel-name[Beispiel]
+Drei Haushaltsmitglieder stimmen über das nächste Urlaubsziel ab:
+
+* Mutter: Meer $\succ$ Stadt $\succ$ Berge
+* Vater: Berge $\succ$ Meer $\succ$ Stadt
+* Tochter: Stadt $\succ$ Berge $\succ$  Meer
+
+Obs! Jedes Haushaltsmitglied hat transitive (und vollständige) Präferenzen
+]
+.panel[.panel-name[Brexit]
+```{r, echo=FALSE,out.width = "100%",fig.align='center'}
+knitr::include_url("https://www.economist.com/britain/2019/03/28/theresa-may-has-united-britain-everyone-hates-her-brexit-deal",height="500px")
+```
+]
+.panel[.panel-name[Condorcet-Paradox]
+.pull-left[
+.blockquote[
+Condorcet-Paradoxon
+Bei einer kollektiven Entscheidung über mindestens drei Alternativen kann
+eine schrittweise (Mehrheits-)Abstimmung über je zwei Alternativen trotz
+individuell transitiver Präferenzen zu eine nicht transitive kollektive
+Präferenzordnung resultieren.
+]
+]
+.pull-right[
 ```{r, echo=FALSE,message=FALSE,fig.align='center'}
 option<-c('Hart','Soft','Verbleib')
 A<-c(3,2,1)
@@ -702,36 +967,224 @@ p <- p + theme(legend.position='bottom',
                legend.text=element_text(size=14))
 p
 ```
-
-.quelle[Eigene Darstellung.]
+]
+.quellePan[Eigene Darstellung.]
+]
+]
 
 ???
 
-[Quelle:](https://www.econlib.org/condorcets-brexit/)
+* Beispiel Urlaub
+  * Selbst wenn die Präferenzen auf individueller Ebene rational sind, können wir bei kollektiven Entscheidungen irrationale (zirkuläre) Präferenzrelationen vorfinden.
 
-No group reaches 50% of the electorate, but they can be close, and one group can be very small. The chart depicts these alternatives with ordinal utility indices on the vertical axis (a higher number representing a more preferred option):
+* Brexit [Quelle:](https://www.econlib.org/condorcets-brexit/)
 
-Präferenzen der Gruppe
+  * No group reaches 50% of the electorate, but they can be close, and one group can be very small. The chart depicts these alternatives with ordinal utility indices on the vertical axis (a higher number representing a more preferred option):
+  * Präferenzen der Gruppe
+    * A: $$H\succ S\succ V$$
+    * B: $$S\succ V\succ H$$
+    * C: $$V\succ H\succ S$$
 
-A: $$H\succ S\succ V$$
-B: $$S\succ V\succ H$$
-C: $$V\succ H\succ S$$
+* Arrow Unmöglichkeitstheorem
+
+
+
+
 
 
 
 ---
-name: framing
+name: Predictions
 class: left
 
-# Ausblick: Verhaltensökonomik
+# Kritik der Vorhersagen
 
-<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/dan_ariely_are_we_in_control_of_our_own_decisions" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+<br>
+
+.pull-left[
+.blockquote[To put this point less paradoxically, the relevant question to ask
+			about the "assumptions" of a theory is not whether they are
+			descriptively "realistic," for they never are, but whether they are
+			sufficiently good approximations for the purpose in hand. And this
+			question can be answered only by seeing whether the theory works,
+			which means whether it yields sufficiently accurate predictions.
+					.tr[
+— (M. Friedman (1966).)
+]
+]
+]
+--
+.pull-right[
+<br>
+* Erklärung der historischen Entwicklung der Arbeitszeit?
+
+* Erklärung der Arbeitszeit im internationalen Vergleich?
+
+* Konzeptioneller Wert des Modells: Substitutions- vs. Einkommenseffekt! 
+]
+
+???
+
+Konzeptioneller Wert des Modells: Substitutions- vs. Einkommenseffekt! 
+* Beispiel Sparen und Zins! (ggf. Classroom Experiment)!
+
+
+
+---
+class: inverse, center, middle
+
+# Exkurs in die Verhaltensökonomik
+
+
+
+---
+name: Framing
+class: left
+
+# Framing 
+
+.panelset[
+.panel[.panel-name[Beispiel 1]
+
+.pull-left[
+```{r, echo=FALSE,out.width = "100%",fig.align='center'}
+knitr::include_url('images/unit3/smartphone_framing_(pixabay).png',height = '450px')
+```
+<br>
+.quellePan[Bildquelle: [pixabay.com](pixabay.com)]
+]
+.pull-right[
+
+* Wahlmöglichkeiten
+  * A: Kauf in Filiale 2 bei Rabatt auf die Kopfhörer
+  * B: Kauf in Filiale 2 bei Rabatt auf das Smartphone
+  * C: Kauf beider Artikel in Filiale 1
+* Entscheidungen unter "Frame 1" und "Frame 2" offenbaren: $A \succ C \land C \succ B$
+* Transitivität würde implizieren: $A \succ C \land C \succ B \implies A \succ B$
+* Jedoch offenbaren die Entscheidungen unter "Frame 3": $A\sim B$
+]
+]
+.panel[.panel-name[Beispiel 2]
+Halbvoll oder Halbleer?
+.blockquote[
+Eine Gruppe von Probanden erhält jeweils 50€. Sie müssen sich entscheiden, ob Sie die gesamte Summe für ein Glücksspiel verwenden oder die sichere Alternative wählen, bei der Sie 20€ behalten dürfen.
+
+* Formulierung des Entscheidungsproblems (Framing):
+  * A: Sie dürfen bei der sicheren Variante 20€ behalten.
+  * B: Sie müssen bei der sicheren Variante auf 30€ verzichten.
+
+* Ergebnis:
+  * Obwohl die beiden Wahlmöglichkeiten äquivalent sind,
+  * wird bei der Formulierung A weniger häufig das Glücksspiel gewählt als bei Formulierung B.
+]
+]
+]
 
 
 ???
-Minute 12:16: Economist Abo
+
+* Beispiel 1:
+  * Im Original: Jacke und Taschenrechner (Kahnemann/Tversky, 1983)
+		  * In Filiale 1 kostet ein Smartphone 125€, Kopfhörer sind für 15€ zu haben.
+			 Der Verkäufer weist darauf hin, dass es in Filiale 2 (20 Minuten entfernt!) einen Rabatt von 5€...
+			    * ...auf die Kopfhörer ("Frame 1")
+				  * ...auf das Smartphone ("Frame 2") gibt.
+			* $\Rightarrow$ In Experimenten machen sich unter Frame 1 68\% der Kunden auf Weg zur Filiale 2, unter Frame 2 aber nur 29\%.
+			
+			* "Frame 3": Weil die Artikel in Filiale 1 nicht auf Lager sind,  werden die Kunden gebeten, die Ware in Filiale 2 abzuholen und erhalten dafür 5€ Rabatt im Sinne einer Aufwandsentschädigung. 
+			$\Rightarrow$ In Experimenten sind die Kunden indifferent zwischen einem Rabatt auf das Smartphone oder auf die Kopfhörer.	
+	*	Sind die (offenbarten) Präferenzen transitiv? (siehe Folie rechts: nein)
+  * Erklärungen?
+      * **Mentale Buchführung** und Schnäppchen: Preisreduktion in Prozent (vs. absolute Beträge)?                 $\rightarrow$ "Transaction Utility" (Thaler)
+      * Wahrnehmung von "Frame 1" und "Frame 2": Rabatt auf einzelne Produkte
+      * Wahrnehmung von "Frame 3" als Rabatt auf das Güterbündel?
+
+  * **Humans are particularly bad at processing information without context**, something we call a „frame“.
+  * The frame provides an understandable setting – one that the client recognises and that helps them understand the meaning of your solution. The frame is the context you place your options in.
+
+* Beispiel 2: 
+  * Am häufigsten kommen Framing-Effekte in Situationen mit Unsicherheit vor
+  * Verweis auf **Endowment Effect und Verlustaversion**
 
 
+---
+class: left
+
+# Verhaltensökonomik
+
+.panelset[
+.panel[.panel-name[SIFs]
+* Thaler (2015): "In order to do good economics, you have to keep in mind that people are human".
+
+* Verhaltensökonomik („Behavioral Economics“) dokumentiert beschränkte Rationalität („Misbehaving“) **realer Menschen**
+
+* Thaler (2015): "Behavioral economics is, to a large extent, standard economics that has been modified to incorporate SIFS"
+
+.blockquote[
+Supposedly Irrelevant Factors (SIF) sind Faktoren, für die in Studien ein signifikanter Einfluss auf das Entscheidungsverhalten **realer** Menschen nachzuweisen ist, während sie für den (vollständig) *homo oeconomicus* der Standardtheorie als nicht entscheidungsrelevant angenommen werden.
+]
+
+* SIFs und Nudging (bspw. Organspende, Altersvorsorge etc.)
+]
+.panel[.panel-name[Video D. Ariely]
+<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/dan_ariely_are_we_in_control_of_our_own_decisions" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+]
+.panel[.panel-name[Lesetipp]
+```{r, echo=FALSE,out.width = "100%",fig.align='center'}
+knitr::include_url('https://www.penguin.com.au/books/misbehaving-9780241951224',height = '450px')
+```
+]
+]
+
+
+???
+* Richard Thaler, Nobelpreis 2019
+
+* Decoy Effekt bei Minute 12:16: Economist Abo
+* Decoy (dt. Köder)
+* Letztlich auch ein Framing Effekt. Der Entscheidungsrahmen/-kontext (Frame) wird so gesetzt, dass
+mehrere Alternativen zur Verfügung stehen, wobei eine klar dominierte Alternative dabei ist (der Köder).
+* Decoys are „asymmetrically dominated“: they are completely inferior to one option (the target) but only partially inferior to the other (the competitor). For this reason, the decoy effect is sometimes
+called the „asymmetric dominance effect."
+* Kommt eine dritte Entscheidungsmöglichkeit ins Spiel, die asymmetrisch von den anderen beiden Optionen platziert wird, greifen die Kunden automatisch zu dem Produkt, bei dem Sie den Preis für angemessener halten
+
+
+---
+name: FazAus
+class: inverse, center, middle
+
+
+# Zusammenfassung und Ausblick
+
+
+---
+name: Fazit
+class: left
+
+# Zusammenfassung
+
+
+* Makroökonomische Perspektive
+   * Gesellschaften können Produktivitätssteigerungen unterschiedlich nutzen
+      * Steigerung der Produktionsmenge
+      * Verkürzung Arbeitszeit vs. "Befreiung" von Arbeit (für bestimmte Gruppen)
+--
+* Mikroökonomische Perspektive
+   * Rational Choice erklärt, wie Produktivitätssteigerungen historische genutzt wurden
+   * Kritik an der Rational Choice Theorie
+      * Verhaltensökonomik
+      * Dennoch: Konzeptioneller Wert (hier: EE vs. SE)
+--
+* Verhaltensökonomik
+   * Reale Menschen verhalten sich nicht wie der homo oeconomicus
+   * Dennoch kann Verhalten vorhergesagt werden
+      * menschliches Verhalten ist "predictably irrational" (D. Ariely)
+      * Hintergrund: Heuristiken erleichtern das Zurechtfinden in einer komplexen Welt
+
+
+???
+
+* Makro: Nutzung Produktivitätsfortschritte und Demografischer Wandel
 
 ---
 name: Ausblick 

@@ -46,7 +46,7 @@ options(htmltools.dir.version = FALSE)
 
 
 
-## Intake 2020B  
+## Intake 2021 A  
 
 ### Prof. Dr. Jörg Schoder
 
@@ -56,10 +56,11 @@ options(htmltools.dir.version = FALSE)
 
 
 ---
-
 layout: true
 
 <div class="my-footer"></div>       
+
+<div style="position: absolute;left:400px;bottom:10px;color:ISBAblue;font-size:9px">`r r2symbols::sym('copyright')``r rmarkdown::metadata$author`</div>
 
 
 

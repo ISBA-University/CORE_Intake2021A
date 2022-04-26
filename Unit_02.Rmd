@@ -383,14 +383,16 @@ class: left
 knitr::include_url("https://www.wiwo.de/images/john-maynard-keynes-der-brite-forderte-eine-aktive-rolle-des-staates-in-wirtschaftskrisen/4881664/1-format7001.jpg",height = "550px")
 ```
 ]
-
 .pull-right[
+<br>
+<br>
+<br>
 .center[
-"Economics is a method rather than a doctrine, an apparatus of the mind, a technique of thinking which helps the possessor to draw correct conclusions. … Economics is a science of thinking in terms of models joined to the art of choosing models which are relevant to the contemporary world"
+"Economics is a method rather than a doctrine, an apparatus of the mind, a technique of thinking which helps the possessor to draw correct conclusions. … Economics is a science of thinking in terms of models joined to the art of choosing models which are relevant to the contemporary world."
+.tr[
+— (J.M. Keynes)
 ]
-
-
-.quelle[J.M. Keynes]
+]
 ]
 
 
@@ -557,7 +559,7 @@ class: left
 
 
 .panelset[
-.panel[.panel-name[Nobelpreis 2019]
+.panel[.panel-name["Nobelpreis" 2019]
 ```{r, echo=FALSE,out.width = "100%"}
 knitr::include_url("images/unit2/Nobel_2019.PNG",height = "480px")
 ```
@@ -567,6 +569,11 @@ knitr::include_url("images/unit2/Nobel_2019.PNG",height = "480px")
 
 * Natürliche Experimente
 ]
+.panel[.panel-name[Exkurs]
+```{r, echo=FALSE,out.width = "100%"}
+knitr::include_url("https://www.nobelprize.org/prizes/lists/all-prizes-in-economic-sciences/",height = "480px")
+```
+]
 ]
 
 
@@ -574,12 +581,18 @@ knitr::include_url("images/unit2/Nobel_2019.PNG",height = "480px")
 
 * Nobelpreis 2019 an Banerjee, Duflo und Kremer
 
-* Im allgemeinen Sprachgebrauch als Nobelpreis für Wirtschaftswissenschaften oder Wirtschaftsnobelpreis bezeichnet; eine offizielle deutsche Bezeichnung existiert nicht.
+* **Exkurs:** Im allgemeinen Sprachgebrauch als Nobelpreis für Wirtschaftswissenschaften oder Wirtschaftsnobelpreis bezeichnet; eine offizielle deutsche Bezeichnung existiert nicht.
 		* Der Preis ist aus verschiedenen Gründen umstritten. 
 		    * Insbesondere die annähernde Gleichstellung mit den Nobelpreisen wirft die Frage auf, ob
 		      der Preis im Sinne Nobels ist und 
 		    * ob es angemessen ist, den Wirtschaftswissenschaften eine solche herausragende Stellung zu geben.
 		    * Ein vorgebrachtes Argument ist, der Preis sei nicht im Sinne Nobels, da dieser eine Abneigung gegen die                   Wirtschaftswissenschaft gehegt habe
+
+
+
+
+
+
 
 
 ---
