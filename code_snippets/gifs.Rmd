@@ -1,0 +1,24 @@
+
+---
+name: PauseSimpsons
+class: center
+
+background-size: 75%
+background-image: url(https://media1.giphy.com/media/3o6UBiAQ9Ws8UWdmqA/giphy.gif?cid=ecf05e47ro6hu5pfdss2uwd9nop2vjqk8pybb8v4ydqywav7&rid=giphy.gif&ct=g)
+
+
+
+---
+name: DBowie
+class: center
+background-size: 75%
+background-image: url(https://media.giphy.com/media/OWefeMtyJex4A/giphy.gif)
+
+
+
+---
+name: EndHanks
+class: center
+
+background-size: 75%
+background-image: url(https://media.giphy.com/media/KJ1f5iTl4Oo7u/giphy.gif)

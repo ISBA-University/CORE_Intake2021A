@@ -191,11 +191,16 @@ knitr::include_graphics("images/unit3/makro_wordcloud.png")
 </tbody>
 </table>
 
+.panel[.panel-name[Fun]
+```{r, echo=FALSE,fig.align='center',out.width = "100%"}
+knitr::include_graphics("images/unit3/Mikro_vs_Makro.png")
+```
 
-
-
+.quellePan[Bildquelle: [tumblr.com](https://econsociology.tumblr.com/post/105479023240)]
 ]
 ]
+]
+
 
 ???
 
@@ -594,7 +599,7 @@ class: left
 
 
 ---
-name: OpportunityCose
+name: OpportunityCost
 class: left
 
 # Feasible Set und Opportunitätskosten
@@ -770,12 +775,6 @@ class: left
 3. Modellkritik?
 
 
----
-name: PauseSimpsons
-class: center
-
-background-size: 75%
-background-image: url(https://media1.giphy.com/media/3o6UBiAQ9Ws8UWdmqA/giphy.gif?cid=ecf05e47ro6hu5pfdss2uwd9nop2vjqk8pybb8v4ydqywav7&rid=giphy.gif&ct=g)
 
 
 ---
@@ -790,6 +789,14 @@ class: inverse,center,middle
 .blockquote[Kritik der Aussagen/Vorhersagen]
 
 .blockquote[Verhaltensökonomische Befunde]
+
+
+---
+name: PauseSimpsons
+class: inverse, center
+
+background-size: 75%
+background-image: url(https://media1.giphy.com/media/3o6UBiAQ9Ws8UWdmqA/giphy.gif?cid=ecf05e47ro6hu5pfdss2uwd9nop2vjqk8pybb8v4ydqywav7&rid=giphy.gif&ct=g)
 
 
 
@@ -1149,6 +1156,45 @@ called the „asymmetric dominance effect."
 * Kommt eine dritte Entscheidungsmöglichkeit ins Spiel, die asymmetrisch von den anderen beiden Optionen platziert wird, greifen die Kunden automatisch zu dem Produkt, bei dem Sie den Preis für angemessener halten
 
 
+
+---
+name: sunkcost
+class: left
+
+# Versunkene Kosten
+
+.blockquote[
+Beispiel (Thaler, 2015)
+
+„Vince paid $1,000 to an indoor tennis club that entitled him to play once
+a week for the indoor season. After two months he developed tennis elbow,
+which made playing painful.“ 
+]
+
+--
+Sollte Vince noch weiterspielen?
+
+--
+* Für einen "Econ" (Thaler, 2015) sind Kosten, die bereits angefallen (und
+damit nicht veränderbar sind) nicht mehr entscheidungsrelevant: Es
+sind **versunkene Kosten** (engl. sunk cost).
+
+* "But for Humans, sunk costs linger and become another SIF
+[Supposedly Irrelevant Factor]." (Thaler, 2015)
+
+--
+
+Obs! Verhaltensökononomische Erklärung: Mentale Buchführung (engl.
+mental accounting)!
+
+???
+
+ToDo:
+
+* Abonnements oder Gebühren für Fitnessstudios und Strategien zur Vermeidung von Kündigungen
+
+
+
 ---
 name: FazAus
 class: inverse, center, middle
@@ -1201,31 +1247,15 @@ In Unit 4 erwartet uns:
   * Effekte individueller Handlungen auf kollektive/soziale Ergebnisse
   
 
+---
+name: EndHanks
+class: inverse, center
+
+
+background-size: 75%
+background-image: url(https://media.giphy.com/media/KJ1f5iTl4Oo7u/giphy.gif)
 
 
 
 
-<!-- name: ArbeitszeitInter -->
-<!-- class: left -->
 
-<!-- # Internationale Entwicklungen der Arbeitsstunden -->
-
-<!-- ```{r, echo=FALSE} -->
-<!-- knitr::include_url("https://personal.lse.ac.uk/minns/Huberman_Minns_EEH_2007.pdf",height = "550px") -->
-<!-- ``` -->
-
-
-
-<!-- ??? -->
-
-<!-- Tabelle 3, Seite 11 -->
-
-<!-- Aktuelle Entwicklungen -->
-
-<!-- [OECD-Daten](https://stats.oecd.org/Index.aspx?DataSetCode=ANHRS) -->
-
-<!-- Deutschland (2019: 1386 Stunden) vs. Griechenland (2019: 1949 Stunden) -->
-<!-- Schweiz (2019: 1557 Stunden), Norwegen (2019: 1384 Stunden),  -->
-
-<!-- geringste Arbeitsstunden (2019): Dänemark (1380) -->
-<!-- höchste Arbeitsstanden (2019): Mexiko (2137), dann schon Griechenland! -->

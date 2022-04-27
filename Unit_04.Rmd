@@ -82,10 +82,9 @@ knitr::include_url("https://www.wiwo.de/images/50_pol_serie_smith1-jpg/5939106/4
 <br>
 
 "It is not from the benevolence of the butcher, the brewer, or the baker that we expect our dinner, but from their regard to their own self-interest. We address ourselves not to their humanity but to their self-love, and never talk to them of our own necessities, but of their advantages."
+.tr[
+— A. Smith (1776): [The Wealth of Nations](http://eet.pixel-online.org/files/etranslation/original/The%20Wealth%20of%20Nations.pdf)]
 ]
-
-
-.quelle[A. Smith (1776): [The Wealth of Nations](http://eet.pixel-online.org/files/etranslation/original/The%20Wealth%20of%20Nations.pdf)]
 ]
 
 ???
@@ -1601,7 +1600,7 @@ Zug um Zug
 * Bisher: simultan, d.h. Entscheidungen der anderen Spieler unbekannt
 * Jetzt: sequenziell. bsp. Markteintritt
 
-
+<!--
 ---
 name: leftright
 class: left
@@ -1636,6 +1635,8 @@ class: left
 * Rückwärts-Induktion zeigt, dass Apple keinen Preiskrieg führen wird in dieser
 Konfiguration
 * Millionen Dollar
+
+-->
 
 ---
 name: Drohung

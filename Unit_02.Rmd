@@ -684,7 +684,7 @@ class: left
 
     * Definition: Vorteil bzw. Nutzen einer wirtschaftlichen Entscheidung im Vergleich zur nächstbesten Alternative (engl.: fallback option)
 
-    * bildet in der ökonomischen Theorie die Grundlage von Entscheidungen
+    * sind in der ökonomischen Theorie die Grundlage von Entscheidungen
 
 
 
@@ -906,6 +906,36 @@ p
 
 * If this more technical material is discussed in the lecture, this is a very good exercise for an in-class "think and compare with your neighbour" exercise. This way one can break up a long front-led lecture.
 
+
+
+---
+name: Anreize
+class: left
+
+# Anreize
+
+.blockquote[
+Anreize (engl. incentives) veranlassen Menschen zu Handlungen. Positive
+(Negative) Anreize entstehen durch die Aussicht auf Belohnung
+(Bestrafung) für ein bestimmtes Verhalten bzw. bestimmte Handlungen.
+]
+
+.center[
+```{r, echo=FALSE,out.width = "80%",fig.align="center"}
+knitr::include_url("images/unit2/karotte_(wiwo).jpg",height = "350px")
+``` 
+.quelle[Bildquelle: wiwo.de]
+]
+
+Bei politischen Entscheidungen müssen Anreizeffekte mitbedacht werden,
+um Fehlentwicklungen zu vermeiden (Gut gemeint vs. schlecht gemacht).
+
+
+???
+
+
+* Extrinsische vs. intrinsische Motivation diskutieren
+* P4 von Mankiw
 
 
 ---
