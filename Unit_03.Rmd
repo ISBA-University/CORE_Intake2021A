@@ -36,6 +36,7 @@ xaringanExtra::style_panelset_tabs(font_family = "inherit")
 #weitere: "share_again","animate_css", "webcam","freezeframe","clipboard","fit_screen","extra-styles" 
 ``` 
 
+
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 library(tidyverse)
@@ -1070,13 +1071,95 @@ class: inverse, center, middle
 
 # Exkurs in die Verhaltensökonomik
 
+---
+class: left
+
+# Verhaltensökonomik
+
+.panelset[
+.panel[.panel-name[SIFs]
+* Thaler (2015): "In order to do good economics, you have to keep in mind that people are human".
+
+* Verhaltensökonomik („Behavioral Economics“) dokumentiert beschränkte Rationalität („Misbehaving“) **realer Menschen**
+
+* Thaler (2015): "Behavioral economics is, to a large extent, standard economics that has been modified to incorporate SIFS"
+
+.blockquote[
+Supposedly Irrelevant Factors (SIF) sind Faktoren, für die in Studien ein signifikanter Einfluss auf das Entscheidungsverhalten **realer** Menschen nachzuweisen ist, während sie für den (vollständig) *homo oeconomicus* der Standardtheorie als nicht entscheidungsrelevant angenommen werden.
+]
+
+* SIFs und Nudging (bspw. Organspende, Altersvorsorge etc.)
+]
+.panel[.panel-name[Lesetipp]
+```{r, echo=FALSE,out.width = "100%",fig.align='center'}
+knitr::include_url('https://www.penguin.com.au/books/misbehaving-9780241951224',height = '450px')
+```
+]
+]
+
+
+???
+* Richard Thaler, Nobelpreis 2019
+
+* Decoy Effekt bei Minute 12:16: Economist Abo
+* Decoy (dt. Köder)
+* Letztlich auch ein Framing Effekt. Der Entscheidungsrahmen/-kontext (Frame) wird so gesetzt, dass
+mehrere Alternativen zur Verfügung stehen, wobei eine klar dominierte Alternative dabei ist (der Köder).
+* Decoys are „asymmetrically dominated“: they are completely inferior to one option (the target) but only partially inferior to the other (the competitor). For this reason, the decoy effect is sometimes
+called the „asymmetric dominance effect."
+* Kommt eine dritte Entscheidungsmöglichkeit ins Spiel, die asymmetrisch von den anderen beiden Optionen platziert wird, greifen die Kunden automatisch zu dem Produkt, bei dem Sie den Preis für angemessener halten
+
+
+
+---
+name: PredictablyIrrational
+class: left
+
+# SIFs als Systematische Verzerrungen 
+
+.panelset[
+.panel[.panel-name[Predictably Irrational]
+.xxxlarge[**Systematische Verzerrungen:**]
+
+
+1. Selbstüberschätzung
+--
+
+2. Mangelnde Selbstkontrolle und hyperbolische Diskontierung
+--
+
+3. Anfälligkeit für Framing
+--
+
+4. Berücksichtigung versunkener Kosten
+--
+
+5. Großzügigkeit und Altruismus
+--
+
+<br>
+<br>
+vgl. dazu ausführlich Kapitel 18 in Goolsbee/Levitt/Syverson (2016).
+
+]
+.panel[.panel-name[Video D. Ariely]
+<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/dan_ariely_are_we_in_control_of_our_own_decisions" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+]
+]
+
+
+
+???
+
+* Systematische Verzerrungen
+* Verweis auf Lehrbuchkapitel in 
 
 
 ---
 name: Framing
 class: left
 
-# Framing 
+# Inkonsistente Präferenzen: Die Bedeutung von Framing 
 
 .panelset[
 .panel[.panel-name[Beispiel 1]
@@ -1142,46 +1225,6 @@ Eine Gruppe von Probanden erhält jeweils 50€. Sie müssen sich entscheiden, o
   * Verweis auf **Endowment Effect und Verlustaversion**
 
 
----
-class: left
-
-# Verhaltensökonomik
-
-.panelset[
-.panel[.panel-name[SIFs]
-* Thaler (2015): "In order to do good economics, you have to keep in mind that people are human".
-
-* Verhaltensökonomik („Behavioral Economics“) dokumentiert beschränkte Rationalität („Misbehaving“) **realer Menschen**
-
-* Thaler (2015): "Behavioral economics is, to a large extent, standard economics that has been modified to incorporate SIFS"
-
-.blockquote[
-Supposedly Irrelevant Factors (SIF) sind Faktoren, für die in Studien ein signifikanter Einfluss auf das Entscheidungsverhalten **realer** Menschen nachzuweisen ist, während sie für den (vollständig) *homo oeconomicus* der Standardtheorie als nicht entscheidungsrelevant angenommen werden.
-]
-
-* SIFs und Nudging (bspw. Organspende, Altersvorsorge etc.)
-]
-.panel[.panel-name[Video D. Ariely]
-<div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/dan_ariely_are_we_in_control_of_our_own_decisions" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
-]
-.panel[.panel-name[Lesetipp]
-```{r, echo=FALSE,out.width = "100%",fig.align='center'}
-knitr::include_url('https://www.penguin.com.au/books/misbehaving-9780241951224',height = '450px')
-```
-]
-]
-
-
-???
-* Richard Thaler, Nobelpreis 2019
-
-* Decoy Effekt bei Minute 12:16: Economist Abo
-* Decoy (dt. Köder)
-* Letztlich auch ein Framing Effekt. Der Entscheidungsrahmen/-kontext (Frame) wird so gesetzt, dass
-mehrere Alternativen zur Verfügung stehen, wobei eine klar dominierte Alternative dabei ist (der Köder).
-* Decoys are „asymmetrically dominated“: they are completely inferior to one option (the target) but only partially inferior to the other (the competitor). For this reason, the decoy effect is sometimes
-called the „asymmetric dominance effect."
-* Kommt eine dritte Entscheidungsmöglichkeit ins Spiel, die asymmetrisch von den anderen beiden Optionen platziert wird, greifen die Kunden automatisch zu dem Produkt, bei dem Sie den Preis für angemessener halten
 
 
 
@@ -1189,7 +1232,7 @@ called the „asymmetric dominance effect."
 name: sunkcost
 class: left
 
-# Versunkene Kosten
+# Versunkene Kosten und Mentale Buchführung
 
 .blockquote[
 Beispiel (Thaler, 2015)

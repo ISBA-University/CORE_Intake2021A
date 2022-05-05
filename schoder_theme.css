@@ -158,3 +158,9 @@ my.footer {
   position: absolute;
   margin-right: -50px;
 }
+
+
+.bold-last-item > ul > li:last-of-type,
+.bold-last-item > ol > li:last-of-type {
+  font-weight: bold;
+}
