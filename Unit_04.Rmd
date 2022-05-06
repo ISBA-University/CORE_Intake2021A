@@ -83,7 +83,7 @@ knitr::include_url("https://www.wiwo.de/images/50_pol_serie_smith1-jpg/5939106/4
 
 "It is not from the benevolence of the butcher, the brewer, or the baker that we expect our dinner, but from their regard to their own self-interest. We address ourselves not to their humanity but to their self-love, and never talk to them of our own necessities, but of their advantages."
 .tr[
-— A. Smith (1776): [The Wealth of Nations](http://eet.pixel-online.org/files/etranslation/original/The%20Wealth%20of%20Nations.pdf)]
+— .small[A. Smith (1776): [The Wealth of Nations](http://eet.pixel-online.org/files/etranslation/original/The%20Wealth%20of%20Nations.pdf)]]
 ]
 ]
 
@@ -182,12 +182,12 @@ class: left
 ???
 
 * Da einsparen, wo es am leichtesten ist.
-* Ist CO2 alles?
-* Methan ist auch ein Hebel. Nur zwölf Jahre in der Atmosphäre (C02 Hundert(e) Jahre) 
+* Ist $CO_2$ alles?
+* Methan ist auch ein Hebel. Nur zwölf Jahre in der Atmosphäre ($C0_2$ Hundert(e) Jahre) 
 * Methanreduktion kann also kurzfristge Effekte bringen - Zeit kaufen
 
 * Corona gut fürs Klima? Leider nein. Aktuelle Messungen zeigen, dass Klimagase trotzdem weiter gestiegen sind, Methan sogar so stark wie zuletzt 1983!
-    * Analysis of samples from 2020 also showed a significant jump in the atmospheric burden of methane, which is far less abundant but 28 times more potent than CO2 at trapping heat over a 100-year time frame. NOAA’s preliminary analysis showed the annual increase in atmospheric methane for 2020 was 14.7 parts per billion (ppb), which is the largest annual increase recorded since systematic measurements began in 1983. 
+    * Analysis of samples from 2020 also showed a significant jump in the atmospheric burden of methane, which is far less abundant but 28 times more potent than $CO_2$ at trapping heat over a 100-year time frame. NOAA’s preliminary analysis showed the annual increase in atmospheric methane for 2020 was 14.7 parts per billion (ppb), which is the largest annual increase recorded since systematic measurements began in 1983. 
 
 
 
@@ -363,7 +363,7 @@ class: left
 .panel[.panel-name[Private Kosten]
 ```{tikz,echo=FALSE,fig.align='center'}
 {\sffamily	
-	\begin{tikzpicture}[scale=.25,thick]
+	\begin{tikzpicture}[scale=.24,thick]
 	\usetikzlibrary{calc}   %allows coordinate calculations.
 	\draw[style=help lines] (0,0) grid (9,9);
 	\draw[-stealth] (0,0) -- (10,0) node[below,text width=1.5cm,text height =6pt, text centered] {\scriptsize $x_F$\\(Flugreisen)};
@@ -384,7 +384,7 @@ class: left
 .panel[.panel-name[Soziale Kosten]
 ```{tikz,echo=FALSE,fig.align='center'}
 {\sffamily	
-	\begin{tikzpicture}[scale=.25,thick]
+	\begin{tikzpicture}[scale=.24,thick]
 	\usetikzlibrary{calc}   %allows coordinate calculations.
 	\draw[style=help lines] (0,0) grid (9,9);
 	\draw[-stealth] (0,0) -- (10,0) node[below,text width=1.5cm,text height =6pt, text centered] {\scriptsize $x_F$\\(Flugreisen)};
@@ -436,7 +436,7 @@ class: left
 .panel[.panel-name[Private Kosten]
 ```{tikz,echo=FALSE,fig.align='center'}
 {\sffamily	
-	\begin{tikzpicture}[scale=.25,thick]
+	\begin{tikzpicture}[scale=.24,thick]
 	\usetikzlibrary{calc}   %allows coordinate calculations.
 	\draw[style=help lines] (0,0) grid (9,9);
 	\draw[-stealth] (0,0) -- (10,0) node[below,text width=1.5cm,text height =6pt, text centered] {\scriptsize $x_K$\\(Kohle)};
@@ -462,7 +462,7 @@ class: left
 .panel[.panel-name[Soziale Kosten]
 ```{tikz,echo=FALSE,fig.align='center'}
 {\sffamily	
-	\begin{tikzpicture}[scale=.25,thick]
+	\begin{tikzpicture}[scale=.24,thick]
 	\usetikzlibrary{calc}   %allows coordinate calculations.
 	\draw[style=help lines] (0,0) grid (9,9);
 	\draw[-stealth] (0,0) -- (10,0) node[below,text width=1.5cm,text height =6pt, text centered] {\scriptsize $x_K$\\(Kohle)};
@@ -516,7 +516,7 @@ class: left
 .pull-left[
 Bitte QR-Code scannen und mitspielen! 
 
-```{r ClassEx1,echo=FALSE, message=FALSE,out.width='50%',fig.align='center'}
+```{r ClassEx1,echo=FALSE, message=FALSE,out.width='90%',fig.align='center'}
 knitr::include_graphics('images/ClassEx-link.svg')
 ```
 ]
@@ -525,7 +525,7 @@ knitr::include_graphics('images/ClassEx-link.svg')
 <br>
 <br>
 <br>
-```{r, echo=FALSE,fig.align='center',out.width = "60%"}
+```{r, echo=FALSE,fig.align='center',out.width = "100%"}
 knitr::include_graphics("images/unit4/Overfishing_(Economist_2020).png")
 ```
 ]
@@ -554,7 +554,7 @@ class: left
 
 * Verbote (Grenzwert)
 * Preise als Lenkungsinstrument
-  * Besteuerung (Pigou-Steuer): negatives Verhalten wird teurer (bspw. CO_2-Steuer)
+  * Besteuerung (Pigou-Steuer): negatives Verhalten wird teurer (bspw. $CO_2$-Steuer)
   * Subventionen: positives Verhalten wird belohnt (bspw. E-Auto-Prämie, Immobiliensanierung...)
 * Eigentumsrechte (Coase-Theorem)
   * Effizienzthese vs. Invarianzthese
@@ -727,7 +727,7 @@ Ein Spiel ist durch folgende Bestandteile charakterisiert:
 ]    
 
 .panel[.panel-name[Beispiel]
-<img src="https://www.core-econ.org/the-economy/book/images/web/figure-04-01.jpg" height="450px" width="800px" />
+<img src="https://www.core-econ.org/the-economy/book/images/web/figure-04-01.svg" height="450px" width="800px" />
 ]
 
 .panel[.panel-name[Normalform]
@@ -1473,7 +1473,7 @@ class: left
 
 
 ```{r ,echo=FALSE, message=FALSE,out.width='100%',fig.align='center'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-04-06-c.jpg',height='550px')
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-04-06-c.svg',height='550px')
 ```
 
 ???
@@ -1574,7 +1574,7 @@ class: left
 # Öffentliche Güter
 
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-04-07.jpg',height = "550px")
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-04-07.svg',height = "550px")
 ```
 
 ???
@@ -1681,7 +1681,7 @@ class: left
 .pull-left[
 Bitte QR-Code scannen und mitspielen! 
 
-```{r, echo=FALSE, message=FALSE,out.width='100%',fig.align='center'}
+```{r, echo=FALSE, message=FALSE,out.width='90%',fig.align='center'}
 knitr::include_graphics('images/ClassEx-link.svg')
 ```
 ]
@@ -1689,8 +1689,8 @@ knitr::include_graphics('images/ClassEx-link.svg')
 .pull-right[
 
 <br>
-<spacer>
-
+<br>
+<br>
 <img src="https://www.misesde.org/wp-content/uploads/2020/06/leuchtturm.jpeg" height="250px" width="500px" />
 
 ]
@@ -1708,7 +1708,7 @@ class: left
 
 
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-04-14.jpg',height = "550px")
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-04-14.svg',height = "550px")
 ```
 
 ???
@@ -1723,11 +1723,29 @@ class: left
 
 # Institutionen und Klimawandel
 
+
+.panelset[
+.panel[.panel-name[Klimapolitik als Spiel]
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/text/04.html#exercise-414-nash-equilibria-and-climate-change',height = "550px")
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-04-17-a.svg',height = "480px")
 ```
+]
+.panel[.panel-name[PD]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-04-17-b.svg',height = "480px")
+```
+]
+.panel[.panel-name[Reziprozität]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-04-17-c.svg',height = "480px")
+```
+]
+]
+
 
 ???
+
+* Nash-Equilibrium and Climate Change, Exercise 
 
 * Business as usual (BAU) is the dominant strategy for purely self-interested players 
 * An emissions treaty would produce the socially optimal outcome
@@ -1761,7 +1779,7 @@ same. Hence, the payoff matrix may look like Figure 4.18b - 2 Nash-Gleichgewicht
 name: Final
 class: inverse, center, middle
 
-# Zusammenfassung
+# Zusammenfassung und Ausblick
 
 
 
@@ -1785,12 +1803,27 @@ class: left
 * Multiple Nash-Gleichgewichte und Institutionen
 
 
+
+
+
+
+---
+name: Ausblick
+class: left
+
+# Ausblick (Unit 5)
+
+
+* Bewertung sozialer Ergebnisse: Effizienz und Fairness
+
+* Die Bedeutung von Institutions für die sozial effiziente Allokationen
+
+* Verhandlungsmacht und Verteilung von Effizienzgewinnen
+
+
 ???
 
 Nächstes Mal (Unit 5)
 * The role of institutions in social allocations
 * How to evaluate social outcomes: efficiency and fairness
 * How bargaining power affects the distribution of surplus
-
-
-

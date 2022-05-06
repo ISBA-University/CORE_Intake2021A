@@ -1120,7 +1120,8 @@ class: left
 .panelset[
 .panel[.panel-name[Predictably Irrational]
 .xxxlarge[**Systematische Verzerrungen:**]
-
+<br>
+.tiny[vgl. dazu ausführlich Goolsbee/Levitt/Syverson (2016, Kapitel 18).]
 
 1. Selbstüberschätzung
 --
@@ -1130,16 +1131,16 @@ class: left
 
 3. Anfälligkeit für Framing
 --
-
+  * Verlustaversion (bspw. Ausstattungseffekt)
+  * Ankereffekte
+  * Mentale Buchführung
+  
 4. Berücksichtigung versunkener Kosten
 --
 
 5. Großzügigkeit und Altruismus
 --
 
-<br>
-<br>
-vgl. dazu ausführlich Kapitel 18 in Goolsbee/Levitt/Syverson (2016).
 
 ]
 .panel[.panel-name[Video D. Ariely]
