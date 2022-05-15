@@ -1579,6 +1579,12 @@ class: left
 }
 ```
 
+* Teilspiel
+
+* Rückwärtsinduktion
+
+* Teilspielperfektheit
+
 
 ???
 
@@ -1625,7 +1631,11 @@ class: left
 * Aufbau von Überkapazität senkt zwar den Monopolgewinn (von 2000 auf 1200), dieser ist aber immer noch
 größer als im Nash-Gleichgewicht in der vorherigen Situation (1000)
 
+* **Reputation** - für Apple kann es durchaus sinnvoll sein, die Kosten des Kampfes geben Amazon auf sich zu nehmen, um seine Reputation als Kämpfer zu stärken und weitere Hersteller wie bspw. HP oder Asus abzuschrecken
 
+* Unendliche Wiederholung
+  * Tit for Tat
+  * Grim-Trigger
 
 
 ---

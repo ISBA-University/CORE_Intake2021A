@@ -1,0 +1,302 @@
+---
+title: "VO Mikroökonomie"
+subtitle: "Intake 2021 A"
+author: "Prof. Dr. Jörg Schoder"
+institute: "ISBA" 
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: 
+        - default
+        - schoder_theme.css
+        - xaringan-themer.css
+    includes:
+      after_body: insert-logo.html
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+    seal: false
+    
+---
+class: title-slide
+
+```{r xaringan-themer, include=FALSE}
+library(xaringanthemer)
+style_xaringan(text_color = "#232461",inverse_text_color = "#FFFFFF",inverse_background_color = "#232461", title_slide_background_color = "#232461",header_background_color = "#232461",header_color = "#FFFFFF",header_h1_font_size = "32px",
+  header_h2_font_size = "26px",link_color="#d84116",
+  header_h3_font_size = "20px",text_slide_number_color = "#232461",text_slide_number_font_size = "0.5em")
+```
+
+```{r xaringanExtra, echo=FALSE}
+xaringanExtra::use_xaringan_extra(c("tile_view","scribble","panelset","tachyons"))
+xaringanExtra::style_panelset_tabs(font_family = "inherit")
+#xaringanExtra::use_search(show_icon = TRUE)
+#weitere: "share_again","animate_css", "webcam","freezeframe","clipboard","fit_screen","extra-styles" 
+``` 
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(fontawesome)
+```
+
+# VO Mikroökonomie
+
+
+
+## Intake 2021 A  
+
+### Prof. Dr. Jörg Schoder
+
+
+# CORE Unit 5 (Soziale Interaktion und Spieltheorie)
+
+
+---
+layout: true
+
+<div class="my-footer"></div>       
+
+<div style="position: absolute;left:400px;bottom:10px;color:ISBAblue;font-size:9px">`r r2symbols::sym('copyright')``r rmarkdown::metadata$author`</div>
+  
+
+
+---
+name: Motivation
+class:
+
+# Vilfredo Pareto Allokation und Distribution
+
+
+
+.pull-left[
+```{r, echo=FALSE,fig.align='center'}
+knitr::include_url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Vilfredo_Pareto_1870s2.jpg/360px-Vilfredo_Pareto_1870s2.jpg",height = "480px")
+```
+]
+.pull-right[
+.center[
+<br>
+"The assertion that men are objectively equal is so absurd that it does not even merit being refuted."
+<br>
+<br>
+"[T]he efforts of men are utilized in two different ways: they are directed to the production or transformation of economic goods, or else to the appropriation of goods produced by others." 
+<br>
+<br>
+
+.tr[— Vilfredo Pareto (1906).]
+]
+]
+
+
+???
+
+* Pareto war studierter Ingenieur und hatte das Ziel Soziologie und Ökonomik zu stärker faktenbasierten Wissenschaften zu machen - nach dem Vorbild der Naturwissenschaften.
+* Das Pareto-Gesetz beasagt, dass ein kleiner Teil von Menschen einen Großteil des Vermögens besitzt 
+  * zur Zeit Paretos: 80-20, d.h. 80 Prozent des Vermögens gehört 20 Prozent der Menschenin Pareto’s time, 
+  * heute in den USA eher 90-20
+* Given this inequality, Pareto argued that people fight over their share of the pie (Zitat): Menschliches **Engagement hat letztlich zwei Zielrichtungen**
+    * entweder Engagement in der **Produktion/Transformation** wirtschaftlicher Güter
+    * oder das Engagement richtet sich auf die Aneignung von Gütern, die von anderen hergestellt wurden. 
+* Besonders bekannt ist Pareto für seinen Effizienzbegriff. 
+  * Bisher: Technologische Effizienz und Ökonomische Effizienz (Unit 2 und Unit 3)
+  * Pareto-Effizienz bewertet die Effizienz sozialer Systeme
+
+
+
+
+
+
+
+---
+name: Motivation
+class: left
+
+# Adam Smith und die unsichtbare Hand
+
+.pull-left[
+.center[
+Article I
+
+.small[Every man has a vote in affairs of moment; has equal title to the fresh provisions, or strong liquors, at any time seized, and may use them at pleasure, unless a scarcity (not an uncommon thing among them) makes it necessary, for the good of all, to vote a retrenchment.]
+
+Article III
+
+.small[No person to Game at Cards or Dice for Money.]
+
+Article IV
+
+.small[The Lights and Candles to be put out at eight a-Clock at Night; If any of the Crew after that Hour still remained enclined for drinking, they are to do so on the open Deck...]
+.tr[ .small[
+— [The Royal Rover’s Articles](https://en.wikipedia.org/wiki/Pirate_code#:~:text=I.,all%2C%20to%20vote%20a%20retrenchment.)]]
+]
+]
+
+.pull-right[
+
+<br>
+<br>
+
+```{r, echo=FALSE,fig.align='center',out.width="69%"}
+knitr::include_url("http://theageofpirates.com/wp-content/uploads/bartholomew-roberts-01.jpg",height = "375px")
+```
+]
+
+
+
+???
+
+* Auch Piraten haben Regeln. 
+* Bartholomew Roberts (Abbildung) 
+    * gilt als der größte Pirat im Goldenen Zeitalter um 1700. 
+    * Er hatte 11 Artikel formuliert.
+*Andere Kommandanten hatten zum Teil nur 6 Regeln
+
+---
+name: Gliederung
+class: inverse, left, middle
+# Was lernen wir?
+
+.small[Die spieltheoretischen Analysen (Unit 4) haben gezeigt, dass Institutionen (Spielregeln) das soziale Ergebnis wesentlich beeinflussen. In der RCT (Unit 3) können Institutionen als Einflussgrößen des Möglichkeitsraums (Feasible Set) betrachtet werden.]
+
+## .underline[Inhaltliche Leitfragen]
+
+.blockquote[.small[
+1. Was ändert sich, wenn die Optimalität der eigenen Entscheidung davon abhängt, wie sich die anderen Gesellschaftsmitglieder entscheiden? 
+2. Wann führt eigeninteressiertes Handeln **nicht** zu sozial erwünschten Ergebnissen?
+3. Wie können wir solche sozialen Dilemmata überwinden?  
+]
+]
+
+## .underline[Ökonomische Methoden und Konzepte]
+
+.blockquote[.small[
+1. Strategische Interaktion und Spieltheorie 
+    * Auszahlungsmatrix
+    * Strategien und Nash-Gleichgewicht
+2. Öffentliche Güter und Externalitäten (Wohlfahrtsökonomik)
+3. Altruismus, soziale Normen und Information
+]
+]
+
+
+???
+
+* Einfluss der Regeln/Regeländerungen
+  * Public Goods Game
+      * Standard
+      * Mit "Leader" wart ihr kooperativer
+  * Ultimatum Spiel
+      * Mit Konkurrenz (zwei Respondents) werden auch schlechtere Angebote akzeptiert
+      
+* Während Regeln in der RCT i.a. als gegeben angenommen und nicht weiter thematisiert werden, sind Sie in der Neuen Institutionenökonomik (Unit 6) explizit Gegenstand der Analyse (Transaktionskosten).
+
+
+---
+name: Teil1
+class: inverse,center,middle
+
+# Teil 1: Soziale Dilemmata und Externalitäten
+
+.blockquote[Pekuniäre vs. technologische Externalitäten]
+
+.blockquote[Kategorien ökonomischer Güter]
+
+.blockquote[Tragik der Allmende]
+
+
+---
+name: ParetoEffizienz
+class: left
+
+# Pareto-Effizienz und Soziale Dilemmata revisited
+
+.panelset[
+.panel[.panel-name[Pareto-Effizienz]
+```{r, echo=FALSE,fig.align='center'}
+knitr::include_url("https://www.core-econ.org/the-economy/book/text/05.html#figure-5-1e",height = "480px")
+```
+]
+.panel[.panel-name[Soziales Dilemma]
+Refresher Unit 4: 
+
+* Soziales Dilemma als Situation, in der individuell eigeninteressiertes Handeln zu einem Ergebnis führt, das für alle weniger vorteilhaft ist, als das Ergebnis, das bei kooperativem Verhalten möglich gewesen wäre.
+
+Mit dem Konzept der Pareto-Effizienz lässt sich dies knapper formulieren:
+
+* Ein Soziales Dilemma ist ein Pareto-ineffizientes Nash-Gleichgewicht.
+]
+]
+
+
+???
+
+* A Pareto comparison
+
+(I, I) lies in the rectangle to the north-east of (T, T), so an outcome where both Anil and Bala use IPC Pareto dominates one where both use Terminator.
+
+* Compare (T, T) and (T, I)
+
+If Anil uses Terminator and Bala IPC, then he is better off but Bala is worse off than when both use Terminator. The Pareto criterion cannot say which of these allocations is better.
+
+* No allocation Pareto dominates (I, I)
+
+None of the other allocations lie to the north-east of (I, I), so it is not Pareto dominated.
+
+* What can we say about (I, T) and (T, I)?
+
+Neither of these allocations are Pareto dominated, but they do not dominate any other allocations either.
+
+---
+name: Final
+class: inverse, center, middle
+
+# Zusammenfassung und Ausblick
+
+
+
+---
+name: Fazit
+class: left
+
+# Zusammenfassung und Fazit
+
+
+* Verschiedene Mechanismen zur Internalisierung externer Effekte
+  * Effizienz vs. Gerechtigkeit
+  * Politischer Prozess und Wiederwahlchancen eines Politikers
+
+* Strategische Interaktionen können mit spieltheoretischen Modellen analysiert werden.
+  * Beste Antworten und Rationalität
+  * Gleichgewichte und Prognosen
+  
+* Soziale Dilemmata wie das Gefangenen-Dilemma können durch soziale Präferenzen, Bestrafung und/oder geeignete Spielregeln aufgelöst werden.
+
+* Multiple Nash-Gleichgewichte und Institutionen
+
+
+
+
+
+
+---
+name: Ausblick
+class: left
+
+# Ausblick (Unit 6)
+
+
+* Bewertung sozialer Ergebnisse: Effizienz und Fairness
+
+* Die Bedeutung von Institutions für die sozial effiziente Allokationen
+
+* Verhandlungsmacht und Verteilung von Effizienzgewinnen
+
+
+???
+
+Nächstes Mal (Unit 5)
+* The role of institutions in social allocations
+* How to evaluate social outcomes: efficiency and fairness
+* How bargaining power affects the distribution of surplus

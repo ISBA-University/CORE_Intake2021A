@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>VO Mikroökonomie</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Prof. Dr. Jörg Schoder" />
+    <meta name="date" content="2022-05-13" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <link rel="stylesheet" href="schoder_theme.css" type="text/css" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: title-slide
+
+
+
+<style>.panelset{--panel-tab-font-family: inherit;}</style>
+
+
+
+# VO Mikroökonomie
+
+
+
+## Intake 2021 A  
+
+### Prof. Dr. Jörg Schoder
+
+
+# CORE Unit 5 (Soziale Interaktion und Spieltheorie)
+
+
+---
+layout: true
+
+&lt;div class="my-footer"&gt;&lt;/div&gt;       
+
+&lt;div style="position: absolute;left:400px;bottom:10px;color:ISBAblue;font-size:9px"&gt;&#169;Prof. Dr. Jörg Schoder&lt;/div&gt;
+  
+
+
+---
+name: Motivation
+class:
+
+# Vilfredo Pareto Allokation und Distribution
+
+
+
+.pull-left[
+&lt;iframe src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Vilfredo_Pareto_1870s2.jpg/360px-Vilfredo_Pareto_1870s2.jpg" width="100%" height="480px" data-external="1"&gt;&lt;/iframe&gt;
+]
+.pull-right[
+.center[
+&lt;br&gt;
+"The assertion that men are objectively equal is so absurd that it does not even merit being refuted."
+&lt;br&gt;
+&lt;br&gt;
+"[T]he efforts of men are utilized in two different ways: they are directed to the production or transformation of economic goods, or else to the appropriation of goods produced by others." 
+&lt;br&gt;
+&lt;br&gt;
+
+.tr[— Vilfredo Pareto (1906).]
+]
+]
+
+
+???
+
+* Pareto war studierter Ingenieur und hatte das Ziel Soziologie und Ökonomik zu stärker faktenbasierten Wissenschaften zu machen - nach dem Vorbild der Naturwissenschaften.
+* Das Pareto-Gesetz beasagt, dass ein kleiner Teil von Menschen einen Großteil des Vermögens besitzt 
+  * zur Zeit Paretos: 80-20, d.h. 80 Prozent des Vermögens gehört 20 Prozent der Menschenin Pareto’s time, 
+  * heute in den USA eher 90-20
+* Given this inequality, Pareto argued that people fight over their share of the pie (Zitat): Menschliches **Engagement hat letztlich zwei Zielrichtungen**
+    * entweder Engagement in der **Produktion/Transformation** wirtschaftlicher Güter
+    * oder das Engagement richtet sich auf die Aneignung von Gütern, die von anderen hergestellt wurden. 
+* Besonders bekannt ist Pareto für seinen Effizienzbegriff. 
+  * Bisher: Technologische Effizienz und Ökonomische Effizienz (Unit 2 und Unit 3)
+  * Pareto-Effizienz bewertet die Effizienz sozialer Systeme
+
+
+
+
+
+
+
+---
+name: Motivation
+class: left
+
+# Adam Smith und die unsichtbare Hand
+
+.pull-left[
+.center[
+Article I
+
+.small[Every man has a vote in affairs of moment; has equal title to the fresh provisions, or strong liquors, at any time seized, and may use them at pleasure, unless a scarcity (not an uncommon thing among them) makes it necessary, for the good of all, to vote a retrenchment.]
+
+Article III
+
+.small[No person to Game at Cards or Dice for Money.]
+
+Article IV
+
+.small[The Lights and Candles to be put out at eight a-Clock at Night; If any of the Crew after that Hour still remained enclined for drinking, they are to do so on the open Deck...]
+.tr[ .small[
+— [The Royal Rover’s Articles](https://en.wikipedia.org/wiki/Pirate_code#:~:text=I.,all%2C%20to%20vote%20a%20retrenchment.)]]
+]
+]
+
+.pull-right[
+
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;iframe src="http://theageofpirates.com/wp-content/uploads/bartholomew-roberts-01.jpg" width="69%" height="375px" data-external="1"&gt;&lt;/iframe&gt;
+]
+
+
+
+???
+
+* Auch Piraten haben Regeln. 
+* Bartholomew Roberts (Abbildung) 
+    * gilt als der größte Pirat im Goldenen Zeitalter um 1700. 
+    * Er hatte 11 Artikel formuliert.
+*Andere Kommandanten hatten zum Teil nur 6 Regeln
+
+---
+name: Gliederung
+class: inverse, left, middle
+# Was lernen wir?
+
+.small[Die spieltheoretischen Analysen (Unit 4) haben gezeigt, dass Institutionen (Spielregeln) das soziale Ergebnis wesentlich beeinflussen. In der RCT (Unit 3) können Institutionen als Einflussgrößen des Möglichkeitsraums (Feasible Set) betrachtet werden.]
+
+## .underline[Inhaltliche Leitfragen]
+
+.blockquote[.small[
+1. Was ändert sich, wenn die Optimalität der eigenen Entscheidung davon abhängt, wie sich die anderen Gesellschaftsmitglieder entscheiden? 
+2. Wann führt eigeninteressiertes Handeln **nicht** zu sozial erwünschten Ergebnissen?
+3. Wie können wir solche sozialen Dilemmata überwinden?  
+]
+]
+
+## .underline[Ökonomische Methoden und Konzepte]
+
+.blockquote[.small[
+1. Strategische Interaktion und Spieltheorie 
+    * Auszahlungsmatrix
+    * Strategien und Nash-Gleichgewicht
+2. Öffentliche Güter und Externalitäten (Wohlfahrtsökonomik)
+3. Altruismus, soziale Normen und Information
+]
+]
+
+
+???
+
+* Einfluss der Regeln/Regeländerungen
+  * Public Goods Game
+      * Standard
+      * Mit "Leader" wart ihr kooperativer
+  * Ultimatum Spiel
+      * Mit Konkurrenz (zwei Respondents) werden auch schlechtere Angebote akzeptiert
+      
+* Während Regeln in der RCT i.a. als gegeben angenommen und nicht weiter thematisiert werden, sind Sie in der Neuen Institutionenökonomik (Unit 6) explizit Gegenstand der Analyse (Transaktionskosten).
+
+
+---
+name: Teil1
+class: inverse,center,middle
+
+# Teil 1: Soziale Dilemmata und Externalitäten
+
+.blockquote[Pekuniäre vs. technologische Externalitäten]
+
+.blockquote[Kategorien ökonomischer Güter]
+
+.blockquote[Tragik der Allmende]
+
+
+---
+name: ParetoEffizienz
+class: left
+
+# Pareto-Effizienz und Soziale Dilemmata revisited
+
+.panelset[
+.panel[.panel-name[Pareto-Effizienz]
+&lt;iframe src="https://www.core-econ.org/the-economy/book/text/05.html#figure-5-1e" width="100%" height="480px" data-external="1"&gt;&lt;/iframe&gt;
+]
+.panel[.panel-name[Soziales Dilemma]
+Refresher Unit 4: 
+
+* Soziales Dilemma als Situation, in der individuell eigeninteressiertes Handeln zu einem Ergebnis führt, das für alle weniger vorteilhaft ist, als das Ergebnis, das bei kooperativem Verhalten möglich gewesen wäre.
+
+Mit dem Konzept der Pareto-Effizienz lässt sich dies knapper formulieren:
+
+* Ein Soziales Dilemma ist ein Pareto-ineffizientes Nash-Gleichgewicht.
+]
+]
+
+
+???
+
+* A Pareto comparison
+
+(I, I) lies in the rectangle to the north-east of (T, T), so an outcome where both Anil and Bala use IPC Pareto dominates one where both use Terminator.
+
+* Compare (T, T) and (T, I)
+
+If Anil uses Terminator and Bala IPC, then he is better off but Bala is worse off than when both use Terminator. The Pareto criterion cannot say which of these allocations is better.
+
+* No allocation Pareto dominates (I, I)
+
+None of the other allocations lie to the north-east of (I, I), so it is not Pareto dominated.
+
+* What can we say about (I, T) and (T, I)?
+
+Neither of these allocations are Pareto dominated, but they do not dominate any other allocations either.
+
+---
+name: Final
+class: inverse, center, middle
+
+# Zusammenfassung und Ausblick
+
+
+
+---
+name: Fazit
+class: left
+
+# Zusammenfassung und Fazit
+
+
+* Verschiedene Mechanismen zur Internalisierung externer Effekte
+  * Effizienz vs. Gerechtigkeit
+  * Politischer Prozess und Wiederwahlchancen eines Politikers
+
+* Strategische Interaktionen können mit spieltheoretischen Modellen analysiert werden.
+  * Beste Antworten und Rationalität
+  * Gleichgewichte und Prognosen
+  
+* Soziale Dilemmata wie das Gefangenen-Dilemma können durch soziale Präferenzen, Bestrafung und/oder geeignete Spielregeln aufgelöst werden.
+
+* Multiple Nash-Gleichgewichte und Institutionen
+
+
+
+
+
+
+---
+name: Ausblick
+class: left
+
+# Ausblick (Unit 6)
+
+
+* Bewertung sozialer Ergebnisse: Effizienz und Fairness
+
+* Die Bedeutung von Institutions für die sozial effiziente Allokationen
+
+* Verhandlungsmacht und Verteilung von Effizienzgewinnen
+
+
+???
+
+Nächstes Mal (Unit 5)
+* The role of institutions in social allocations
+* How to evaluate social outcomes: efficiency and fairness
+* How bargaining power affects the distribution of surplus
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+<style>
+.logo {
+  background-image: url(isba_Logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  width: 100px;
+  height: 60px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+    ':not(.inverse)' +
+    ':not(.hide-logo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="logo"></div>';
+  });
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
