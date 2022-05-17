@@ -1,45 +1,39 @@
----
-title: "VO Mikroökonomie"
-subtitle: "Intake 2020 B"
-author: "Prof. Dr. Jörg Schoder"
-institute: "ISBA" 
-date: "`r Sys.Date()`"
-output:
-  xaringan::moon_reader:
-    css: 
-        - default
-        - schoder_theme.css
-        - xaringan-themer.css
-    includes:
-      after_body: insert-logo.html
-    lib_dir: libs
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
-    seal: false
-    
----
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>VO Mikroökonomie</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Prof. Dr. Jörg Schoder" />
+    <meta name="date" content="2022-05-17" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"fb180ec0606b4a02a6adb9fba9835227","expires":1}</script>
+    <script src="libs/himalaya/himalaya.js"></script>
+    <script src="libs/js-cookie/js.cookie.js"></script>
+    <link href="libs/editable/editable.css" rel="stylesheet" />
+    <script src="libs/editable/editable.js"></script>
+    <link rel="stylesheet" href="schoder_theme.css" type="text/css" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
 class: title-slide
 
-```{r xaringan-themer, include=FALSE}
-library(xaringanthemer)
-style_xaringan(text_color = "#232461",inverse_text_color = "#FFFFFF",inverse_background_color = "#232461", title_slide_background_color = "#232461",header_background_color = "#232461",header_color = "#FFFFFF",header_h1_font_size = "32px",
-  header_h2_font_size = "26px",link_color="#d84116",
-  header_h3_font_size = "20px",text_slide_number_color = "#232461",text_slide_number_font_size = "0.5em")
-```
 
-```{r xaringanExtra, echo=FALSE}
-xaringanExtra::use_xaringan_extra(c("tile_view","scribble","panelset","tachyons"))
-xaringanExtra::style_panelset_tabs(font_family = "inherit")
-#xaringanExtra::use_search(show_icon = TRUE)
-#weitere: "share_again","animate_css", "webcam","freezeframe","clipboard","fit_screen","extra-styles" 
-xaringanExtra::use_editable(expires = 1)
-``` 
 
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-```
+<style>.panelset{--panel-tab-font-family: inherit;}</style>
+
+
 
 
 # VO Mikroökonomie
@@ -58,9 +52,9 @@ options(htmltools.dir.version = FALSE)
 ---
 layout: true
 
-<div class="my-footer"></div>       
+&lt;div class="my-footer"&gt;&lt;/div&gt;       
 
-<div style="position: absolute;left:400px;bottom:10px;color:ISBAblue;font-size:9px">`r r2symbols::sym('copyright')``r rmarkdown::metadata$author`</div>
+&lt;div style="position: absolute;left:400px;bottom:10px;color:ISBAblue;font-size:9px"&gt;&#169;Prof. Dr. Jörg Schoder&lt;/div&gt;
 
 
 
@@ -72,9 +66,7 @@ class: left
 # Herbert Simon: Organisationen und Märkte
 
 .pull-left[
-```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_graphics('images/unit6/simon_(nobel.org).jpg')
-```
+&lt;img src="images/unit6/simon_(nobel.org).jpg" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 .pull-right[
@@ -84,7 +76,7 @@ equipped with a telescope that reveals social structures. The firms reveal thems
 show as red lines connecting firms, forming a network in the spaces between
 them.
 
-<br>
+&lt;br&gt;
 
 "Organizations would be the dominant feature of the landscape. A message sent back home, describing the
 scene, would speak of "large green areas interconnected by red lines." It would not likely speak of "a network of red lines connecting green spots."
@@ -152,14 +144,12 @@ class: left
 # Ronald Coase und die "Natur der Unternehmung"
 
 .pull-left[
-```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_graphics('images/unit6/coase_(nobel.org).jpg')
-```
+&lt;img src="images/unit6/coase_(nobel.org).jpg" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 .pull-right[
 .center[.small[
-"An economist thinks of the economic system as being co-ordinated by the price mechanism and society becomes not an organisation but an organism. The economic &laquo;system works itself&raquo;."
+"An economist thinks of the economic system as being co-ordinated by the price mechanism and society becomes not an organisation but an organism. The economic &amp;laquo;system works itself&amp;raquo;."
 
 "Within a firm, the description does not fit at all. For instance, in economic theory we find that the allocation of factors of production between different uses is determined by the price mechanism."
 
@@ -199,20 +189,16 @@ class: left
 
 .panelset[
 .panel[.panel-name[Entstehung]
-```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_graphics('images/unit6/T-kosten_Phasen_(Felden_Hack_S111).PNG')
-```
+&lt;img src="images/unit6/T-kosten_Phasen_(Felden_Hack_S111).PNG" width="100%" style="display: block; margin: auto;" /&gt;
 
-<br>
+&lt;br&gt;
 
 .quellePan[Quelle: Felden/Hack (2019, S. 111).]
 ]
 .panel[.panel-name[Einflussfaktoren]
-```{r, echo=FALSE,fig.align='center'}
-knitr::include_graphics('images/unit6/T-kosten_Faktoren_(Felden_Hack_S112).PNG')
-```
+&lt;img src="images/unit6/T-kosten_Faktoren_(Felden_Hack_S112).PNG" width="955" style="display: block; margin: auto;" /&gt;
 
-<br>
+&lt;br&gt;
 
 .quellePan[Quelle: Felden/Hack (2019, S. 112).]
 ]
@@ -258,31 +244,7 @@ class: left
 ## Transaktionskosten und Governance-Alternativen
 
 .center[
-```{tikz,echo=FALSE}
-		\tikzset{
-			point/.style={insert path={node[circle, inner sep=1.5pt, fill]{}}}
-		}
-	{\sffamily\tiny
-		\begin{tikzpicture}[scale=.3,thick]
-			\usetikzlibrary{calc,intersections}   %allows coordinate calculations.
-			
-			\draw[-stealth] (0,0) -- (16,0) node[below, text width=1.5cm,text height =6pt, text centered] {k};
-			\node[thick,below]  at (8,-.7) {Spezifizität/Unsicherheit}; 
-			\draw[-stealth] (0,0) -- (0,12) node[left,text height =6pt,text centered] {};
-			\node[thick, above, rotate=90] at (0,5) {Transaktionskosten}; 
-		%Kurven
-			\draw[name path=markt,line width=1.2pt,color=blue,domain=0:6.5] plot (\x,{(1+(.45*\x)^2)}) node [left,align=center] {Markt\\(Spontane Ordnung)};
-			\draw[name path=hybrid,line width=1.2pt,color=blue,domain=0:10.25] plot (\x,{(2.5+(.15*\x)^4.5)}) node [above] {Hybridform};
-			\draw[name path=firm,line width=1.2pt,color=blue,domain=0:14] plot (\x,{(4+(.1*\x)^5)}) node [above] {Organisation};
-		%Schnittpunkte
-			\path[name intersections={of=markt and hybrid, by={M}}]	(M) node[] {};	
-			\path let \p1 = (M) in node[below]  at (\x1,0) (kM) {$k_M$};
-			\draw[dotted] (M) -- (kM);
- 			\path[name intersections={of=hybrid and firm, by={H}}]	(H) node[] {};
- 			\path let \p1 = (H) in node[below]  at (\x1,0) (kH) {$k_H$};
- 			\draw[dotted] (H) -- (kH);
-		\end{tikzpicture}}
-```
+![](Unit_06_files/figure-html/unnamed-chunk-5-1.png)&lt;!-- --&gt;
 ]
 .quelle[Eigene Darstellung.]
 
@@ -299,9 +261,7 @@ class: left
 
 # Neue Insitutionenökonomik
 
-```{r, echo=FALSE,fig.align='center',out.width='75%'}
-knitr::include_graphics('images/unit6/NIE_(Williamson_2000)_small.png')
-```
+&lt;img src="images/unit6/NIE_(Williamson_2000)_small.png" width="75%" style="display: block; margin: auto;" /&gt;
 
 .quelle[[Williamson (2000, S. 597)](https://www.researchgate.net/publication/4981429_The_New_Institutional_Economics_Take_Stock_Looking_Ahead)]
 
@@ -409,9 +369,7 @@ class: left
 # Unternehmensstruktur und Entscheidungen
 
 
-```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-06-01-b.svg',height='550px')
-```
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-06-01-b.svg" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
 
 
 ???
@@ -450,11 +408,9 @@ class: left
 ]
 
 .pull-right[
-```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_graphics('images/unit6/gewinnmaximierung.png')
-```
+&lt;img src="images/unit6/gewinnmaximierung.png" width="100%" style="display: block; margin: auto;" /&gt;
 
-<br>
+&lt;br&gt;
 
 .quellePan[Bildquelle: pixabay.com]
 ]
@@ -556,9 +512,7 @@ class: left
 # Grenzen des Monitorings
 
 
-```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-06-01-c.svg',height='550px')
-```
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-06-01-c.svg" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
 
 ???
 
@@ -627,51 +581,7 @@ class: left
 # Lohnformen
 
 .center[
-```{tikz,echo=FALSE}
-\usetikzlibrary{angles,arrows,arrows.meta,babel,backgrounds,bending,calc,chains,colorbrewer,decorations.markings,decorations.pathreplacing,decorations.text,fit,intersections,math,matrix,mindmap,patterns,positioning,quotes,shapes,shapes.arrows,shapes.multipart,shapes.geometric,shadows,shadows.blur,shadings,trees}
-	\tikzset{font=\normalsize,
-	edge from parent fork down,
-	%level distance=12mm,
-	level 1/.style={sibling distance=60mm,level distance=15ex,},
-%	level 2/.style={sibling distance=50mm,level distance=15ex,},
-	level 3/.style={grow=down,xshift=1em,anchor=west,
-		edge from parent path={(\tikzparentnode.south) |- (\tikzchildnode.west)}},
-	first/.style={level distance=15ex},
-	second/.style={level distance=30ex},
-	third/.style={level distance=45ex},
-	%	every node/.style=
-	treenode/.style = {align=center, inner sep=4pt, text centered,
-		font=\normalsize\bfseries},
-	kasten/.style = {treenode,
-		top color=white,
-		bottom color=blue!25,
-		rectangle,rounded corners,
-		minimum width=34mm,
-		minimum height=12mm,
-		draw=blue!75,
-		very thick,
-		drop shadow,
-		align=center,
-		text depth = 2pt
-	},
-	plainode/.style = {treenode,fill=none},% arbre rouge noir, noeud rouge
-	edge from parent/.style={draw=blue!50,thick}
-	}
-{\sffamily\scriptsize
-\begin{tikzpicture}
-	\node [kasten] {Lohnformen}
-	child[level 1] {node [kasten]{Zeitlohn}
-			child[level 3,first] {node [kasten]{Reiner Zeitlohn}} 
-			child[level 3,second] {node [kasten,align=left]{Zeitlohn mit\\ Leistungszulage}}
-	}	
-	child[level 1]  {node [kasten] {Leistungslohn}
-		child[level 3,first] {node [kasten]{Akkordlohn}} 
-		child[level 3,second] {node [kasten]{Prämienlohn}}	
-		child[level 3,third] {node [kasten]{Pensumlohn}}
-	};
-\end{tikzpicture}
-}
-```
+![](Unit_06_files/figure-html/unnamed-chunk-10-1.png)&lt;!-- --&gt;
 ]
 
 .quelle[Eigene Darstellung.]
@@ -683,7 +593,7 @@ Quelle: Doris Lindner-Lohmann/Lohmann/Schirmer (2016): Personalmanagement
 
 * Out of all US manufacturing workers:
   * In the late 19th century, the pay of more than 50% was based on their output.
-  * In the 21st century, less than 5% were paid piece rates (Helper, Kleiner & Wang, 2010).
+  * In the 21st century, less than 5% were paid piece rates (Helper, Kleiner &amp; Wang, 2010).
 
 * Der **Akkordlohn** als "die" Leistungslohnform **kann immer weniger genutzt werden**,
     * weil die Automatisierung der Arbeitsprozesse den Arbeitnehmern immer weniger Einflussmöglichkeiten lässt. 
@@ -734,14 +644,10 @@ class: left
 ]
 .panel[.panel-name[Anstellungs-Rente]
 
-```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-06-02-g.svg',height='480px')
-```
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-06-02-g.svg" width="100%" height="480px" data-external="1"&gt;&lt;/iframe&gt;
 ]
 .panel[.panel-name[Anreizeffekte]
-```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-06-03.svg',height='480px')
-```
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-06-03.svg" width="100%" height="480px" data-external="1"&gt;&lt;/iframe&gt;
 ]
 ]
 
@@ -777,11 +683,11 @@ reservation wage.
  * Besides the large but hard-to-measure psychological and social cost of job loss, estimating the size of the employment rent is not simple.
  * We cannot compare the economic situation of employed and unemployed, because the latter are different in terms of abilities and skills: even if they were employed, they would on average earn less than people currently employed.
  * **An entire firm closing, or a mass layoff** of workers, provides a **natural experiment** that can help: we **can look at the earnings of workers before and after** they lost their job.
- * Jacobson, Lalonde & Sullivan (1993) studied experienced full-time workers hit by mass layoffs in the US state of Pennsylvania in 1982.
+ * Jacobson, Lalonde &amp; Sullivan (1993) studied experienced full-time workers hit by mass layoffs in the US state of Pennsylvania in 1982.
       * In 2014 dollars, those displaced had been earning 50.000 Dollar in 1979.
       * Those who find another job in 3 months earned 15,000 less.
       * 4 years later they were still making 13.300 less than similar workers whose firms did not lay off their workers.
-  * Similar studies (e.g. Kletzer, 1998; Couch & Placzek, 2010) suggest that employment rents are large enough for workers to worry about losing them. 
+  * Similar studies (e.g. Kletzer, 1998; Couch &amp; Placzek, 2010) suggest that employment rents are large enough for workers to worry about losing them. 
   
 
 
@@ -795,7 +701,7 @@ class: left
 
 * Unter Anreizgesichtspunkten nicht: 
   * Arbeitgeber kann Arbeitseinsatz nicht direkt messen
-  * Höhere Anstellungsrente  $\Rightarrow$  höhere Kosten des Arbeitsplatzverlustes  $\Rightarrow$  höherer Anreiz zu hohem Arbeitseinsatz
+  * Höhere Anstellungsrente  `\(\Rightarrow\)`  höhere Kosten des Arbeitsplatzverlustes  `\(\Rightarrow\)`  höherer Anreiz zu hohem Arbeitseinsatz
   * Lohnerhöhung als Anreizinstrument
 
 * Außerdem: Suchkosten etc. um adäquaten Ersatz zu finden. 
@@ -846,9 +752,7 @@ class: left
 
 # Arbeitnehmer: Beste Antwort
 
-```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-06-04-g.svg',height='500px')
-```
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-06-04-g.svg" width="100%" height="500px" data-external="1"&gt;&lt;/iframe&gt;
 
 Steigung der Besten-Antwort-Kurve entspricht der MRT
 
@@ -870,14 +774,10 @@ class: left
 
 .panelset[
 .panel[.panel-name[Isokostenlinie]
-```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-06-05-e.svg',height='480px')
-```
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-06-05-e.svg" width="100%" height="480px" data-external="1"&gt;&lt;/iframe&gt;
 ]
 .panel[.panel-name[Beste Antwort]
-```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-06-06-f.svg',height='480px')
-```
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-06-06-f.svg" width="100%" height="480px" data-external="1"&gt;&lt;/iframe&gt;
 ]
 .panel[.panel-name[Effizienzlohn]
 .blockquote[
@@ -923,9 +823,7 @@ class: left
 # Effizienzlöhne implizieren Unfreiwillige Arbeitslosigkeit
 
 
-```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-06-07-d.svg',height='420px')
-```
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-06-07-d.svg" width="100%" height="420px" data-external="1"&gt;&lt;/iframe&gt;
 
 .blockquote[
 Wer zu den gegebenen Arbeitsbedingungen und Löhnen, zu denen andere Arbeitnehmer beschäftigt sind, keine Arbeit findet, gilt als **unfreiwillig arbeitslos**. 
@@ -1005,9 +903,7 @@ class: left
 
 # Prinzipale und Agenten
 
-```{r, echo=FALSE,fig.align='center',out.width='75%'}
-knitr::include_graphics('images/unit6/Prinzipal-Agent_(Felden_Hack_S113).png')
-```
+&lt;img src="images/unit6/Prinzipal-Agent_(Felden_Hack_S113).png" width="75%" style="display: block; margin: auto;" /&gt;
 
 Auswahl weiterer Beispiele (neben Arbeitgeber/-nehmer, Eigner/Manager)
 
@@ -1073,3 +969,153 @@ class: left
 * Verteilung der Tauschgewinne zwischen Unternehmenseignern und Kunden
 
 * Auswirkungen von Steuern und Wettbewerb auf Preise und Absatzmengen
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+<style>
+.logo {
+  background-image: url(isba_Logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  width: 100px;
+  height: 60px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+    ':not(.inverse)' +
+    ':not(.hide-logo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="logo"></div>';
+  });
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
