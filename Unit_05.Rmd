@@ -422,16 +422,16 @@ class: left
 * Materielle Gerechtigkeit (ergebnisorientiert)
   * Bewertung eines Zustands 
   * Mögliche Indikatoren:
-    * Einkommen
-    * Vermögen
-    * Zufriedenheit (vgl. Schoder, 2015)
+      * Einkommen
+      * Vermögen
+      * Zufriedenheit (vgl. Schoder, 2015)
 
 * Verfahrensgerechtigkeit (prozessorientiert)
   * Bewertung der Spielregeln, die ein Ergebnis hervorbringen
   * Indikatoren:
-    * Freiwilligkeit (!)
-    * Chancengleichheit
-    * "deservingness"
+      * Freiwilligkeit (!)
+      * Chancengleichheit
+      * "deservingness"
 ]
 .panel[.panel-name[Rawls]
 <iframe width="1000" height="480" src="https://www.youtube.com/embed/4rRzMeAkULc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
