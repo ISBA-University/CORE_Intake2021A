@@ -75,6 +75,10 @@ class: inverse, left, middle
 # Was lernen wir?
 
 
+## Inhaltliche Leitfragen
+
+
+
 ## Ökonomische Methoden und Konzepte 
 
 .blockquote[.small[
@@ -171,6 +175,8 @@ knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure
 
 ???
 * Zahlungsbereitschaft (WTP)
+* Hausman - conjoint-Analyse
+* R-Paket (conjoint)[https://cran.r-project.org/web/packages/conjoint/conjoint.pdf]
 
 
 

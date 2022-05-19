@@ -66,6 +66,17 @@ layout: true
 
 
 ---
+name: Aktuell
+class: left
+
+# Arbitrage und die Bedeutung von Transaktionskosten
+
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.tagesschau.de/wirtschaft/weltwirtschaft/weizen-preis-rekordhoch-101.html',height='550px')
+```
+
+
+---
 name: Motivation
 class: left
 
@@ -78,6 +89,9 @@ knitr::include_graphics('images/unit6/simon_(nobel.org).jpg')
 ]
 
 .pull-right[
+
+<br>
+
 .center[.small[
 "Suppose that [a visitor from Mars] approaches the Earth from space,
 equipped with a telescope that reveals social structures. The firms reveal themselves, say, as solid green areas with faint interior contours marking out divisions and departments. Market transactions
@@ -232,9 +246,9 @@ unter allen Kontextbedingungen und -entwicklungen immer altruistisch handeln. D.
 
 
 * Transaktionskosten fallen somit in den verschiedenen Phasen eines Austauschs von Leistungen zwischen Menschen an
-  * vorvertragliche Suchkosten
-  * Verhandlungskosten
-  * nachvertragliche Kontroll- und Durchsetzungskosten
+   * vorvertragliche Suchkosten
+   * Verhandlungskosten
+   * nachvertragliche Kontroll- und Durchsetzungskosten
   
   
 * Transaktionen sind also immer so zu organisieren, dass die aus der eigenen begrenzten Rationalität entstehenden Kosten möglichst gering ausfallen und gleichzeitig eine optimale Absicherung vor opportunistischem Verhalten des Vertragspartners aufgebaut wird 
@@ -357,11 +371,13 @@ class: left
 * Die Koordination von Tätigkeiten im Rahmen der Arbeitsteilung unterscheidet erfolgt in Unternehmen (als Organisationen) anders als über Märkte
 
 --
+
 * Unternehmen: Ausübung wirschaftlicher Macht
     * Eigentümer/Manager geben ihren Mitarbeitern Anweisungen...
     * ...in der Annahme, dass diesen Folge geleistet wird ("Order als Befehl")
 
 --
+
 * Märkte: Dezentralisierte Macht und Freiwilligkeit
   * Käufe und Verkäufe als Resultat autonomer Entscheidungen von Ver-/Käufern
   * "Order als Anfrage", die abgelehnt werden kann.
@@ -380,24 +396,26 @@ class: left
 
 # Verträge und Beziehungen
 
-* Organisationen und Märkte unterscheiden sich in der Form der Verträge als Basis des Austauschs.
+* Organisationen und Märkte unterscheiden sich in der Form der Verträge als Basis des Austauschs
+
 
 --
-  * (Arbeits-)Verträge transferieren **zeitlich begrenzt** die Autorität über die Tätigkeiten der Mitarbeiter an die Eigentümer/Manager 
+    * (Arbeits-)Verträge transferieren **zeitlich begrenzt** die Autorität über die Tätigkeiten der Mitarbeiter an die Eigentümer/Manager
 
 --
-  * Verträge über Güter, die auf Märkten gehandelt werden, transferieren das **Eigentum** der Güter **dauerhaft** vom Verkäufer zum Käufer.
- 
+    * Verträge über Güter, die auf Märkten gehandelt werden, transferieren das **Eigentum** der Güter **dauerhaft** vom Verkäufer zum Käufer.
+
+
 --
-* Organisationen und Märkte unterscheiden sich auch in der Art der Beziehungen
-  
-    * Firmenspezifisches Kapital
-      * Soziale Beziehungen in Organisationen sind langfristig (**Netzwerk** von Kollegen)
-      * Angeeignete **Fähigkeiten** zur Erledigung der Aufgaben 
-      * Beendigung der Arbeitsbeziehung bedeutet für beide Seiten einen Wertverlust
+
+* Organisationen und Märkte unterscheiden sich auch in der Art der Beziehungen (Mitarbeiter erwerben **firmenspezifisches Kapital**)
+    * Soziale Beziehungen in Organisationen sind langfristig (**Netzwerk** von Kollegen)
+    * Angeeignete **Fähigkeiten** zur Erledigung der Aufgaben 
+    * Beendigung der Arbeitsbeziehung bedeutet für beide Seiten einen Wertverlust
 
 
 ???
+
 * Vertrag als rechtliches Dokument oder Einigung über Handlungen, die von den Vertragspartnern zu erbringen sind.
 
 
@@ -425,6 +443,19 @@ knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure
 * Managers assign workers
   * Each manager assigns workers to the tasks required for these decisions to be implemented,
   * and attempts to ensure that the assignments are carried out.
+
+
+---
+name: Struktur
+class: left
+
+# Unternehmen: Hierarchie oder spontane Ordnung?
+
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.handelsblatt.com/unternehmen/management/job-agiles-arbeiten-flache-hierarchien-offene-bueroraeume-die-new-work-illusion/24896462.html',height='550px')
+```
+
+
 
 
 
@@ -506,13 +537,14 @@ class: left
   
 * Großunternehmen
   * typischerweise viele Eigentümer (Anteilseigner)
-    * Individuen und Institutionelle Investoren (Pensionskassen) 
-    * die Mehrheit ist nicht in der Unternehmensführung
+      * Individuen und 
+      * Institutionelle Investoren (Pensionskassen) 
+  * die Mehrheit der Anteilseigner ist nicht in der Unternehmensführung 
     
-  * Geschäftsführer entscheiden über die Verwendung des Eigentums anderer
-    * Produktion (was, wo, wie?)
-    * Entlohnung von Angestellten und Managern
-    * Ausschüttung von Gewinnen
+  * Geschäftsführer entscheiden über die **Verwendung des Eigentums anderer**
+     * Produktion (was, wo, wie?)
+     * Entlohnung von Angestellten und Managern
+     * Ausschüttung von Gewinnen
 
 ???
 
@@ -532,21 +564,42 @@ class: left
 
 * Die Überschüsse aus der unternehmerischen Tätigkeit stehen den Eigentümern zu
 
+
 * Trennung von Eigentum und Kontrolle kann zu Interessenkonflikten führen
+
   * Entscheidungen der Geschäftsführung beeinflussen die Profite
+  
   * Profitiert die Geschäftsführung von steigenden Profiten?
+  
   * Haftet die Geschäftsführung für sinkende Profite?
 
 --
+
 * Lösungsmöglichkeiten:
+
+  * Überwachung (Monitoring) der Management-Leistung (bspw. in D: Aufsichtsrat)
+  
   * Verknüpfung der Manager-Entlohnung mit der Wertentwicklung des Unternehmens (Aktienoptionen)
-  * Überwachung (Monitoring) der Management-Leistung (Aufsichtsrat)
+  
+  
 
 
 ???
 * Profit is the residual: whatever remains after revenues (the proceeds from sale of the products) are used to pay employees, managers, suppliers, creditors, and taxes.
   
 * Walter Eucken: Haftung als Grundprinzip einer funktionierenden marktwirtschaftlichen Ordnung.  
+
+
+---
+name: Pay
+class: left
+
+# Kritik an Managerentlohnung
+
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.manager-magazin.de/finanzen/artikel/manager-gehaelter-norwegens-staatsfonds-macht-mobil-a-1090312.html',height='550px')
+```
+
 
 
 ---

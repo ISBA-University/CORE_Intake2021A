@@ -137,6 +137,15 @@ name: Lernziele
 class: inverse, left, middle
 # Was lernen wir?
 
+.small[In Unit 5 haben wir gesehen, dass die Verhandlungsmacht darüber entscheidet, wie das Ergebnis der Produktion verteilt wird. Die Produktion findet in Unternehmen statt, die wir in dieser Einheit als Black Box betrachten. Mithin wollen wir nicht den Entscheidungsprozess des Managements modellieren (vgl. Unit 6) sondern das Ergebnis der unternehmerischen Entscheidungen in Form des Güterangebots erklären.]
+
+## Inhaltliche Leitfragen
+
+.blockquote[.small[
+1. Wie können wir die Produktionsmenge und die Preispolitik von Unternehmen verstehen?
+2. Wie können wir die Verhandlungsmacht zwischen Anbietern und ihren Kunden analysieren?
+]
+]
 
 ## Ökonomische Methoden und Konzepte 
 
@@ -145,7 +154,7 @@ class: inverse, left, middle
   * Produktions- und Kostentheorie
   * Preiselastizität
   * Marktmacht (und Marktformen)
-3. Wohlfahrtsgewinne
+2. Wohlfahrtsgewinne
 ]
 ]
 
