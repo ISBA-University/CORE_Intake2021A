@@ -189,6 +189,111 @@ class: left
   * But a firm can actively influence both consumer demand and costs in more ways than through price and quantity. As we saw in Unit 2, innovation may lead to new and attractive products, or to lower production costs. If the firm can innovate successfully it can earn economic rents—at least in the short term until others catch up. Further innovation may be needed if it is to stay ahead. Advertising can increase demand. And as we saw in Unit 6, the firm sets the wage, which is an important component of its cost. As we will see in later units, the firm also spends to influence taxes and environmental regulation in order to lower its production costs.
 
 
+---
+name: secNachfrage
+class: inverse, center, middle
+
+# Nachfrage
+
+
+
+---
+name: NEtheorie
+class: left
+
+# Nachfrage (Theorie)
+
+
+.panelset[
+.panel[.panel-name[Individuell]
+```{tikz,echo=FALSE}
+{\sffamily
+	\begin{tikzpicture}[scale=.16,thick]
+			\usetikzlibrary{calc}   %allows coordinate calculations.	
+			%RC-Diagram	
+			\draw[-stealth] (0,0) -- (17,0) node[below, text centered] {$x_1$};	
+			\draw[-stealth] (0,0) -- (0,10) node[left,text centered] {$x_2$};
+
+		%Ausgangssituation
+			\draw[red,line width=.1em] (0,8) -- (12,0) node[font=\tiny,below right] {$\frac{m}{p_1}$};
+			\draw[blue] (1.6,9.2)  to [out=275,in=170] (9.3,3.6) node {};
+			\draw[fill] (3.8,5.5) circle [radius=.15] node[below] {};
+			\draw[dotted] (3.8,5.5) -- (3.8,0);
+			\draw[red,line width=.1em] (0,8) -- (8,0) node[font=\tiny,below right] {$\frac{m}{\hat{p}_1}$};
+			\draw[blue] (1,9.1)  to [out=275,in=168] (9,2.3) node {};
+			\draw[fill] (2.9,5.1) circle [radius=.15] node[below] {};
+			\draw[dotted] (2.9,5.1) -- (2.9,0);
+			
+			% Weitere Preiserhöhung	
+			\draw[red,line width=.1em] (0,8) -- (4,0) node[font=\tiny,below right] {$\frac{m}{\tilde{p}_1}$};
+			\draw[blue] (.5,8.7)  to [out=272,in=173] (8.5,.65) node {};
+			\draw[fill] (1.5,4.9) circle [radius=.15] node[below] {};
+			\draw[dotted] (1.5,4.9) -- (1.5,0);
+
+			\path[draw,green,rounded corners=1mm]  (.8,4.8) -- (1.5,4.9) -- (2.9,5.1) -- (3.8,5.5) -- (5.5,6.3);
+			\draw (5.7,6.3) node[font=\tiny,right,black,align=left] {Preis-Konsum-Kurve};
+	
+			% Verbindungslinien dotted			
+			\draw[dotted] (1.5,0) -- (1.5,-12) ;
+			\draw[dotted] (2.9,0) -- (2.9,-12) ;
+			\draw[dotted] (3.8,0) -- (3.8,-12);	
+			
+			%Unteres Diagramm
+			\draw[-stealth] (0,-12) -- (17,-12) node[font=\tiny,below, text width=1.5cm,text height =6pt, text centered] {$x_1$};
+			\draw[-stealth] (0,-12) -- (0,-2) node[font=\tiny,above left,text height =6pt,text centered] {\textbf{Preis} $p_1$};
+			
+			\draw[dotted] (0,-3) node[font=\tiny,left] {$\tilde{p}_1$} -- (1.5,-3);
+			\draw[fill] (1.5,-3) circle [radius=.15];
+			\draw[dotted] (0,-7.5) node[font=\tiny,left] {$\hat{p}_1$}  -- (2.9,-7.5);
+			\draw[fill] (2.9,-7.5) circle [radius=.15];
+			\draw[dotted] (0,-9) node[font=\tiny,left] {$p_1$}  -- (3.8,-9);
+			\draw[fill] (3.8,-9) circle [radius=.15];
+			
+			
+			\draw[rounded corners=5mm] (1.2,-1.7) .. controls (1.5,-3) .. (2.9,-7.5)
+			.. controls (3.8,-9) .. (4.5,-10) .. controls (6.5,-10.5) .. (11,-11.2);
+			\draw (5.7,-5.7) node[font=\tiny,right,black,align=left] {(Inverse) Nachfragekurve};
+		\end{tikzpicture}
+}
+```
+]
+.panel[.panel-name[Marktnachfrage]
+
+Horizontale Aggregation
+
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('images/unit7/NE_agg.png',height='550px')
+```
+]
+.panel[.panel-name[Gesetz?]
+* Hat die Nachfragekurve immer einen fallenden Verlauf?
+
+.blockquote[
+Gesetz der Nachfrage
+
+"Wenn die Nachfrage nach einem Gut auf Grund einer
+Einkommenserhöhung steigt, dann muss die Nachfrage nach diesem Gut
+bei einem Anstieg seines Preises fallen."
+.tr[
+— Varian (2016, S. 161)
+]
+]
+* Giffen-Güter?
+]
+]
+
+
+---
+name: NEempirie
+class: left
+
+
+# Nachfrage (Empirie)
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-07-03.svg',height='550px')
+```
+
+
 
 
 
@@ -600,111 +705,6 @@ knitr::include_url('images/unit7/ViralNFX-Chart.png',height='470px')
 
  
 
----
-name: secNachfrage
-class: inverse, center, middle
-
-# Nachfrage
-
-
-
----
-name: NEtheorie
-class: left
-
-# Nachfrage (Theorie)
-
-
-.panelset[
-.panel[.panel-name[Individuell]
-```{tikz,echo=FALSE}
-{\sffamily
-	\begin{tikzpicture}[scale=.16,thick]
-			\usetikzlibrary{calc}   %allows coordinate calculations.	
-			%RC-Diagram	
-			\draw[-stealth] (0,0) -- (17,0) node[below, text centered] {$x_1$};	
-			\draw[-stealth] (0,0) -- (0,10) node[left,text centered] {$x_2$};
-
-		%Ausgangssituation
-			\draw[red,line width=.1em] (0,8) -- (12,0) node[font=\tiny,below right] {$\frac{m}{p_1}$};
-			\draw[blue] (1.6,9.2)  to [out=275,in=170] (9.3,3.6) node {};
-			\draw[fill] (3.8,5.5) circle [radius=.15] node[below] {};
-			\draw[dotted] (3.8,5.5) -- (3.8,0);
-			\draw[red,line width=.1em] (0,8) -- (8,0) node[font=\tiny,below right] {$\frac{m}{\hat{p}_1}$};
-			\draw[blue] (1,9.1)  to [out=275,in=168] (9,2.3) node {};
-			\draw[fill] (2.9,5.1) circle [radius=.15] node[below] {};
-			\draw[dotted] (2.9,5.1) -- (2.9,0);
-			
-			% Weitere Preiserhöhung	
-			\draw[red,line width=.1em] (0,8) -- (4,0) node[font=\tiny,below right] {$\frac{m}{\tilde{p}_1}$};
-			\draw[blue] (.5,8.7)  to [out=272,in=173] (8.5,.65) node {};
-			\draw[fill] (1.5,4.9) circle [radius=.15] node[below] {};
-			\draw[dotted] (1.5,4.9) -- (1.5,0);
-
-			\path[draw,green,rounded corners=1mm]  (.8,4.8) -- (1.5,4.9) -- (2.9,5.1) -- (3.8,5.5) -- (5.5,6.3);
-			\draw (5.7,6.3) node[font=\tiny,right,black,align=left] {Preis-Konsum-Kurve};
-	
-			% Verbindungslinien dotted			
-			\draw[dotted] (1.5,0) -- (1.5,-12) ;
-			\draw[dotted] (2.9,0) -- (2.9,-12) ;
-			\draw[dotted] (3.8,0) -- (3.8,-12);	
-			
-			%Unteres Diagramm
-			\draw[-stealth] (0,-12) -- (17,-12) node[font=\tiny,below, text width=1.5cm,text height =6pt, text centered] {$x_1$};
-			\draw[-stealth] (0,-12) -- (0,-2) node[font=\tiny,above left,text height =6pt,text centered] {\textbf{Preis} $p_1$};
-			
-			\draw[dotted] (0,-3) node[font=\tiny,left] {$\tilde{p}_1$} -- (1.5,-3);
-			\draw[fill] (1.5,-3) circle [radius=.15];
-			\draw[dotted] (0,-7.5) node[font=\tiny,left] {$\hat{p}_1$}  -- (2.9,-7.5);
-			\draw[fill] (2.9,-7.5) circle [radius=.15];
-			\draw[dotted] (0,-9) node[font=\tiny,left] {$p_1$}  -- (3.8,-9);
-			\draw[fill] (3.8,-9) circle [radius=.15];
-			
-			
-			\draw[rounded corners=5mm] (1.2,-1.7) .. controls (1.5,-3) .. (2.9,-7.5)
-			.. controls (3.8,-9) .. (4.5,-10) .. controls (6.5,-10.5) .. (11,-11.2);
-			\draw (5.7,-5.7) node[font=\tiny,right,black,align=left] {(Inverse) Nachfragekurve};
-		\end{tikzpicture}
-}
-```
-]
-.panel[.panel-name[Marktnachfrage]
-
-Horizontale Aggregation
-
-```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('images/unit7/NE_agg.png',height='550px')
-```
-]
-.panel[.panel-name[Gesetz?]
-* Hat die Nachfragekurve immer einen fallenden Verlauf?
-
-.blockquote[
-Gesetz der Nachfrage
-
-"Wenn die Nachfrage nach einem Gut auf Grund einer
-Einkommenserhöhung steigt, dann muss die Nachfrage nach diesem Gut
-bei einem Anstieg seines Preises fallen."
-.tr[
-— Varian (2016, S. 161)
-]
-]
-* Giffen-Güter?
-]
-]
-
-
----
-name: NEempirie
-class: left
-
-
-# Nachfrage (Empirie)
-```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-07-03.svg',height='550px')
-```
-
-
 
 
 ---
@@ -828,20 +828,23 @@ The difference between the price and the marginal cost is called the **profit ma
 
 * At any point on an isoprofit curve the **slope** is given by:
 
-$$\mbox{slope of isoprofit curve}=-\frac{(P-MC)}{Q}=\frac{\mbox{profit margin}{\mbox{Menge}}$$
+      * $\frac{(P-MC)}{Q}$
+      * Verhältnis Gewinnmarge (profit margin) zu Mengeneinheiten Q
+      * Stückgewinn bzw. Grenzgewinn
+
 * Ausgangspunkt G
-  * Erhöhung der Ausbringungsmenge um 1 nur möglich, wenn der Preis um (P-MC)/Q (=Steigung der Isoprofitkurve) sinkt (implizit in der Isogewinnlinie)
+  * Erhöhung der Ausbringungsmenge um 1 nur möglich, wenn der Preis um $\frac{(P-MC)}{Q}$ (=Steigung der Isoprofitkurve) sinkt (implizit in der Isogewinnlinie)
   * Profit bleibt der Gleiche (gleiche Isogewinnlinie)
 
 
 To understand why, **think again about point G** in Figure 7.10 at which Q = 23, and the price is much higher than the marginal cost. If you:
 
-increase Q by 1
-reduce P by (P − MC)/Q
-then your profit will stay the same because the extra profit of (P − MC) on car 24 will be offset by a fall in revenue of (P − MC) on the other 23 cars.
+* increase Q by 1
+* reduce P by (P − MC)/Q
+* then your profit will stay the same because the extra profit of (P − MC) on car 24 will be offset by a fall in revenue of (P − MC) on the other 23 cars.
 
-Leibniz: Isoprofit curves and their slopes
-The same reasoning applies at every point where P > MC. The profit margin is positive so the slope is negative. And it also applies when P < MC. In this case, the profit margin is negative so an increase in price is required to keep profit constant when quantity rises by 1. The isoprofit curve slopes upward.
+**Leibniz:** Isoprofit curves and their slopes
+The same reasoning applies at every point where $P > MC$. The profit margin is positive so the slope is negative. And it also applies when $P < MC$. In this case, the profit margin is negative so an increase in price is required to keep profit constant when quantity rises by 1. The isoprofit curve slopes upward.
 
 
 
@@ -945,7 +948,7 @@ class: left
 .panelset[
 .panel[.panel-name[Innovation]
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.toyota.de/automobile/prius-plugin/',height='470px')
+knitr::include_url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Toyota_Prius_in_Toyota_Automobile_Museum.jpg/640px-Toyota_Prius_in_Toyota_Automobile_Museum.jpg',height='470px')
 ```
 ]
 .panel[.panel-name[Werbung]

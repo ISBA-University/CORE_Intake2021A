@@ -4,7 +4,7 @@
     <title>VO Mikroökonomie</title>
     <meta charset="utf-8" />
     <meta name="author" content="Prof. Dr. Jörg Schoder" />
-    <meta name="date" content="2022-05-18" />
+    <meta name="date" content="2022-05-24" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
@@ -16,7 +16,7 @@
     <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-scribble/scribble.js"></script>
     <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"e4336b5d16db44f1961c33568827f5f9","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"cef83e35f0834ad78c86fa2645c2e12d","expires":1}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -175,6 +175,58 @@ class: left
   * But a firm can actively influence both consumer demand and costs in more ways than through price and quantity. As we saw in Unit 2, innovation may lead to new and attractive products, or to lower production costs. If the firm can innovate successfully it can earn economic rents—at least in the short term until others catch up. Further innovation may be needed if it is to stay ahead. Advertising can increase demand. And as we saw in Unit 6, the firm sets the wage, which is an important component of its cost. As we will see in later units, the firm also spends to influence taxes and environmental regulation in order to lower its production costs.
 
 
+---
+name: secNachfrage
+class: inverse, center, middle
+
+# Nachfrage
+
+
+
+---
+name: NEtheorie
+class: left
+
+# Nachfrage (Theorie)
+
+
+.panelset[
+.panel[.panel-name[Individuell]
+![](Unit_07_files/figure-html/unnamed-chunk-5-1.png)&lt;!-- --&gt;
+]
+.panel[.panel-name[Marktnachfrage]
+
+Horizontale Aggregation
+
+&lt;iframe src="images/unit7/NE_agg.png" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
+]
+.panel[.panel-name[Gesetz?]
+* Hat die Nachfragekurve immer einen fallenden Verlauf?
+
+.blockquote[
+Gesetz der Nachfrage
+
+"Wenn die Nachfrage nach einem Gut auf Grund einer
+Einkommenserhöhung steigt, dann muss die Nachfrage nach diesem Gut
+bei einem Anstieg seines Preises fallen."
+.tr[
+— Varian (2016, S. 161)
+]
+]
+* Giffen-Güter?
+]
+]
+
+
+---
+name: NEempirie
+class: left
+
+
+# Nachfrage (Empirie)
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-07-03.svg" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
+
+
 
 
 
@@ -245,7 +297,7 @@ Die Gesamtkosten `\((TC)\)` setzen sich somit aus Arbeits- und Kapitalkosten zus
 ]
 .panel[.panel-name[Grafisch]
 .center[
-![](Unit_07_files/figure-html/unnamed-chunk-7-1.png)&lt;!-- --&gt;
+![](Unit_07_files/figure-html/unnamed-chunk-10-1.png)&lt;!-- --&gt;
 ]
 ]]
 
@@ -259,7 +311,7 @@ class: left
 
 .panelset[
 .panel[.panel-name[Minimalkostenkombination]
-![](Unit_07_files/figure-html/unnamed-chunk-8-1.png)&lt;!-- --&gt;
+![](Unit_07_files/figure-html/unnamed-chunk-11-1.png)&lt;!-- --&gt;
 ]
 .panel[.panel-name[Optimalitätsbedingung]
 * Das Optimum ist dadurch gekennzeichnet, dass sich die Marginale Rate der Transformation (MRT, hier: Faktorpreisverhätnis `\(\frac{w}{r}\)`) und die
@@ -542,58 +594,6 @@ class: left
 
  
 
----
-name: secNachfrage
-class: inverse, center, middle
-
-# Nachfrage
-
-
-
----
-name: NEtheorie
-class: left
-
-# Nachfrage (Theorie)
-
-
-.panelset[
-.panel[.panel-name[Individuell]
-![](Unit_07_files/figure-html/unnamed-chunk-16-1.png)&lt;!-- --&gt;
-]
-.panel[.panel-name[Marktnachfrage]
-
-Horizontale Aggregation
-
-&lt;iframe src="images/unit7/NE_agg.png" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
-]
-.panel[.panel-name[Gesetz?]
-* Hat die Nachfragekurve immer einen fallenden Verlauf?
-
-.blockquote[
-Gesetz der Nachfrage
-
-"Wenn die Nachfrage nach einem Gut auf Grund einer
-Einkommenserhöhung steigt, dann muss die Nachfrage nach diesem Gut
-bei einem Anstieg seines Preises fallen."
-.tr[
-— Varian (2016, S. 161)
-]
-]
-* Giffen-Güter?
-]
-]
-
-
----
-name: NEempirie
-class: left
-
-
-# Nachfrage (Empirie)
-&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-07-03.svg" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
-
-
 
 
 ---
@@ -707,20 +707,23 @@ The difference between the price and the marginal cost is called the **profit ma
 
 * At any point on an isoprofit curve the **slope** is given by:
 
-`$$\mbox{slope of isoprofit curve}=-\frac{(P-MC)}{Q}=\frac{\mbox{profit margin}{\mbox{Menge}}$$`
+      * `\(\frac{(P-MC)}{Q}\)`
+      * Verhältnis Gewinnmarge (profit margin) zu Mengeneinheiten Q
+      * Stückgewinn bzw. Grenzgewinn
+
 * Ausgangspunkt G
-  * Erhöhung der Ausbringungsmenge um 1 nur möglich, wenn der Preis um (P-MC)/Q (=Steigung der Isoprofitkurve) sinkt (implizit in der Isogewinnlinie)
+  * Erhöhung der Ausbringungsmenge um 1 nur möglich, wenn der Preis um `\(\frac{(P-MC)}{Q}\)` (=Steigung der Isoprofitkurve) sinkt (implizit in der Isogewinnlinie)
   * Profit bleibt der Gleiche (gleiche Isogewinnlinie)
 
 
 To understand why, **think again about point G** in Figure 7.10 at which Q = 23, and the price is much higher than the marginal cost. If you:
 
-increase Q by 1
-reduce P by (P − MC)/Q
-then your profit will stay the same because the extra profit of (P − MC) on car 24 will be offset by a fall in revenue of (P − MC) on the other 23 cars.
+* increase Q by 1
+* reduce P by (P − MC)/Q
+* then your profit will stay the same because the extra profit of (P − MC) on car 24 will be offset by a fall in revenue of (P − MC) on the other 23 cars.
 
-Leibniz: Isoprofit curves and their slopes
-The same reasoning applies at every point where P &gt; MC. The profit margin is positive so the slope is negative. And it also applies when P &lt; MC. In this case, the profit margin is negative so an increase in price is required to keep profit constant when quantity rises by 1. The isoprofit curve slopes upward.
+**Leibniz:** Isoprofit curves and their slopes
+The same reasoning applies at every point where `\(P &gt; MC\)`. The profit margin is positive so the slope is negative. And it also applies when `\(P &lt; MC\)`. In this case, the profit margin is negative so an increase in price is required to keep profit constant when quantity rises by 1. The isoprofit curve slopes upward.
 
 
 
@@ -813,7 +816,7 @@ class: left
 
 .panelset[
 .panel[.panel-name[Innovation]
-&lt;iframe src="https://www.toyota.de/automobile/prius-plugin/" width="100%" height="470px" data-external="1"&gt;&lt;/iframe&gt;
+&lt;iframe src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Toyota_Prius_in_Toyota_Automobile_Museum.jpg/640px-Toyota_Prius_in_Toyota_Automobile_Museum.jpg" width="100%" height="470px" data-external="1"&gt;&lt;/iframe&gt;
 ]
 .panel[.panel-name[Werbung]
 &lt;iframe src="https://ourworldindata.org/grapher/advertising-expenditure-and-market-share-of-breakfast-cereals-in-chicago" loading="lazy" style="width: 100%; height: 470px; border: 0px none;"&gt;&lt;/iframe&gt;
@@ -940,6 +943,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
