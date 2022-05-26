@@ -1,6 +1,6 @@
 ---
 title: "VO Mikroökonomie"
-subtitle: "Intake 2020 B"
+subtitle: "Intake 2021 A"
 author: "Prof. Dr. Jörg Schoder"
 institute: "ISBA" 
 date: "`r Sys.Date()`"

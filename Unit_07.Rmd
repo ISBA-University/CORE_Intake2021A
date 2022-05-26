@@ -1,6 +1,6 @@
 ---
 title: "VO Mikroökonomie"
-subtitle: "Intake 2020 B"
+subtitle: "Intake 2021 A"
 author: "Prof. Dr. Jörg Schoder"
 institute: "ISBA" 
 date: "`r Sys.Date()`"
@@ -357,7 +357,7 @@ class: left
 * Für die Nutzung der Produktionsfaktoren (K und L) im Produktionsprozess fallen Kosten an.
 Die Gesamtkosten $(TC)$ setzen sich somit aus Arbeits- und Kapitalkosten zusammen.
 
-$$TC=\underbrace{w\cdot L}_{\mbox{Arbeitskosten}}+\underbrace{r\cdot K}_{\mbox{Arbeitskosten}}$$
+$$TC=\underbrace{w\cdot L}_{\mbox{Arbeitskosten}}+\underbrace{r\cdot K}_{\mbox{Kapitalkosten}}$$
 * Ein bestimmtes Kostenniveau $\overline{TC}$ lässt sich mit unterschiedlichen Kombinationen der Produktionsfaktoren erreichen. Für eine gegebene Menge Kapital ergibt sich die mit dem Kostenniveau $\overline{TC}$ korrespondierende Einsatzmenge des Faktors Arbeit als:
 
 $$L(K)=\frac{\overline{TC}}{w}-\frac{r}{w}\cdot K$$
@@ -788,10 +788,19 @@ knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure
 ]
 
 ???
-* Isoprofit curves show price-quantity combinations that give the same profit. 
-* The shape of a firm’s cost function affects the shape of their isoprofit curves. 
 
-* Remember that for Beautiful Cars, the average cost curve slopes downward until Q = 40, and then upward. Figure 7.10 shows the corresponding isoprofit curves. They look similar to those for Cheerios in Figure 7.3, but there are some differences because the average cost function has a different shape. The lowest (lightest blue) curve shows the zero-economic-profit curve: the combinations of price and quantity for which economic profit is equal to zero, because the price is just equal to the average cost at each quantity.
+* Isoprofit curves show price-quantity combinations that give the same profit. 
+
+$$Gewinn=Umsatz-Kosten = PQ-C(Q)=Q(P-\frac{C(Q)}{Q})=Q(P-AC)$$
+
+* Damit hängt der Verlauf der Isogewinnlinie vom Verlauf der Durchschnittskostenkurve ab!
+
+    * Bei den **Cheerio Cornflakes** wurden konstante Stückkosten von 2US$ unterstellt (mithin sind auch die Grenzkosten konstant)
+    * Bei den **Beautiful Cars** wurden Fixkosten unterstellt, bei gleichzeitig steigenden Grenzkosten. Damit ergibt sich eine U-förmig verlaufende AC-Kurve
+        * Isoprofit curves slope downward at points where $P > MC$
+        * Isoprofit curves slope upward at points where $P < MC$
+
+* The lowest (lightest blue) curve shows the zero-economic-profit curve: the combinations of price and quantity for which economic profit is equal to zero, because the price is just equal to the average cost at each quantity.
 
 
 
@@ -846,6 +855,10 @@ To understand why, **think again about point G** in Figure 7.10 at which Q = 23,
 **Leibniz:** Isoprofit curves and their slopes
 The same reasoning applies at every point where $P > MC$. The profit margin is positive so the slope is negative. And it also applies when $P < MC$. In this case, the profit margin is negative so an increase in price is required to keep profit constant when quantity rises by 1. The isoprofit curve slopes upward.
 
+
+* Im **Optimum (Punkt E)** gilt $MRT=MRS$ (Perspektive des Unternehmens!)
+    * MRT: Steigung der Nachfragekurve, die das feasible set bestimmt
+    * MRS: Steigung der Isogewinnlinie (wieviel Preisnachlass ist der Unternehmer bereit zu geben, um mehr Autos absetzen zu können)
 
 
 ---
@@ -906,10 +919,38 @@ knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure
 knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-07-14-e.svg',height='470px')
 ```
 ]
+.panel[.panel-name[Preisdiskriminierung]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-07-14-e.svg',height='470px')
+```
+
+]
 ]
 
 
+???
 
+* Preisdiskriminierung (1. Grades bzw. perfekt: wenn der Anbieter die Zahlungsbereitschaft der Kunden kennt) ermöglicht dem Unternehmer die gesamten Tauschgewinne zu vereinnahmen.
+
+* komplette Flächen einheitlich schattieren 
+
+
+---
+name: Preisdiskriminierung
+class: left
+
+# Realitätscheck zur Preisdiskriminierung
+
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.wiwo.de/unternehmen/handel/neue-strategie-dm-verabschiedet-sich-vom-einheitspreis/24960714.html',height="550px")
+```
+
+???
+
+Weitere Beispiele: 
+* Flüge (Kontingente)
+* Abonnements (digital, print, kombi)
+* etc.
 
 ---
 name: Elast
@@ -918,6 +959,12 @@ class: left
 # Verteilung der Wohlfahrtsgewinne
 
 .panelset[
+.panel[.panel-name[Refresher]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-07-15-e.svg
+',height='470px')
+```
+]
 .panel[.panel-name[elastische NE]
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
 knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-07-16.svg
@@ -937,6 +984,14 @@ knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure
 Verteilung der Wohlfahrtsgewinne abhängig von der Elastizität.
  * die relativ elastischere Seite hat die höhere Verhandlungsmacht...
  * ...und kann entsprechend einen größeren Anteil vom Tauschgewinn beanspruchen
+ 
+ 
+* Firms that face relatively elastic demand curves: have little market power, low profit margins, and generate a small amount of deadweight loss (Standard-Android-Phone).
+
+* Firms that face relatively inelastic demand curves have lots of market power, high profit margins, and generate a large amount of deadweight loss (Iphone).
+
+* **In perfect competition, firms face horizontal demand curves and have no market power (Unit 8).**
+
 
 ---
 name: Werbung
@@ -951,7 +1006,7 @@ class: left
 knitr::include_url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Toyota_Prius_in_Toyota_Automobile_Museum.jpg/640px-Toyota_Prius_in_Toyota_Automobile_Museum.jpg',height='470px')
 ```
 ]
-.panel[.panel-name[Werbung]
+.panel[.panel-name[Markenbildung]
 <iframe src="https://ourworldindata.org/grapher/advertising-expenditure-and-market-share-of-breakfast-cereals-in-chicago" loading="lazy" style="width: 100%; height: 470px; border: 0px none;"></iframe>
 ]
 ]

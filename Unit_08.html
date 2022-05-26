@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>VO Mikroökonomie</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Prof. Dr. Jörg Schoder" />
+    <meta name="date" content="2022-05-26" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xc23081c8ad34db48c597c9aa822c83b","expires":1}</script>
+    <script src="libs/himalaya/himalaya.js"></script>
+    <script src="libs/js-cookie/js.cookie.js"></script>
+    <link href="libs/editable/editable.css" rel="stylesheet" />
+    <script src="libs/editable/editable.js"></script>
+    <link rel="stylesheet" href="schoder_theme.css" type="text/css" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: title-slide
+
+
+
+<style>.panelset{--panel-tab-font-family: inherit;}</style>
+
+
+
+
+# VO Mikroökonomie
+
+
+
+## Intake 2021 A  
+
+### Prof. Dr. Jörg Schoder
+
+
+# CORE Unit 8 (Analyse eines Wettbewerbsmarktes)
+
+
+
+---
+layout: true
+
+&lt;div class="my-footer"&gt;&lt;/div&gt;       
+
+&lt;div style="position: absolute;left:400px;bottom:10px;color:ISBAblue;font-size:9px"&gt;&#169;Prof. Dr. Jörg Schoder&lt;/div&gt;
+       
+
+
+
+---
+name: Lernziele
+class: inverse, left, middle
+# Was lernen wir?
+
+.small[In Unit 7 haben wir gesehen, dass Unternehmen versuchen, sich von Wettbewerbern zu unterscheiden, um von ihren Kunden einen über den Grenzkosten liegenden Preis verlangen zu können. Dies können sie vor allem durch Innovationen und Markenbildung aber auch durch Netzwerkeffekte erreichen. Langfristig besteht aber die Gefahr, dass erfolgreiche Strategien nachgeahmt werden. Sie neoklassische Theorie nimmt eine solche langfristige Perspektive ein.]
+
+## Inhaltliche Leitfragen
+
+.blockquote[.small[
+1. Was geschieht, wenn Anbieter und Nachfrager keine Marktmacht haben (**Preisnehmer** sind)?
+2. Welche Wohlfahrtsgewinne sind in Wettbewerbsmärkten möglich und wie sind sie verteilt?
+3. Worin sind sich Unternehmen mit Preissetzungsmacht und Preisnehmer ähnlich? Worin unterscheiden sie sich?
+4. Welche Implikationen für die Politik ergeben sich in nicht wettbewerblichen Märkten?
+]
+]
+
+## Ökonomische Methoden und Konzepte 
+
+.blockquote[.small[
+1. Wettbewerbsmarkt
+2. Komparative Statik
+3. Elastizität und Inzidenz (bspw. Steuern)
+]
+]
+
+???
+
+The purpose of our economic analysis is not to model the manager’s thought process, but to understand the outcome, and its relationship to the firm’s cost and consumer demand
+
+
+
+
+
+---
+name: NE
+class: left
+
+# Nachfrage: Grenznutzen und Zahlungsbereitschaft
+
+.panelset[
+.panel[.panel-name[Individuell]
+![](Unit_08_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
+]
+.panel[.panel-name[Marktnachfrage]
+
+Horizontale Aggregation
+
+&lt;iframe src="images/unit7/NE_agg.png" width="100%" height="430px" data-external="1"&gt;&lt;/iframe&gt;
+]
+.panel[.panel-name[Beispiel]
+
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-08-04.svg" width="100%" height="480px" data-external="1"&gt;&lt;/iframe&gt;
+]
+]
+
+
+
+???
+
+* Zahlungsbereitschaft (WTP)
+* Hausman - conjoint-Analyse
+* R-Paket (conjoint)[https://cran.r-project.org/web/packages/conjoint/conjoint.pdf]
+
+* Den Preis nehmen die Kunden, wie auch schon in Unit 7 als gegeben
+    * d.h. Zahlungsbereitschaft im Vergleich zum Marktpreis - take it or leave it
+    * Since there are so many consumers wanting to buy breakfast cereals, an individual consumer has no power to negotiate a more advantageous deal, but simply has to accept the price that all other consumers are paying.
+
+
+* während die Kunden bereits in Unit 7 als Preisnehmer modelliert wurden, hatten wir in **Unit 7** angenommen, dass die **Anbieter Preissetzungsmacht** haben 
+
+* In **this unit 8**, we study market equilibria where **both buyers and sellers** are **price-takers** (vollständiger Wettbewerb)
+
+
+
+---
+name: IndivAT
+class: left
+
+# Angebot bei vollständigem Wettbewerb
+
+
+.panelset[
+.panel[.panel-name[Individuell]
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-08-06-d.svg" width="100%" height="480px" data-external="1"&gt;&lt;/iframe&gt;
+]
+.panel[.panel-name[Marktangebot]
+
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-08-07-d.svg" width="100%" height="480px" data-external="1"&gt;&lt;/iframe&gt;
+]
+.panel[.panel-name[Empirie (1)]
+
+&lt;iframe src="https://www.tagesspiegel.de/wirtschaft/gute-geschaefte-dank-covid-19-wenn-sogar-autokonzerne-atemschutzmasken-produzieren/25666520.html" width="100%" height="480px" data-external="1"&gt;&lt;/iframe&gt;
+]
+.panel[.panel-name[Empirie (2)]
+
+&lt;iframe src="https://www.focus.de/finanzen/boerse/kein-schnaeppchen-trigema-chef-grupp-reagiert-auf-maskenpreis-kritik_id_11887211.html" width="100%" height="480px" data-external="1"&gt;&lt;/iframe&gt;
+]
+.panel[.panel-name[Analytisch]
+* Aus Unit 7 bekannt: `\(G=R-C\)`
+* FOC: `\(G'=MR-MC\stackrel{!}{=}0 \iff MR = MC\)`
+* Im Optimum entsprechen sich Grenzerlös und Grenzkosten
+* Grenzerlös: 
+    * bei Preissetzungsmacht: 
+          `$$R(Q)=P(Q)\cdot Q \iff R'(Q)=P'(Q)\cdot Q+P(Q)$$`
+    * bei Preisnehmerverhalten
+          `$$R(Q)=P\cdot Q \iff R'(Q)=P$$`
+
+* Optimalitätsbedingung bei Preisnehmerverhalten: 
+  `$$R'(Q)=P=MC$$`
+
+* "Preis-gleich-Grenzkosten-Regel"
+]
+]
+
+???
+
+* Anbieter haben keine Preissetzungsmacht - Preisnehmerverhalten!
+
+   * Marktpreis bestimmt feasible set (horizontale Linien). 
+   * Bei 2,35US$ ist die gewinnmaximale Menge bei 120
+   * Die gewinnmaximale Menge wird wie immer mittels MRT=MRS bestimmt
+   * Hier ist der Tangentialpunkt immer im Durchschnittskostenminimum
+   * Wir wissen, dass die Grenzkostenkurve (MC) immer die AC-Kurve in deren Minimum schneidet.
+   * Mithin gibt die Grenzkostenkurve das Angebot wieder
+
+* Grenzkosten=AT als Willingness to Accept (WTA)
+
+* Marktangebot ergibt sich durch **horizontale Aggregation**
+
+
+* We have seen examples where market participants do not behave as price-takers: the producer of a differentiated product can set its own price because it has no close competitors. 
+
+
+* many sellers selling the identical goods, and many buyers wishing to purchase them.
+
+* Sellers are forced to be price-takers by the presence of other sellers, as well as buyers who always choose the seller with the lowest price. If a seller tried to set a higher price, buyers would simply go elsewhere.
+
+* Implizite Annahme: keine Transaktionskosten
+
+
+* Verlauf Isogewinnlinien wieder wie bei Beautiful cars - steigende AC
+
+
+
+
+---
+name: ATNE
+class: left
+
+# Markträumung und Marktgleichgewicht
+
+
+.panelset[
+.panel[.panel-name[Modell]
+* Annahmen
+    * viele Anbieter und viele Kunden (Preisnehmerverhalten bzw. keine Verhandlungsmacht auf beiden Marktseiten)
+    * vollständige Information (Preise und Qualitäten bekannt) bzw. vollständige Verträge (impliziert *homogene Güter*)
+    * keine Externalitäten
+
+* Implikationen/Vorhersagen
+    * <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zM140 300h116v70.9c0 10.7 13 16.1 20.5 8.5l114.3-114.9c4.7-4.7 4.7-12.2 0-16.9l-114.3-115c-7.6-7.6-20.5-2.2-20.5 8.5V212H140c-6.6 0-12 5.4-12 12v64c0 6.6 5.4 12 12 12z"/></svg> Arbitrage und einheitlicher Marktpreis (**law of one price**).
+    * <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zM140 300h116v70.9c0 10.7 13 16.1 20.5 8.5l114.3-114.9c4.7-4.7 4.7-12.2 0-16.9l-114.3-115c-7.6-7.6-20.5-2.2-20.5 8.5V212H140c-6.6 0-12 5.4-12 12v64c0 6.6 5.4 12 12 12z"/></svg> Markträumung (Walrasianischer Auktionator)
+    * <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zM140 300h116v70.9c0 10.7 13 16.1 20.5 8.5l114.3-114.9c4.7-4.7 4.7-12.2 0-16.9l-114.3-115c-7.6-7.6-20.5-2.2-20.5 8.5V212H140c-6.6 0-12 5.4-12 12v64c0 6.6 5.4 12 12 12z"/></svg> Preisnehmerverhalten 
+    * <svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zM140 300h116v70.9c0 10.7 13 16.1 20.5 8.5l114.3-114.9c4.7-4.7 4.7-12.2 0-16.9l-114.3-115c-7.6-7.6-20.5-2.2-20.5 8.5V212H140c-6.6 0-12 5.4-12 12v64c0 6.6 5.4 12 12 12z"/></svg> Wohlfahrtsmaximierung ("unsichtbare Hand")
+]
+.panel[.panel-name[Marshall-Diagramm]
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-08-08.svg" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
+]
+]
+
+
+???
+
+* In the market equilibrium, each bakery is producing on its marginal cost curve, at the point where its marginal cost is €2.00. 
+
+* Markträumung:
+    * Jeder Anbieter, der die WTA von 2 hat, wird seine Ware verkaufen
+    * Jeder Kunde, der die WTP von 2 hat, wird das Produkt bekommen
+    * es gibt keine Überschussnachfrage (nichts bleibt übrig, nichts fehlt)
+
+* Marktgleichgewicht und Walrasianischer Auktionator
+    * homogene Güter: Alleiniges Kriterium für ständig neu zu schließende Werk- und Tauschverträge ist der Preis. 
+    
+* A competitive market equilibrium is a **Nash equilibrium**, because given what all other actors are doing (trading at the equilibrium price), no actor can do better than to continue what he or she is doing (also trading at the equilibrium price).
+
+
+---
+name: Wohlfahrt
+class: left
+
+# Wohlfahrt im perfekten Wettbewerbsmarkt
+
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-08-09-a-d.svg" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
+
+???
+
+* Buyers and sellers of bread voluntarily engage in trade because both benefit. Their mutual benefits from the equilibrium allocation can be measured by the consumer and producer surpluses introduced in Unit 7.
+
+* On both sides of the market, competition **eliminates bargaining power**.
+
+* The competitive equilibrium allocation of bread has the property that the **total surplus is maximized**. 
+    * Figure 8.9b shows that the surplus would be smaller if **fewer than 5,000 loaves** were produced. There would be consumers without bread who would be willing to pay more than the cost of producing another loaf, so there would be unexploited gains from trade.
+    * And if **more than 5,000 loaves** were produced, the surplus on the extra loaves would be negative: they would cost more to make than consumers were willing to pay.
+
+* **Pareto-Effizienz des Marktgleichgewichts** At the competitive equilibrium allocation in the bread market, it is not possible to make any of the consumers or firms better off (that is, to increase the surplus of any individual) without making at least one of them worse off.
+
+
+* **Fairness als Frage der Elastizität** Relativ Elastische Marktseite erhält den größeren Anteil an den Tauschgewinnen
+
+
+* Kritik:
+  * The Pareto efficiency of a competitive equilibrium allocation is often interpreted as a powerful argument in favour of markets as a means of allocating resources. But we need to be careful not to exaggerate the value of this result:
+  * The allocation may not be Pareto efficient: We might not have taken everything into account. (**Annahmenverletzungen** in der Realität sehr wahrscheinlich! Info nicht vollständig und Externalitäten allgegenwärtig)
+There are other important considerations: Fairness, for example.
+Price-takers are hard to find in real life: It is not as easy as you might think to find behaviour consistent with our simple model of the bread market (as we will see in Section 8.9).
+
+
+---
+name: Kritik
+class: inverse, center, middle
+
+# Modellkritik
+
+---
+name: MatchingMarkets
+class: left
+
+# Güter- vs. Matching-Märkte
+
+&lt;iframe width="1000" height="500" src="https://www.youtube.com/embed/r7vzgexzXOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+---
+name: Diskussion
+class: left
+
+# Perfekter Wettbewerb in Gütermärkten (?)
+
+
+&lt;iframe width="900" height="450" src="https://www.youtube.com/embed/5hJF8zNJg5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+* Bedeutung von Marktzugangsbarrieren aus Sicht...
+  * ...von Unternehmen
+  * ...der Gesellschaft
+
+???
+
+* Rolle von Marktzugangsschranken
+
+
+
+
+
+---
+name: Analysen
+class: inverse, center, middle
+
+# Analysen
+
+
+
+---
+name: KompStat
+class: left
+
+# Komparative Statik: Nachfrage-Schocks
+
+
+.panelset[
+.panel[.panel-name[Quinoa-Produktion]
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-08-10-a.svg" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
+
+]
+.panel[.panel-name[Quinoa-Nachfrage]
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-08-10-c.svg" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
+]
+.panel[.panel-name[Modell]
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-08-11-d.svg" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
+]
+]
+
+
+# Komparative Statik: Angebots-Schocks
+
+.panelset[
+.panel[.panel-name[Produktivitätssteigerung]
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-08-12-e.svg" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
+
+]
+.panel[.panel-name[Markteintritte]
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-08-13.svg" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
+]
+.panel[.panel-name[Beispiel]
+
+&lt;iframe src="https://www.tagesspiegel.de/wirtschaft/gute-geschaefte-dank-covid-19-wenn-sogar-autokonzerne-atemschutzmasken-produzieren/25666520.html" width="100%" height="480px" data-external="1"&gt;&lt;/iframe&gt;
+]
+]
+
+???
+
+* The improvement in the technology of breadmaking leads to:
+    * an increase in supply
+    * a fall in the price of bread
+    * a rise in the quantity sold
+
+* Markteintritt
+
+---
+name: Inzidenz
+class: left
+
+# Mengen vs. Wertsteuer
+
+.panelset[
+.panel[.panel-name[Wertsteuer]
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-08-14-d.svg" width="100%" height="470px" data-external="1"&gt;&lt;/iframe&gt;
+]
+.panel[.panel-name[Mengensteuer]
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-08-16-c.svg" width="100%" height="470px" data-external="1"&gt;&lt;/iframe&gt;
+]
+]
+
+???
+
+* The effect of a 30% salt tax.
+* The effect of a fat tax on the retail market for butter.
+* Mengensteuer 10 kronen per kg 
+* Lenkungswirkung vs. Steueraufkommen
+
+---
+name: Inzidenz
+class: left
+
+# Steuerinzidenz: Wer trägt die Last der Besteuerung?
+
+.panel[.panel-name[Wertsteuer]
+.panelset[
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-08-15-d.svg" width="100%" height="470px" data-external="1"&gt;&lt;/iframe&gt;
+]
+.panelset[
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-08-17.svg" width="100%" height="470px" data-external="1"&gt;&lt;/iframe&gt;
+]
+]
+
+???
+
+Lenkungswirkung vs. Steueraufkommen
+
+
+
+
+
+---
+name: FazitAusblick
+class: inverse, center, middle
+
+# Fazit und Ausblick
+
+---
+name: Preisnehmer
+class: left
+
+# Preissetzungsmacht vs. Preisnehmerverhalten
+
+.small[
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Price-setting firm or monopoly&lt;/th&gt;
+      &lt;th&gt;Firm in a perfectly competitive market&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Sets price and quantity to maximize profits (‘price-maker’)&lt;/td&gt;
+      &lt;td&gt;Takes market determined price as given and chooses quantity to maximize profits (‘price-taker’)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Chooses an output level at which marginal cost is less than price&lt;/td&gt;
+      &lt;td&gt;Chooses an output level at which marginal cost equals price&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Deadweight losses (Pareto inefficient)&lt;/td&gt;
+      &lt;td&gt;No deadweight losses for consumers and firms (can be Pareto efficient if no one else in the economy is affected)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Owners receive economic rents (profits greater than normal profits)&lt;/td&gt;
+      &lt;td&gt;If the owners receive economic rents, the rents are likely to disappear as more firms enter the market&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Firms advertise their unique product&lt;/td&gt;
+      &lt;td&gt;Little advertising: it costs the firm, but benefits all firms (it’s a public good)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Firms may spend money to influence elections, legislation and regulation&lt;/td&gt;
+      &lt;td&gt;Little expenditure by individual firms on this (same as advertising)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Firms invest in research and innovation; seek to prevent copying&lt;/td&gt;
+      &lt;td&gt;Little incentive for innovation; others will copy (unless the firm can succeed in differentiating its product and escaping from the competitive market)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+]
+
+
+---
+name: Fazit
+class: left
+
+# Fazit
+
+1. Unternehmen versuchen Wettbewerb zu vermeiden
+  * Absprachen (Kartelle) bei begrenzter Anzahl von Unternehmen
+  * Produktdifferenzierung und Nischenstrategien
+  
+2. In Wettbewerbsmärkten gelingt den Unternehmen dies nicht
+  * Arbitrage und Preisnehmerverhalten
+  * Preis=Grenzkosten-Regel
+  * Wettbewerb hat positive Effekte für die Konsumenten (Wohlfahrtsmaximierung)
+  
+3. Perfekter Wettbewerb als 
+    * idealisiertes Konzept,
+    * nützliches Analysetool
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+<style>
+.logo {
+  background-image: url(isba_Logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  width: 100px;
+  height: 60px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+    ':not(.inverse)' +
+    ':not(.hide-logo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="logo"></div>';
+  });
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

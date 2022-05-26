@@ -4,7 +4,7 @@
     <title>VO Mikroökonomie</title>
     <meta charset="utf-8" />
     <meta name="author" content="Prof. Dr. Jörg Schoder" />
-    <meta name="date" content="2022-05-24" />
+    <meta name="date" content="2022-05-26" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
@@ -16,7 +16,7 @@
     <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-scribble/scribble.js"></script>
     <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"cef83e35f0834ad78c86fa2645c2e12d","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x3809bbae747405a8d4709634a3f2f38","expires":1}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -286,7 +286,7 @@ class: left
 * Für die Nutzung der Produktionsfaktoren (K und L) im Produktionsprozess fallen Kosten an.
 Die Gesamtkosten `\((TC)\)` setzen sich somit aus Arbeits- und Kapitalkosten zusammen.
 
-`$$TC=\underbrace{w\cdot L}_{\mbox{Arbeitskosten}}+\underbrace{r\cdot K}_{\mbox{Arbeitskosten}}$$`
+`$$TC=\underbrace{w\cdot L}_{\mbox{Arbeitskosten}}+\underbrace{r\cdot K}_{\mbox{Kapitalkosten}}$$`
 * Ein bestimmtes Kostenniveau `\(\overline{TC}\)` lässt sich mit unterschiedlichen Kombinationen der Produktionsfaktoren erreichen. Für eine gegebene Menge Kapital ergibt sich die mit dem Kostenniveau `\(\overline{TC}\)` korrespondierende Einsatzmenge des Faktors Arbeit als:
 
 `$$L(K)=\frac{\overline{TC}}{w}-\frac{r}{w}\cdot K$$`
@@ -671,10 +671,19 @@ class: left
 ]
 
 ???
-* Isoprofit curves show price-quantity combinations that give the same profit. 
-* The shape of a firm’s cost function affects the shape of their isoprofit curves. 
 
-* Remember that for Beautiful Cars, the average cost curve slopes downward until Q = 40, and then upward. Figure 7.10 shows the corresponding isoprofit curves. They look similar to those for Cheerios in Figure 7.3, but there are some differences because the average cost function has a different shape. The lowest (lightest blue) curve shows the zero-economic-profit curve: the combinations of price and quantity for which economic profit is equal to zero, because the price is just equal to the average cost at each quantity.
+* Isoprofit curves show price-quantity combinations that give the same profit. 
+
+`$$Gewinn=Umsatz-Kosten = PQ-C(Q)=Q(P-\frac{C(Q)}{Q})=Q(P-AC)$$`
+
+* Damit hängt der Verlauf der Isogewinnlinie vom Verlauf der Durchschnittskostenkurve ab!
+
+    * Bei den **Cheerio Cornflakes** wurden konstante Stückkosten von 2US$ unterstellt (mithin sind auch die Grenzkosten konstant)
+    * Bei den **Beautiful Cars** wurden Fixkosten unterstellt, bei gleichzeitig steigenden Grenzkosten. Damit ergibt sich eine U-förmig verlaufende AC-Kurve
+        * Isoprofit curves slope downward at points where `\(P &gt; MC\)`
+        * Isoprofit curves slope upward at points where `\(P &lt; MC\)`
+
+* The lowest (lightest blue) curve shows the zero-economic-profit curve: the combinations of price and quantity for which economic profit is equal to zero, because the price is just equal to the average cost at each quantity.
 
 
 
@@ -725,6 +734,10 @@ To understand why, **think again about point G** in Figure 7.10 at which Q = 23,
 **Leibniz:** Isoprofit curves and their slopes
 The same reasoning applies at every point where `\(P &gt; MC\)`. The profit margin is positive so the slope is negative. And it also applies when `\(P &lt; MC\)`. In this case, the profit margin is negative so an increase in price is required to keep profit constant when quantity rises by 1. The isoprofit curve slopes upward.
 
+
+* Im **Optimum (Punkt E)** gilt `\(MRT=MRS\)` (Perspektive des Unternehmens!)
+    * MRT: Steigung der Nachfragekurve, die das feasible set bestimmt
+    * MRS: Steigung der Isogewinnlinie (wieviel Preisnachlass ist der Unternehmer bereit zu geben, um mehr Autos absetzen zu können)
 
 
 ---
@@ -779,10 +792,34 @@ class: left
 .panel[.panel-name[Monopol]
 &lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-07-14-e.svg" width="100%" height="470px" data-external="1"&gt;&lt;/iframe&gt;
 ]
+.panel[.panel-name[Preisdiskriminierung]
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-07-14-e.svg" width="100%" height="470px" data-external="1"&gt;&lt;/iframe&gt;
+
+]
 ]
 
 
+???
 
+* Preisdiskriminierung (1. Grades bzw. perfekt: wenn der Anbieter die Zahlungsbereitschaft der Kunden kennt) ermöglicht dem Unternehmer die gesamten Tauschgewinne zu vereinnahmen.
+
+* komplette Flächen einheitlich schattieren 
+
+
+---
+name: Preisdiskriminierung
+class: left
+
+# Realitätscheck zur Preisdiskriminierung
+
+&lt;iframe src="https://www.wiwo.de/unternehmen/handel/neue-strategie-dm-verabschiedet-sich-vom-einheitspreis/24960714.html" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
+
+???
+
+Weitere Beispiele: 
+* Flüge (Kontingente)
+* Abonnements (digital, print, kombi)
+* etc.
 
 ---
 name: Elast
@@ -791,6 +828,10 @@ class: left
 # Verteilung der Wohlfahrtsgewinne
 
 .panelset[
+.panel[.panel-name[Refresher]
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-07-15-e.svg
+" width="100%" height="470px" data-external="1"&gt;&lt;/iframe&gt;
+]
 .panel[.panel-name[elastische NE]
 &lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-07-16.svg
 " width="100%" height="470px" data-external="1"&gt;&lt;/iframe&gt;
@@ -806,6 +847,14 @@ class: left
 Verteilung der Wohlfahrtsgewinne abhängig von der Elastizität.
  * die relativ elastischere Seite hat die höhere Verhandlungsmacht...
  * ...und kann entsprechend einen größeren Anteil vom Tauschgewinn beanspruchen
+ 
+ 
+* Firms that face relatively elastic demand curves: have little market power, low profit margins, and generate a small amount of deadweight loss (Standard-Android-Phone).
+
+* Firms that face relatively inelastic demand curves have lots of market power, high profit margins, and generate a large amount of deadweight loss (Iphone).
+
+* **In perfect competition, firms face horizontal demand curves and have no market power (Unit 8).**
+
 
 ---
 name: Werbung
@@ -818,7 +867,7 @@ class: left
 .panel[.panel-name[Innovation]
 &lt;iframe src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Toyota_Prius_in_Toyota_Automobile_Museum.jpg/640px-Toyota_Prius_in_Toyota_Automobile_Museum.jpg" width="100%" height="470px" data-external="1"&gt;&lt;/iframe&gt;
 ]
-.panel[.panel-name[Werbung]
+.panel[.panel-name[Markenbildung]
 &lt;iframe src="https://ourworldindata.org/grapher/advertising-expenditure-and-market-share-of-breakfast-cereals-in-chicago" loading="lazy" style="width: 100%; height: 470px; border: 0px none;"&gt;&lt;/iframe&gt;
 ]
 ]
