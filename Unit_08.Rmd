@@ -100,6 +100,91 @@ class: inverse, left, middle
 The purpose of our economic analysis is not to model the manager’s thought process, but to understand the outcome, and its relationship to the firm’s cost and consumer demand
 
 
+---
+name: Marktstrukturen
+class: left
+
+# Marktstrukturen
+
+.panelset[
+.panel[.panel-name[Zahl der Akteure]
+<div align="center">
+
+<table border="2" cellspacing="20" cellpadding="20">
+<!-- <caption>Klassifikation wirtschaftlicher Güter</caption> -->
+<thead>
+<tr>
+<th></th>
+<th>Ein Nachfrager</th>
+<th>Wenige Nachfrager</th>
+<th>Viele Nachfrager</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Ein Anbieter</th>
+<td>Bilaterales Monopol</td>
+<td></td>
+<td>Monopol</td>
+</tr>
+<tr>
+<th>Wenige Anbieter</th>
+<td></td>
+<td>Bilaterales Oligopol</td>
+<td>Oligopol</td>
+</tr>
+<tr>
+<th>Viele Anbieter</th>
+<td>Monopson</td>
+<td>Oligopson</td>
+<td>Vollständige Konkurrenz</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+]
+.panel[.panel-name[Akteure und Produkteigenschaften]
+<div align="center">
+
+<table border="2" cellspacing="20" cellpadding="20">
+<!-- <caption>Klassifikation wirtschaftlicher Güter</caption> -->
+<thead>
+<tr>
+<th rowspan="2"></th>
+<th colspan="3">homogene Güter</th>
+</tr>
+<tr>
+<th>ja</th>
+<th></th>
+<th>nein</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Ein Anbieter</th>
+<td>Monopol</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<th>Wenige Anbieter</th>
+<td></td>
+<td>Oligopol</td>
+<td></td>
+</tr>
+<tr>
+<th>Viele Anbieter</th>
+<td>Vollständige Konkurrenz</td>
+<td></td>
+<td>Monopolistische Konkurrenz</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+]]
 
 
 
@@ -298,7 +383,7 @@ class: left
 ]
 .panel[.panel-name[Marshall-Diagramm]
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-08.svg',height='550px')
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-08.svg',height='480px')
 ```
 ]
 ]
@@ -364,7 +449,7 @@ class: left
 
 # Güter- vs. Matching-Märkte
 
-<iframe width="1000" height="500" src="https://www.youtube.com/embed/r7vzgexzXOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1000" height="550" src="https://www.youtube.com/embed/r7vzgexzXOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ---
@@ -397,7 +482,7 @@ class: inverse, center, middle
 
 
 ---
-name: KompStat
+name: KompStat1
 class: left
 
 # Komparative Statik: Nachfrage-Schocks
@@ -406,35 +491,38 @@ class: left
 .panelset[
 .panel[.panel-name[Quinoa-Produktion]
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-10-a.svg',height='550px')
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-10-a.svg',height='480px')
 ```
 
 ]
 .panel[.panel-name[Quinoa-Nachfrage]
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-10-c.svg',height='550px')
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-10-c.svg',height='480px')
 ```
 ]
 .panel[.panel-name[Modell]
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-11-d.svg',height='550px')
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-11-d.svg',height='480px')
 ```
 ]
 ]
 
+---
+name: KompStat2
+class: left
 
 # Komparative Statik: Angebots-Schocks
 
 .panelset[
 .panel[.panel-name[Produktivitätssteigerung]
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-12-e.svg',height='550px')
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-12-e.svg',height='480px')
 ```
 
 ]
 .panel[.panel-name[Markteintritte]
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-13.svg',height='550px')
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-13.svg',height='480px')
 ```
 ]
 .panel[.panel-name[Beispiel]
@@ -455,7 +543,7 @@ knitr::include_url('https://www.tagesspiegel.de/wirtschaft/gute-geschaefte-dank-
 * Markteintritt
 
 ---
-name: Inzidenz
+name: KompStat3
 class: left
 
 # Mengen vs. Wertsteuer
@@ -463,12 +551,12 @@ class: left
 .panelset[
 .panel[.panel-name[Wertsteuer]
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-14-d.svg',height='470px')
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-14-d.svg',height='480px')
 ```
 ]
 .panel[.panel-name[Mengensteuer]
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-16-c.svg',height='470px')
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-16-c.svg',height='480px')
 ```
 ]
 ]
@@ -480,6 +568,7 @@ knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure
 * Mengensteuer 10 kronen per kg 
 * Lenkungswirkung vs. Steueraufkommen
 
+
 ---
 name: Inzidenz
 class: left
@@ -489,12 +578,12 @@ class: left
 .panel[.panel-name[Wertsteuer]
 .panelset[
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-15-d.svg',height='470px')
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-15-d.svg',height='480px')
 ```
 ]
 .panelset[
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-17.svg',height='470px')
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-17.svg',height='480px')
 ```
 ]
 ]
