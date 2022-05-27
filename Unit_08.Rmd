@@ -109,82 +109,78 @@ class: left
 .panelset[
 .panel[.panel-name[Zahl der Akteure]
 <div align="center">
-
-<table border="2" cellspacing="20" cellpadding="20">
-<!-- <caption>Klassifikation wirtschaftlicher Güter</caption> -->
-<thead>
-<tr>
-<th></th>
-<th>Ein Nachfrager</th>
-<th>Wenige Nachfrager</th>
-<th>Viele Nachfrager</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>Ein Anbieter</th>
-<td>Bilaterales Monopol</td>
-<td></td>
-<td>Monopol</td>
-</tr>
-<tr>
-<th>Wenige Anbieter</th>
-<td></td>
-<td>Bilaterales Oligopol</td>
-<td>Oligopol</td>
-</tr>
-<tr>
-<th>Viele Anbieter</th>
-<td>Monopson</td>
-<td>Oligopson</td>
-<td>Vollständige Konkurrenz</td>
-</tr>
-</tbody>
-</table>
-
+  <table border="2" cellspacing="20" cellpadding="20">
+    <!-- <caption>Klassifikation wirtschaftlicher Güter</caption> -->
+    <thead>
+      <tr>
+        <th></th>
+        <th>Ein Nachfrager</th>
+        <th>Wenige Nachfrager</th>
+        <th>Viele Nachfrager</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Ein Anbieter</th>
+        <td>Bilaterales Monopol</td>
+        <td></td>
+        <td>Monopol</td>
+      </tr>
+      <tr>
+        <th>Wenige Anbieter</th>
+        <td></td>
+        <td>Bilaterales Oligopol</td>
+        <td>Oligopol</td>
+      </tr>
+      <tr>
+        <th>Viele Anbieter</th>
+        <td>Monopson</td>
+        <td>Oligopson</td>
+        <td>Vollständige Konkurrenz</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 ]
 .panel[.panel-name[Akteure und Produkteigenschaften]
 <div align="center">
-
-<table border="2" cellspacing="20" cellpadding="20">
-<!-- <caption>Klassifikation wirtschaftlicher Güter</caption> -->
-<thead>
-<tr>
-<th rowspan="2"></th>
-<th colspan="3">homogene Güter</th>
-</tr>
-<tr>
-<th>ja</th>
-<th></th>
-<th>nein</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>Ein Anbieter</th>
-<td>Monopol</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<th>Wenige Anbieter</th>
-<td></td>
-<td>Oligopol</td>
-<td></td>
-</tr>
-<tr>
-<th>Viele Anbieter</th>
-<td>Vollständige Konkurrenz</td>
-<td></td>
-<td>Monopolistische Konkurrenz</td>
-</tr>
-</tbody>
-</table>
-
+  <table border="2" cellspacing="20" cellpadding="20">
+    <!-- <caption>Klassifikation wirtschaftlicher Güter</caption> -->
+    <thead>
+      <tr>
+        <th rowspan="2"></th>
+        <th colspan="3">homogene Güter</th>
+      </tr>
+      <tr>
+        <th>ja</th>
+        <th></th>
+        <th>nein</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Ein Anbieter</th>
+        <td>Monopol</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Wenige Anbieter</th>    
+        <td></td>
+        <td>Oligopol</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Viele Anbieter</th>
+        <td>Vollständige Konkurrenz</td>
+        <td></td>
+        <td>Monopolistische Konkurrenz</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
-
-]]
+]
+]
 
 
 
@@ -369,17 +365,31 @@ class: left
 
 
 .panelset[
-.panel[.panel-name[Modell]
-* Annahmen
-    * viele Anbieter und viele Kunden (Preisnehmerverhalten bzw. keine Verhandlungsmacht auf beiden Marktseiten)
-    * vollständige Information (Preise und Qualitäten bekannt) bzw. vollständige Verträge (impliziert *homogene Güter*)
-    * keine Externalitäten
+.panel[.panel-name[Modell-Annahmen]
 
-* Implikationen/Vorhersagen
-    * `r fa("arrow-alt-circle-right")` Arbitrage und einheitlicher Marktpreis (**law of one price**).
-    * `r fa("arrow-alt-circle-right")` Markträumung (Walrasianischer Auktionator)
-    * `r fa("arrow-alt-circle-right")` Preisnehmerverhalten 
-    * `r fa("arrow-alt-circle-right")` Wohlfahrtsmaximierung ("unsichtbare Hand")
+* viele Anbieter und viele Kunden (Preisnehmerverhalten bzw. keine Verhandlungsmacht auf beiden Marktseiten)
+
+* Rationale Akteure (homo oeconomicus) 
+   
+    * vollständige Information bzw. vollständige Verträge
+        * Preise und Qualitäten bekannt (impliziert *homogene Güter*)  
+        * keine Transaktionskosten
+   
+    * konvexe Präferenzen (stärker als die Annahme der Konsistenz)
+
+* Unternehmen mit konvexer Technologie
+
+* keine Externalitäten
+]
+.panel[.panel-name[Modell-Vorhersagen]
+
+`r fa("arrow-alt-circle-right")` Markträumung (Walrasianischer Auktionator)
+
+`r fa("arrow-alt-circle-right")` Arbitrage und einheitlicher Marktpreis (**law of one price**)
+
+`r fa("arrow-alt-circle-right")` Preisnehmerverhalten 
+
+`r fa("arrow-alt-circle-right")` Wohlfahrtsmaximierung ("unsichtbare Hand")
 ]
 .panel[.panel-name[Marshall-Diagramm]
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
@@ -400,8 +410,71 @@ knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure
 
 * Marktgleichgewicht und Walrasianischer Auktionator
     * homogene Güter: Alleiniges Kriterium für ständig neu zu schließende Werk- und Tauschverträge ist der Preis. 
-    
-* A competitive market equilibrium is a **Nash equilibrium**, because given what all other actors are doing (trading at the equilibrium price), no actor can do better than to continue what he or she is doing (also trading at the equilibrium price).
+
+    * Existenz des Gleichgewichts wird durch Konvexitätsannahmen gewährleistet (Mathematik: Fixpunktsatz)
+
+    * A competitive market equilibrium is a **Nash equilibrium**, because given what all other actors are doing (trading at the equilibrium price), no actor can do better than to continue what he or she is doing (also trading at the equilibrium price).
+
+
+---
+name: WalrasAukt
+class: left
+
+# Exkurs: Walrasianischer Auktionator
+
+.panelset[
+.panel[.panel-name[Auktion]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('images/unit8/xetra_auktionsplan.png',height='480px')
+```
+.quellePan[[Börse Frankfurt](https://www.xetra.com/xetra-de/handel/handelsmodelle/auktionsplan)]
+
+]
+
+.panel[.panel-name[Individuell]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('images/unit8/inlandsorder_comdirect.png',height='480px')
+```
+]
+.panel[.panel-name[Orderbuch]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('images/unit8/offenes_Orderbuch_(20200420).png',height='480px')
+```
+.quellePan[[Börse Frankfurt](https://www.boerse-frankfurt.de/aktien/offenes-orderbuch/DE0008469008)]
+]
+.panel[.panel-name[Diagramm]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('images/unit8/AT-NE_Bofinger_S46.png',height='480px')
+```
+]
+]
+
+??? 
+
+* Bid (Geldkurs): gibt an, was ein möglicher Wertpapierkäufer bereit ist, für ein Wertpapier zu bezahlen. Es ist also der höchste Preis, den eine Person, eine Bank oder Broker bietet, um ein Wertpapier zu kaufen.
+
+
+* Ask (Briefkurs): niedrigster Preis, zu dem jemand bereit ist, Wertpapiere zu verkaufen
+
+* Der Walrasianische Auktionator (Léon Walras, 1834-1910)
+
+* Gleichgewicht durch „Tâtonnements“ (Versuch und Irrtum)
+
+    * Ein Auktionator ruft zu Beginn einer Periode für alle Güter Preise aus.
+    * Zu diesen Preisen nennen die Wirtschaftssubjekte ihre Tauschpläne.
+    * Der Auktionator prüft, in welchen Teilmärkten ein
+          * Nachfrageüberschuss oder ein
+          * Angebotsüberschuss herrscht und 
+    * passt die Preise demgemäß an.
+    * Dies wird solange wiederholt, bis sich alle Märkte im Gleichgewicht befinden.
+
+* Gehandelt wird nur im Gleichgewicht.
+
+* Obs!
+  * Tâtonnements-Prozess findet außerhalb der Zeit (bzw. unendlich schnell) statt: Statisches Modell!
+  * Damit verbunden ist die Annahme "perfekter Information" als Eigenschaft des "homo oeconomicus"
+
+
 
 
 ---
