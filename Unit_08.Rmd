@@ -74,7 +74,7 @@ name: Lernziele
 class: inverse, left, middle
 # Was lernen wir?
 
-.small[In Unit 7 haben wir gesehen, dass Unternehmen versuchen, sich von Wettbewerbern zu unterscheiden, um von ihren Kunden einen über den Grenzkosten liegenden Preis verlangen zu können. Dies können sie vor allem durch Innovationen und Markenbildung aber auch durch Netzwerkeffekte erreichen. Langfristig besteht aber die Gefahr, dass erfolgreiche Strategien nachgeahmt werden. Sie neoklassische Theorie nimmt eine solche langfristige Perspektive ein.]
+.small[In Unit 7 haben wir gesehen, dass Unternehmen versuchen, sich von Wettbewerbern zu unterscheiden, um von ihren Kunden einen über den Grenzkosten liegenden Preis verlangen zu können. Dies können sie vor allem durch Innovationen und Markenbildung aber auch durch Netzwerkeffekte erreichen. Langfristig besteht aber die Gefahr, dass erfolgreiche Strategien nachgeahmt werden. Die neoklassische Theorie nimmt eine solche langfristige Perspektive ein.]
 
 ## Inhaltliche Leitfragen
 
@@ -648,13 +648,15 @@ class: left
 
 # Steuerinzidenz: Wer trägt die Last der Besteuerung?
 
-.panel[.panel-name[Wertsteuer]
+
 .panelset[
+.panel[.panel-name[Wertsteuer]
+
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
 knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-15-d.svg',height='480px')
 ```
 ]
-.panelset[
+.panel[.panel-name[Mengensteuer]
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
 knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-08-17.svg',height='480px')
 ```
