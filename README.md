@@ -18,3 +18,5 @@ Folien zu den Vorlesungen im Modul Volkswirtschaftslehre an der ISBA, Studienort
 [Folien Unit 7](https://isba-university.github.io/CORE_Intake2021A/Unit_07.html#1)
 
 [Folien Unit 8](https://isba-university.github.io/CORE_Intake2021A/Unit_08.html#1)
+
+[Folien Unit 13](https://isba-university.github.io/CORE_Intake2021A/Unit_13.html#1)
