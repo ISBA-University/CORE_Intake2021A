@@ -39,6 +39,7 @@ xaringanExtra::use_editable(expires = 1)
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
+library(fontawesome)
 ```
 
 
@@ -145,19 +146,20 @@ class: inverse, left, middle
 ## Inhaltliche Leitfragen
 
 .blockquote[.small[
-1. Warum gibt es wirtschaftliche Schwankungen und wie wirken sie sich auf die Lebensqualität aus? 
-3. Wie reagieren Haushalte und Unternehmen auf Schwankungen? Und welche Rückwirkungen hat dies auf die Konjunktur?
+1. Welche makroökonomischen Aggregate werden betrachtet, um den Wohlstand eines Landes zu beurteilen?
+2. Welche Zusammenhänge bestehen zwischen diesen Aggregaten und warum schwanken sie?
+3. Wie reagieren Haushalte und Unternehmen auf Schwankungen bzw. welche selbstverstärkenden Effekt gibt es?
+4. Wie wirken sich die Schwankungen auf die Lebensqualität aus? 
 ]
 ]
 
 ## Ökonomische Methoden und Konzepte 
 
 .blockquote[.small[
-1. Wirtschaftskreislauf und Makroökonomische Aggregate
-2. Inflation und Arbeitslosigkeit
-3. Volkswirtschaftliche Gesamtrechnungen (VGR)
-4. Konjunkturzyklus und die Rolle von Konsum und Investitionen
-
+1. Wirtschaftskreislauf, Makroökonomische Aggregate und VGR
+2. Konjunkturzyklus und die Rolle von Konsum und Investitionen
+3. Inflation und Arbeitslosigkeit
+4. Fähigkeiten-Ansatz und Wohlstandsmessung
 ]
 ]
 
@@ -379,12 +381,21 @@ class: inverse, center, middle
 name: VGR
 class: left
 
-# Volkswirtschaftliche Gesamtrechnungen
+# Volkswirtschaftliche Gesamtrechnungen (VGR)
 
-
+.panelset[
+.panel[.panel-name[Übersicht]
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-13-06.svg',height='550px')
+knitr::include_url('images/unit13/VGR_small.png',height='480px')
 ```
+.quellePan[Eigene Darstellung.]
+]
+.panel[.panel-name[Inlandsproduktrechnungen]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-13-06.svg',height='480px')
+```
+]
+]
 
 
 ---
@@ -513,6 +524,37 @@ class: left
 knitr::include_url('https://service.destatis.de/DE/vgr-monitor-deutschland/investitionen.html
 ',height='550px')
 ```
+
+
+---
+name: Real-nominal
+class: left
+
+# Reales vs. nominales BIP
+
+.blockquote[
+Nominales BIP
+Wert der innerhalb eines festgelegten Zeitraums im Inland hergestellten Güter (Waren und Dienstleistungen) zu laufenden Preisen abzüglich des Werts importierter Vorleistungen.
+]
+
+Anstieg des nominalen BIP durch:
+* Anstieg der Preise (des Preisniveaus)
+* Anstieg der Menge (reale Produktion)
+
+.blockquote[
+Reales BIP
+Wert der innerhalb eines festgelegten Zeitraums im Inland hergestellten Güter und Dienstleistungen zu Vorjahrespreisen abzüglich des Werts importierter Vorleistungen.
+]
+`r fa("arrow-alt-circle-right")` Ziel: Abbildung des (reinen) Mengeneffekts
+
+`r fa("arrow-alt-circle-right")` Methodik: Vorjahrespreisbasis (seit VGR Revision 2005), vgl. [BIP-Deflator](#InfMess)
+
+
+
+???
+
+* bis zur VGR Revision 2005: Festpreisbasis
+* Reales BIP-Wachstum: Prozentbetrag, um den das reale BIP über dem nominalen Vorjahres-BIP liegt.
 
 
 
@@ -1008,21 +1050,23 @@ class: left
 
 # Möglichkeiten zur Konsumglättung
 
+
 * Vorsorge (Self-Insurance)
+
 
 --
     * Sparen
     * Kreditaufnahme
-    
---
 
+--
 * Versicherung (Co-Insurance)
 
 --
     * Grundproblem: Asymmetrische Information
+
 --
-        * vorvertraglich: Adverse Selektion 
-            * Market(s) for Lemons (G. Akerlof) 
+        * vorvertraglich: Adverse Selektion
+            * Market(s) for Lemons (G. Akerlof)
             * Lösungsstrategie: Signalling, Screening
         * nachvertraglich: Moralisches Risiko
             * Verhaltensänderungen nach Abschluss einer Versicherung gefährden die Versicherungsidee
@@ -1181,12 +1225,20 @@ class: left
 * [ifo Geschäftsklima](http://www.cesifo-group.de/de/ifoHome/facts/Survey-Results/Business-Climate.html)
   * Geschäftslage 
   * Geschäftserwartungen
+
 * [ZEW-Konjunkturerwartungen](http://www.zew.de/de/publikationen/zew-gutachten-und-forschungsberichte/forschungsberichte/konjunktur/zew-finanzmarktreport/)
+
 * [Earlybird-Indikator](https://www.commerzbank.de/media/de/research/economic_research/aktuell_1/early_bird.pdf) (Commerzbank, Wirtschaftswoche)
+
 * [FAZ-Konjunkturindikator](http://www.faz.net/-gqe-rfsb)
+
 * [GfK-Konsumklimaindex](http://www.gfk.com/de/insights/press-release/konsumklima-nimmt-wieder-fahrt-auf/)
+
 * [Einkaufsmanager-Index (EMI)](http://www.bme.de/services/einkaufsmanager-index/)
+
 * [Google R-Word](https://trends.google.com/trends/explore?date=all&geo=DE&q=rezession)
+
+* ...
 ]
 .panel[.panel-name[Vorlaufeigenschaften]
 ```{r, echo=FALSE,fig.align='center'}
@@ -1195,7 +1247,7 @@ knitr::include_graphics('images/unit13/Konjunkturindikatoren_(Breitung&Jag_2002)
 
 <br>
 
-.quellePan[Quelle: Breitung/Jagodzinski (2002, S. 11).]
+.quellePan[Quelle: [Breitung/Jagodzinski (2002, S. 11)](https://www.researchgate.net/publication/254458181_Prognoseeigenschaften_alternativer_Indikatoren_fur_die_Konjunkturentwicklung_in_Deutschland).]
 ]
 ]
 
@@ -1246,48 +1298,112 @@ class: inverse, center, middle
 
 ## Inflation und Arbeitslosigkeit
 
-
-
-.blockquote[Phillipskurve]
+.blockquote[Inflationsbegriff]
 
 .blockquote[Inflationsmessung]
 
-
-
-
+.blockquote[Phillipskurve]
 
 
 
 
 ---
-name: Phillipskurve
+name: Inflation
 class: left
 
-# Arbeitsmarkt und Inflation: die Phillips-Kurve
+# Inflation und Geldwert
 
 
-```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-15-04-a.svg',height='550px')
-```
+.blockquote[
+Inflation
 
-.quelle[[CORE - The Economy (Unit 15)](https://www.core-econ.org/the-economy/book/text/15.html#153-inflation-the-business-cycle-and-the-phillips-curve).]
+Eine über einen längeren Zeitraum anhaltende Zunahme des Preisniveaus bzw. sinkende Kaufkraft. 
+]
+
+* Preisniveau
+      * Preis als objektiver Tauschwert eines Gutes in Marktwirtschaften.
+      * Preisniveau als durschnittlicher Preis aller (produzierten) Güter.
+
+* Kaufkraft und Geldwert
+
+.blockquote[
+Die Kaufkraft...
+
+...gibt an, welche Gütermenge mit einer gegebenen Geldsumme erworben
+werden kann (Geldwert).
+]
+
+* Obs! **Den** Geldwert gibt es nicht (`r fa("arrow-alt-circle-right")` [individueller Verwendungszweck](#PersInf)).
+
+* Inflation vs. Disinflation vs. [Deflation vs. Stagflation](#Deflation)
 
 
 ???
 
-* In Figure 15.4a, it is only at point (A), where the real wage on the wage-setting curve coincides with the real wage on the price-setting curve, that the labour market is at a **Nash equilibrium**.
-    * As we saw in Unit 9, at this point both workers and firms are doing the best that they can, given the actions of the other. 
-    * At A, the **claims** of owners for profits and of workers for wages **add up exactly to the size of the pie** (the sum of the double-headed arrows showing the profits per worker and real wages is equal to output per worker, which is shown by the red dashed line). 
-  
-* This means that the 
-  * HR department will have no reason to raise wages, 
-  * and with no increase in costs, the marketing department will keep prices unchanged.
-  
-* The real wage will remain constant and no one will be disappointed.
+* Disinflation: Abnehmende/rückläufige Inflationsraten. 
+* Deflation: Gegenteil von Inflation, also fallende Preise (negative Inflationsraten)
+
+---
+name: Geld
+class: left
+
+# Ausblick: Geld und Währung (5. Semester)
 
 
+.panelset[
+.panel[.panel-name[Definition]
 
+.blockquote[
+In der Volkswirtschaftslehre wird der Geldbegriff heute überwiegend über die Geldfunktionen bestimmt. Motto: Geld ist, was (mindestens eine) Geldfunktion erfüllt.
+]
 
+* Geldfunktionen:
+
+    * allgemein akzeptiertes (universelles!) Tausch- und
+
+    * Zahlungsmittel
+
+    * Wertaufbewahrungsmittel (Vermögensobjekt, Aktivum)
+
+    * Recheneinheit
+    
+* Unterschiedliche Geldmengendefinitionen 
+    * Geldmengenbegriffe (M1, M2, M3)
+    * Abgrenzung nach Liquidität
+
+]
+.panel[.panel-name[Verwechslungsgefahr]
+
+* Geld ist wie Einkommen eine Stromgröße
+
+* **Einkommen** entsteht im Wege der Produktion **realer Güter**, 
+    * deren Wert den Produktionsfaktoren als Entlohnung zukommt 
+    * auch Naturalleistungen sind demnach Einkommen, aber nicht Geld.
+
+* Kapital
+    * Produktionsfaktor (Sach-/Realkapital) 
+    * erwirtschaftet eine reale Rendite in Form von Produktivitätsgewinnen
+
+* Finanzkapital 
+    * verbrieft Rechte an realen Vermögensgegenständen (Sach-/Realkapital)
+    * dient der Finanzierung von Realkapital
+    * erhält eine Faktorentlohnung in Form des Zinses (nominale Rendite)
+]
+]
+
+???
+
+* Obwohl Geld zu den zentralen Forschungsgegenständen der Wirtschaftswissenschaften gehört, ist der Geldbegriff im Fach keineswegs unumstritten.
+
+* Obs! Definitionen sind nicht richtig oder falsch, sondern zweckmäßig (oder nicht).
+* In der Volkswirtschaftslehre wird der Geldbegriff heute überwiegend über die Geldfunktionen bestimmt. Motto: Geld ist, was (mindestens eine) Geldfunktion erfüllt.
+
+    * Es ist ein **universelles** Tauschmittel, da man es gegenüber anderen Händlern zum Tausch gegen Waren verwenden kann. Dies ist am wichtigsten! Geld funktioniert nur, wenn wir uns einig sind, dass es einen Wert hat! Vertrauen!
+		* Es ist Zahlungsmittel, da man mit ihm  **Rechnungen begleichen**, also **Schuldverhältnisse auflösen**, kann (**settlement**).
+		* Es ist Wertaufbewahrungsmittel, weil man es vorrätig halten kann, um seine **Zahlungsfähigkeit zu erhalten**.
+		* ist die allgemeine Recheneinheit, da man alle Güter und Dienstleistungen in Geldeinheiten bewertet und ihre Preise so miteinander vergleichen kann.
+
+* **Funktionen beeinflussen sich gegenseitig**: am bedeutsamsten ist vielleicht der Zusammenhang zwischen der Wertaufbewahrungsfunktion und der Tauschmittel-/Zahlungsmittelfunktion. Einschätzung der **künftigen Kaufkraft des Geldes** entscheidend für dessen Akzeptanz als Zahlungsmittel.
 
 
 ---
@@ -1311,7 +1427,7 @@ knitr::include_graphics('images/unit13/verbraucherpreise_(BpB_S209)_small.png')
 .quellePan[Quelle: [Bundeszentrale für Politische Bildung (2015)](https://www.bpb.de/system/files/dokument_pdf/4938_zb_dtindaten_gesamt.pdf)]
 ]
 .panel[.panel-name[International]
-<iframe src="https://ourworldindata.org/grapher/inflation-levels-and-volatility-in-high--and-low-income-economies-1960-2017" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+<iframe src="https://ourworldindata.org/grapher/inflation-levels-and-volatility-in-high--and-low-income-economies-1960-2017" loading="lazy" style="width: 100%; height: 480px; border: 0px none;"></iframe>
 ]
 ]
 
@@ -1320,6 +1436,37 @@ knitr::include_graphics('images/unit13/verbraucherpreise_(BpB_S209)_small.png')
 * D: Hyperinflation 20er Jahre, Deflation 30er Jahre
 * International: Konvergenz der Inflationsraten auf niedrigem Niveau (Great Moderation)
 
+
+
+---
+name: Deflation
+class: left
+
+
+# Stagflation vs. Deflation
+
+
+.panelset[
+.panel[.panel-name[Stagflation]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.boersen-zeitung.de/img/pdf/91d/91da2e80-1483-11ec-9992-c879d4511d99/ff85530beff72d2f81ad487c4657a0a1/wusinflationarbeitslosenquotems2sp.webp',height='480px')
+```
+.quellePan[Quelle: [Börsen-Zeitung (14.09.2021).](https://www.amazon.de/dp/0809033615/ref=cm_sw_em_r_mt_dp_5WNEX8X23YD4AVNFM9Y9).]
+]
+.panel[.panel-name[Deflation]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('images/unit13/comic_deflation_(Bauman_S55).png',height='480px')
+```
+
+.quellePan[Quelle: [Bauman (2011, S. 48)](https://www.amazon.de/dp/0809033615/ref=cm_sw_em_r_mt_dp_5WNEX8X23YD4AVNFM9Y9).]
+]
+]
+
+
+???
+
+* Inflation im Boom vs. Stagflation
+
 ---
 name: InfMess
 class: left
@@ -1327,11 +1474,29 @@ class: left
 # Inflationsmessung
 
 .panelset[
+.panel[.panel-name[Perspektiven]
+Inflation als Anstieg des Preisniveaus: Durchschnitt aller Güterpreise
+(Waren und Dienstleistungen)
+
+* Aggregierte Betrachtung: [BIP-Deflator bzw. Preisindex des BIP](https://www.destatis.de/DE/Themen/Wirtschaft/Volkswirtschaftliche-Gesamtrechnungen-Inlandsprodukt/Publikationen/Downloads-Inlandsprodukt/inlandsprodukt-lange-reihen-pdf-2180150.pdf?__blob=publicationFile)
+(Konsum- und Investitionsgüter/Vorprodukte)
+
+* Disaggregierte Betrachtung
+
+    * Produktion: Erzeugerpreise
+    
+    * Außenhandel: Importpreise
+    
+    * Großhandel: Großhandelspreise (Einkaufspreise)
+    
+    * Konsum: Verbraucherpreise
+
+]
 .panel[.panel-name[BIP-Deflator]
 .blockquote[
 Der BIP-Deflator ist der implizite Preisindex des BIP und misst die Änderung des aggregierten Preisniveaus unter Berücksichtigung aller Güter
 ]
-* Berechnung des BIP-Deflators:
+* Berechnung des BIP-Deflators (vgl. [reales BIP](#Real-nominal)):
 
 $$P_t=\frac{\mbox{nominales BIP in Periode t}}{\mbox{reales BIP in Periode t}}=\frac{Y_t}{Y_t^r}$$
 * Inflationsrate $\pi_t$ gemessen am BIP-Deflator:
@@ -1348,6 +1513,8 @@ knitr::include_url('https://service.destatis.de/Voronoi/PreisKaleidoskop.svg',he
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
 knitr::include_url('https://www.wirtschaftsdienst.eu/files/journal-issues/wirtschaftsdienst/10.1007/s10273-020-2778-0/ZG-Weichen-abb-1.png',height='480px')
 ```
+
+.quellePan[Quelle: [Weichenrieder/Gürer (2020)](https://www.wirtschaftsdienst.eu/inhalt/jahr/2020/heft/11/beitrag/inflation-inflationsmessung-und-zentralbankpolitik.html).]
 ]
 ]
 
@@ -1408,6 +1575,61 @@ knitr::include_url('https://www.iwkoeln.de/fileadmin/user_upload/Presse/IW-Nachr
 ]
 
 .quelle[Quelle: [IW Köln](https://www.iwkoeln.de/presse/iw-nachrichten/michael-huether-christoph-schroeder-fuenf-minuten-arbeit-fuer-einen-liter-benzin.html).]
+
+
+
+
+---
+name: UrsachenInflation
+class: left
+
+# Ursachen und Erklärungen für Inflation
+
+.panelset[
+.panel[.panel-name[Übersicht]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('images/unit13/Ursachen_Inflation_small.png',height='480px')
+```
+.quellePan[Eigene Darstellung.]
+]
+.panel[.panel-name[Quantitätstheorie]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('images/unit13/Q-Theory.png',height='480px')
+```
+.quellePan[Quelle: [Bauman (2011, S. 48)](https://www.amazon.de/dp/0809033615/ref=cm_sw_em_r_mt_dp_5WNEX8X23YD4AVNFM9Y9).]
+]
+]
+
+
+
+---
+name: Phillipskurve
+class: left
+
+# Arbeitsmarkt und Inflation: die Phillips-Kurve
+
+
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-15-04-a.svg',height='550px')
+```
+
+.quelle[[CORE - The Economy (Unit 15)](https://www.core-econ.org/the-economy/book/text/15.html#153-inflation-the-business-cycle-and-the-phillips-curve).]
+
+
+???
+
+* In Figure 15.4a, it is only at point (A), where the real wage on the wage-setting curve coincides with the real wage on the price-setting curve, that the labour market is at a **Nash equilibrium**.
+    * As we saw in Unit 9, at this point both workers and firms are doing the best that they can, given the actions of the other. 
+    * At A, the **claims** of owners for profits and of workers for wages **add up exactly to the size of the pie** (the sum of the double-headed arrows showing the profits per worker and real wages is equal to output per worker, which is shown by the red dashed line). 
+  
+* This means that the 
+  * HR department will have no reason to raise wages, 
+  * and with no increase in costs, the marketing department will keep prices unchanged.
+  
+* The real wage will remain constant and no one will be disappointed.
+
+
+
 
 
 ---
@@ -1607,12 +1829,12 @@ class: left
 
 .panelset[
 .panel[.panel-name[Daten]
-<iframe src="https://ourworldindata.org/grapher/gdp-vs-happiness" loading="lazy" style="width: 100%; height: 550px; border: 0px none;"></iframe>
+<iframe src="https://ourworldindata.org/grapher/gdp-vs-happiness" loading="lazy" style="width: 100%; height: 480px; border: 0px none;"></iframe>
 ]
 
 .panel[.panel-name[Erklärungsmodell]
 ```{r, echo=FALSE,out.width = "100%"}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-13-flowchart-01.svg',height='550px')
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-13-flowchart-01.svg',height='480px')
 ```
 ]
 ]
