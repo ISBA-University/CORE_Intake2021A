@@ -338,70 +338,16 @@ class: inverse, center, middle
 
 
 
-
 ---
-name: Wachstum
+name: VGR
 class: left
 
-# Ausgangspunkt: Langfristige Wirtschaftsentwicklung
+# Volkswirtschaftliche Gesamtrechnungen
 
 
-.panelset[
-.panel[.panel-name[BIP pro Kopf]
-```{r, echo=FALSE,fig.align='center'}
-knitr::include_graphics('images/unit13/bpb_langeReihe_BIP_(Metz_2015)_small.png')
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-13-06.svg',height='550px')
 ```
-]
-.panel[.panel-name[Wachstumsraten]
-```{r, echo=FALSE,fig.align='center'}
-knitr::include_graphics('images/unit13/BIP-Wachstum_langeReihe_(BpB)_small.png')
-```
-]
-]
-.quelle[Quelle: [Bundeszentrale für Politische Bildung (2015)](https://www.bpb.de/system/files/dokument_pdf/4938_zb_dtindaten_gesamt.pdf)]
-
-
-
-
-???
-* Langfristige Betrachtung des realen BIP
-* Anstieg des Index von 3,6 (1850) auf 2643,9 (2012), das entspricht einer jährlichen Wachstumsrate von
-durchschnittlich 4,18 Prozent.
-
-* Aber die Grafik zeigt schon, dass wir im Zeitverlauf deutliche Schwankungen hatten, nicht 
-nur in den Kriegszeiten
-
-* Schauen wir uns die Schwankungen seit den 1970er Jahren genauer an
-
-
-
----
-name: Wachstumsraten
-class: left
-
-# Wachstumsraten seit 1970
-
-```{r, echo=FALSE,fig.align='center'}
-knitr::include_graphics('images/unit13/Wachstumsraten_(destatis_2022_S10).png')
-```
-
-
-.quelle[[Statistisches Bundesamt (2022, S. 10)](https://www.destatis.de/DE/Themen/Wirtschaft/Volkswirtschaftliche-Gesamtrechnungen-Inlandsprodukt/Publikationen/Downloads-Inlandsprodukt/zusammenhaenge-pdf-0310100.pdf;jsessionid=9082E91CA5A2D0DAB3E72CBDA8DA25EA.live711?__blob=publicationFile)]
-
-
-???
-
-
-* Wir sehen auf Seite 10: 7 Jahre mit negativen Wachstumsraten seit 1970 
-
-* Lange Frist [BpB (2015)](http://www.deutschland-in-daten.de/wp-content/gallery/Abbildungen/13-abb-2.png)
-
-* Seit dem 2. Weltkrieg: Negative Wachstumsraten in **acht
-Kalenderjahren** (**1967**, 1975, 1982, 1993, 2002, 2003, 2009, 2020)!
-
-* Zunächst wollen wir ein paar Begriffe klären und wir beginnen mit der Unterscheidung
-von Konjunktur und Wachstum
-
 
 
 ---
@@ -508,6 +454,9 @@ knitr::include_graphics('images/unit13/IGE_(ifo_2018).png')
 * Panel 1: Schere nach Steuern deutlich kleiner. Umverteilung funktioniert
 * Panel 2: Mobilitätsforschung greift häufig auf Intergenerationelle Einkommenselastizität (IGE) zurück 
       * IGE misst, wie stark das Einkommen der Kinder vom Einkommen der Eltern abhängt. 
+      
+      $$IGE=\frac{\mbox{relative Einkommensänderung Kind}}{\mbox{relative Einkommensänderung Eltern(teil)}}$$
+        
            * Bei einer IGE von 0% wäre das Einkommen der Kinder komplett unabhängig (chancengerechten Gesellschaft)
            * bei einer IGE von 100% wäre das Einkommen der Kinder komplett vom Einkommen der Eltern determiniert
       * OECD berechnet für Deutschland eine IGE von 55,1%
@@ -531,150 +480,91 @@ knitr::include_url('https://service.destatis.de/DE/vgr-monitor-deutschland/inves
 
 
 ---
-name: Definition
+name: WachstumKonj
+class: inverse,center,middle
+
+# Wachstum vs. Konjunktur
+
+
+---
+name: Log-scale
 class: left
 
-# Konjunkturbegriff und -phasen
-
-.panelset[.panel[.panel-name[Definition]
-.blockquote[
-Als Konjunktur werden *Schwankungen* der wichtigen makroökonomischer Aggregate
-(Produktion, Beschäftigung und Preise,...) in *marktwirtschaftlich*
-organisierten Volkswirtschaften bezeichnet, wobei die Schwankungen eine *gewisse Regelmäßigkeiten* aufweisen.
-]
-]
-.panel[.panel-name[Phasen]
-```{r, echo=FALSE,fig.align='center'}
-knitr::include_graphics('images/unit13/Konjunkturzyklus_(Perret_Welfens_2016_S335).png')
-```
-
-<br> 
-
-.quellePan[Quelle: Perret/Welfens (2016, S. 335)]
-]
-]
+# Wachstumsprozesse und Logarihmische Skalen
 
 
-???
-
-* Etymologie des Konjunkturbegriffs:
-  * "conjunctio rerum omnium- eine das Dasein geheimnis- und unheilvoll verknüpfende Schicksalskette"(3. Jh. V. Ch.)
-  * später: "Konjunktur als Synonym für eine "gute Geschäftslage"
-
-* "Konjunktur" ist im allgemeinen Sprachgebrauch eine Bezeichnung
-für die gesamtwirtschaftliche Lage.
-* In der **Fachsprache** sind mit "Konjunktur" die zyklischen
-Schwankungen um den langfristigen Trend der wirtschaftlichen
-Entwicklung gemeint.
-* Typischerweise sind kurzfristige Schwankungen mit Zyklus von 4
-bis 6 Jahren.
-* Wir werden gleich sehen, dass sich Zyklen mit unterschiedlichen
-Dauern überlagern
-
-* Zyklen von einem Hoch zum nächsten Hoch
-
-* **Rezessionen** (teil der Abschwungphase) meist als Perioden definiert,
-in denen die preis-, saison- und kalenderbereinigten
-Vierteljahreswerte des Bruttoinlandsprodukts (BIP) **mindestens zwei
-Vierteljahre in Folge rückläufig** sind (technische Rezession).
-
-* Rezession relativ klar definiert, auch wenn sich die Definitionen im Detail unterscheiden
-  * Null oder negatives Wachstum über einen Zeitraum von mehreren Monaten (in D: sechs)
-
-* Unklarer ist, was unter einer Depression zu verstehen ist
-  * ein gemeinsamer Nenner ist, dasss es bei der Depression  um einen längeren Zeitraum
-  wirtschaftlicher Schwäche geht und viele Menschen in Not bringt
-  
-* [Robert Hall (2011)](https://web.stanford.edu/~rehall/Long%20Slump.pdf) führte noch einen weiteren Begriff ein: Slump
-  * A slump **begins with a contraction**, usually fairly **brief, at least in comparison to the extended period of slow growth that follows** the contraction. 
-  * Relative to the vocabulary of peaks and troughs, a slump lasts from the time when employment falls below its normal level during the contraction to the time when employment regains its normal level during an expansion.
-
-
-
-
+<iframe src="https://ourworldindata.org/grapher/uk-real-gdp-per-capita-in-2011-us-dollars" loading="lazy" style="width: 100%; height: 550px; border: 0px none;"></iframe>
 
 
 
 ---
-name: Okun
+name: Wachstum
 class: left
 
-# Wachstum und Beschäftigung (Okun's Gesetz)
+# Langfristige Wirtschaftsentwicklung in D
+
 
 .panelset[
-.panel[.panel-name[Entwicklung]
-```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-13-03-d.svg',height='480px')
-```
-]
-.panel[.panel-name[Okun's Gesetz]
+.panel[.panel-name[BIP pro Kopf]
 ```{r, echo=FALSE,fig.align='center'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-13-05.svg',height='480px')
+knitr::include_graphics('images/unit13/bpb_langeReihe_BIP_(Metz_2015)_small.png')
+```
+]
+.panel[.panel-name[Wachstumsraten]
+```{r, echo=FALSE,fig.align='center'}
+knitr::include_graphics('images/unit13/BIP-Wachstum_langeReihe_(BpB)_small.png')
 ```
 ]
 ]
+.quelle[Quelle: [Bundeszentrale für Politische Bildung (2015)](https://www.bpb.de/system/files/dokument_pdf/4938_zb_dtindaten_gesamt.pdf)]
+
+
 
 
 ???
+* Langfristige Betrachtung des realen BIP
+* Anstieg des Index von 3,6 (1850) auf 2643,9 (2012), das entspricht einer jährlichen Wachstumsrate von
+durchschnittlich 4,18 Prozent.
 
-* Okun’s Law = a strong and stable relationship between unemployment and GDP growth. 
-* Changes in the rate of GDP growth are negatively correlated with the unemployment rate.
-* Output falls -- Unemployment rises -- Well-being falls
+* Aber die Grafik zeigt schon, dass wir im Zeitverlauf deutliche Schwankungen hatten, nicht 
+nur in den Kriegszeiten
 
-* Regressionsmodell
-  * Ermöglicht Prognosen: Wie stark wirkt sich rückläufiges Wachstum im Durchschnitt
-  auf die Beschäftigung aus?
-  * Finanzkrise 2009:
-    * Deutschland: unterdurchschnittlicher Rückgang der Beschäftigung. Warum?
-    Kurzarbeitergeld + Konjunkturprogramm (u.a. Abwrackprämie - Finanzierung?)
-    * Spanien: deutlich heftiger als im Durchschnitt der Landesgeschichte. Warum?
-    Überschuldete Haushalte (Immobilienkrise), Zukunftsangst größer (Erwartungen)  
-* Aber dazu später mehr
-* Jetzt erstmal noch einige Grundbegriffe, damit wir eine gemeinsame Sprache finden,
-um die Phänomene zu beschreiben und die Probleme zu analysieren
+* Schauen wir uns die Schwankungen seit den 1970er Jahren genauer an
+
+
+
 
 
 
 ---
-name: Zyklen
+name: Wachstumsraten
 class: left
 
-# Konjunktur und Konjunkturzyklen
+# Wachstumsraten seit 1970
 
-
-.panelset[.panel[.panel-name[Statistik]
 ```{r, echo=FALSE,fig.align='center'}
-knitr::include_graphics('images/unit13/Zyklen.png')
+knitr::include_graphics('images/unit13/Wachstumsraten_(destatis_2022_S10).png')
 ```
 
-<br>
 
-.quellePan[Quelle: [Savoiu/Manea (2014)](https://www.revistadestatistica.ro/wp-content/uploads/2014/05/RRS01_2014_A1.pdf).]
-
-]
-.panel[.panel-name[Kondratieff]
-```{r, echo=FALSE,fig.align='center'}
-knitr::include_url('https://www.researchgate.net/profile/Gerhard-Posch/publication/318360851/figure/fig2/AS:515180092026881@1499839913439/Kondratieff-Zyklen-Technische-Innovationen_W640.jpg')
-```
-
-<br>
-
-.quellePan[Quelle: [Posch/Bruckner (2017)](https://www.researchgate.net/publication/318360851_Schweisstechnik_im_Zeichen_von_Internet_of_Things_und_Industrie_40)]
-]
-]
+.quelle[[Statistisches Bundesamt (2022, S. 10)](https://www.destatis.de/DE/Themen/Wirtschaft/Volkswirtschaftliche-Gesamtrechnungen-Inlandsprodukt/Publikationen/Downloads-Inlandsprodukt/zusammenhaenge-pdf-0310100.pdf;jsessionid=9082E91CA5A2D0DAB3E72CBDA8DA25EA.live711?__blob=publicationFile)]
 
 
 ???
 
-* Juglar-Zyklus (sieben bis elf Jahre); 
-  * 1860 von C. Juglar festgestellt; 
-  * dieses ist der Konjunkturzyklus i.e.S;
-* Kitchin-Zyklus (drei bis vier Jahre)
-  * auch als Mitchell-Zyklus bezeichnet; 
-  * 1923 von J. Kitchin in den USA und Großbritannien festgestellt; **Existenz umstritten**;
-* Kondratieffzyklus (50 bis 60 Jahre); 
-  * 1926 von N.D. Kondratieff festgestellt. 
-  * Interpretation als Basisinnovationen
+
+* Wir sehen auf Seite 10: 7 Jahre mit negativen Wachstumsraten seit 1970 
+
+* Lange Frist [BpB (2015)](http://www.deutschland-in-daten.de/wp-content/gallery/Abbildungen/13-abb-2.png)
+
+* Seit dem 2. Weltkrieg: Negative Wachstumsraten in **acht
+Kalenderjahren** (**1967**, 1975, 1982, 1993, 2002, 2003, 2009, 2020)!
+
+* Zunächst wollen wir ein paar Begriffe klären und wir beginnen mit der Unterscheidung
+von Konjunktur und Wachstum
+
+
+
 
 
 
@@ -771,6 +661,154 @@ Schätzungen anhand von Zeitreihenanalysen, bei denen aus der beobachtbaren
 Veränderung der Produktion konjunkturelle Effekte herausgefiltert
 werden, um so einen Wachstumstrend zu erhalten. Dieser wird als Veränderung
 des Produktionspotenzials interpretiert.
+
+
+
+---
+name: Definition
+class: left
+
+# Konjunkturbegriff und -phasen
+
+.panelset[.panel[.panel-name[Definition]
+.blockquote[
+Als Konjunktur werden *Schwankungen* der wichtigen makroökonomischer Aggregate
+(Produktion, Beschäftigung und Preise,...) in *marktwirtschaftlich*
+organisierten Volkswirtschaften bezeichnet, wobei die Schwankungen eine *gewisse Regelmäßigkeiten* aufweisen.
+]
+]
+.panel[.panel-name[Phasen]
+```{r, echo=FALSE,fig.align='center'}
+knitr::include_graphics('images/unit13/Konjunkturzyklus_(Perret_Welfens_2016_S335).png')
+```
+
+<br> 
+
+.quellePan[Quelle: Perret/Welfens (2016, S. 335)]
+]
+]
+
+
+???
+
+* Etymologie des Konjunkturbegriffs:
+  * "conjunctio rerum omnium- eine das Dasein geheimnis- und unheilvoll verknüpfende Schicksalskette"(3. Jh. V. Ch.)
+  * später: "Konjunktur als Synonym für eine "gute Geschäftslage"
+
+* "Konjunktur" ist im allgemeinen Sprachgebrauch eine Bezeichnung
+für die gesamtwirtschaftliche Lage.
+* In der **Fachsprache** sind mit "Konjunktur" die zyklischen
+Schwankungen um den langfristigen Trend der wirtschaftlichen
+Entwicklung gemeint.
+* Typischerweise sind kurzfristige Schwankungen mit Zyklus von 4
+bis 6 Jahren.
+* Wir werden gleich sehen, dass sich Zyklen mit unterschiedlichen
+Dauern überlagern
+
+* Zyklen von einem Hoch zum nächsten Hoch
+
+* **Rezessionen** (teil der Abschwungphase) meist als Perioden definiert,
+in denen die preis-, saison- und kalenderbereinigten
+Vierteljahreswerte des Bruttoinlandsprodukts (BIP) **mindestens zwei
+Vierteljahre in Folge rückläufig** sind (technische Rezession).
+
+* Rezession relativ klar definiert, auch wenn sich die Definitionen im Detail unterscheiden
+  * Null oder negatives Wachstum über einen Zeitraum von mehreren Monaten (in D: sechs)
+
+* Unklarer ist, was unter einer Depression zu verstehen ist
+  * ein gemeinsamer Nenner ist, dasss es bei der Depression  um einen längeren Zeitraum
+  wirtschaftlicher Schwäche geht und viele Menschen in Not bringt
+  
+* [Robert Hall (2011)](https://web.stanford.edu/~rehall/Long%20Slump.pdf) führte noch einen weiteren Begriff ein: Slump
+  * A slump **begins with a contraction**, usually fairly **brief, at least in comparison to the extended period of slow growth that follows** the contraction. 
+  * Relative to the vocabulary of peaks and troughs, a slump lasts from the time when employment falls below its normal level during the contraction to the time when employment regains its normal level during an expansion.
+
+
+
+
+---
+name: Okun
+class: left
+
+# Konjuntur und Beschäftigung
+
+.panelset[
+.panel[.panel-name[Entwicklung]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-13-03-d.svg',height='480px')
+```
+]
+.panel[.panel-name[Okun's Gesetz]
+```{r, echo=FALSE,fig.align='center'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-13-05.svg',height='480px')
+```
+]
+]
+
+
+???
+
+* Okun’s Law = a strong and stable relationship between unemployment and GDP growth. 
+* Changes in the rate of GDP growth are negatively correlated with the unemployment rate.
+* Output falls -- Unemployment rises -- Well-being falls
+
+* Regressionsmodell
+  * Ermöglicht Prognosen: Wie stark wirkt sich rückläufiges Wachstum im Durchschnitt
+  auf die Beschäftigung aus?
+  * Finanzkrise 2009:
+    * Deutschland: unterdurchschnittlicher Rückgang der Beschäftigung. Warum?
+    Kurzarbeitergeld + Konjunkturprogramm (u.a. Abwrackprämie - Finanzierung?)
+    * Spanien: deutlich heftiger als im Durchschnitt der Landesgeschichte. Warum?
+    Überschuldete Haushalte (Immobilienkrise), Zukunftsangst größer (Erwartungen)  
+* Aber dazu später mehr
+* Jetzt erstmal noch einige Grundbegriffe, damit wir eine gemeinsame Sprache finden,
+um die Phänomene zu beschreiben und die Probleme zu analysieren
+
+
+
+
+
+---
+name: Zyklen
+class: left
+
+# Konjunktur und Konjunkturzyklen
+
+
+.panelset[.panel[.panel-name[Statistik]
+```{r, echo=FALSE,fig.align='center'}
+knitr::include_graphics('images/unit13/Zyklen.png')
+```
+
+<br>
+
+.quellePan[Quelle: [Savoiu/Manea (2014)](https://www.revistadestatistica.ro/wp-content/uploads/2014/05/RRS01_2014_A1.pdf).]
+
+]
+.panel[.panel-name[Kondratieff]
+```{r, echo=FALSE,fig.align='center'}
+knitr::include_url('https://www.researchgate.net/profile/Gerhard-Posch/publication/318360851/figure/fig2/AS:515180092026881@1499839913439/Kondratieff-Zyklen-Technische-Innovationen_W640.jpg')
+```
+
+<br>
+
+.quellePan[Quelle: [Posch/Bruckner (2017)](https://www.researchgate.net/publication/318360851_Schweisstechnik_im_Zeichen_von_Internet_of_Things_und_Industrie_40)]
+]
+]
+
+
+???
+
+* Juglar-Zyklus (sieben bis elf Jahre); 
+  * 1860 von C. Juglar festgestellt; 
+  * dieses ist der Konjunkturzyklus i.e.S;
+* Kitchin-Zyklus (drei bis vier Jahre)
+  * auch als Mitchell-Zyklus bezeichnet; 
+  * 1923 von J. Kitchin in den USA und Großbritannien festgestellt; **Existenz umstritten**;
+* Kondratieffzyklus (50 bis 60 Jahre); 
+  * 1926 von N.D. Kondratieff festgestellt. 
+  * Interpretation als Basisinnovationen
+
 
 
 
@@ -882,13 +920,13 @@ class: left
 # Konsumverhalten und Lebenszyklushypothese
 
 .panelset[
-.panel[.panel-name[Optimum]
+.panel[.panel-name[RCT-Modell]
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-13-12-b.svg
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-10-04-a.svg
 ',height='480px')
 ```
 ]
-.panel[.panel-name[Konsumglättung]
+.panel[.panel-name[Lebenszyklusprofil]
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
 knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-13-10-c.svg
 ',height='480px')
@@ -1124,8 +1162,18 @@ knitr::include_graphics('images/unit13/Konjunkturindikatoren_(Breitung&Jag_2002)
 ]
 
 
+---
+name: googleR-word
+class: left
+
+# Google R-Word 
+
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://trends.google.de/trends/explore?date=all&geo=DE&q=recession',height='550px')
+```
 
   
+
 ---
 name: animalspirits
 class: left
@@ -1140,6 +1188,25 @@ knitr::include_graphics('images/unit13/Shiller_voxEU.png')
 
 
 
+---
+name: narrativeEcon
+class: left
+
+# Exkurs: Narrative Economics
+
+.center[
+<iframe width="800" height="550" src="https://www.youtube.com/embed/SCNzE3FbVEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
+
+???
+
+* Menschen sind narrative Wesen - Geschichten-Erzählen gehört schon seit den Höhlenmenschen
+zu unserer Kultur
+* Welche Geschichte erzählen wir? bzw. die Medien? die Sozialen Medien?
+* Fakten im Post-faktischen (Trump) Zeitalter? und Überforderung der Menschen?
+* Narrative und Erwartungen
+
+
 
 
 ---
@@ -1149,6 +1216,7 @@ class: inverse, center, middle
 # Teil 3
 
 ## Inflation und Arbeitslosigkeit
+
 
 
 .blockquote[Phillipskurve]
@@ -1212,11 +1280,16 @@ knitr::include_url('https://www.dashboard-deutschland.de/#/themen/konjunktur_wir
 knitr::include_graphics('images/unit13/verbraucherpreise_(BpB_S209)_small.png')
 ```
 .quellePan[Quelle: [Bundeszentrale für Politische Bildung (2015)](https://www.bpb.de/system/files/dokument_pdf/4938_zb_dtindaten_gesamt.pdf)]
-
+]
+.panel[.panel-name[International]
+<iframe src="https://ourworldindata.org/grapher/inflation-levels-and-volatility-in-high--and-low-income-economies-1960-2017" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
 ]
 ]
 
+???
 
+* D: Hyperinflation 20er Jahre, Deflation 30er Jahre
+* International: Konvergenz der Inflationsraten auf niedrigem Niveau (Great Moderation)
 
 ---
 name: InfMess
@@ -1225,25 +1298,64 @@ class: left
 # Inflationsmessung
 
 .panelset[
-.panel[.panel-name[Warenkorb]
+.panel[.panel-name[BIP-Deflator]
+.blockquote[
+Der BIP-Deflator ist der implizite Preisindex des BIP und misst die Änderung des aggregierten Preisniveaus unter Berücksichtigung aller Güter
+]
+* Berechnung des BIP-Deflators:
+
+$$P_t=\frac{\mbox{nominales BIP in Periode t}}{\mbox{reales BIP in Periode t}}=\frac{Y_t}{Y_t^r}$$
+* Inflationsrate $\pi_t$ gemessen am BIP-Deflator:
+	
+	$$\pi_t=\frac{P_t-P_{t-1}}{P_{t-1}}=\frac{P_t}{P_{t-1}}-1$$
+* Obs! Preise der im Inland hergestellten Güter
+]
+.panel[.panel-name[VPI]
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
 knitr::include_url('https://service.destatis.de/Voronoi/PreisKaleidoskop.svg',height='480px')
 ```
 ]
-.panel[.panel-name[Individuell]
+.panel[.panel-name[Vergleich]
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://service.destatis.de/inflationsrechner/',height='480px')
+knitr::include_url('https://www.wirtschaftsdienst.eu/files/journal-issues/wirtschaftsdienst/10.1007/s10273-020-2778-0/ZG-Weichen-abb-1.png',height='480px')
 ```
 ]
 ]
 
-.quelle[Quelle: [Statistisches Bundesamt](https://www.destatis.de/DE/Themen/Wirtschaft/Preise/_inhalt.html).]
+
+???
+
+[Quelle: [Statistisches Bundesamt](https://www.destatis.de/DE/Themen/Wirtschaft/Preise/_inhalt.html).]
 
 
 ???
 
-BIP-Deflator vs. Warenkorb
+* BIP-Deflator vs. VPI
+  * BIP-Deflator - Preise der im Inland **produzierten** Güter
+  * VPI - Preise der im Inlande **konsumierten** Güter
 
+* Berechnung des BIP-Deflators: Division des zu einer Messzahl umgerechneten Ergebnis in jeweiligen Preisen (nominales BIP) dividiert durch die entsprechende preisbereinigte Größe (reales BIP).
+			* BIP-Deflator: nominales BIP-Wachstum abzüglich reales BIP-Wachstum (Näherungsformel!).
+			* BIP-Kettenindex: (= 100 im Jahr 2010)
+			      Vorjahreswert $\cdot$ (1 + reales BIP-Wachstum).
+			* BIP-Deflator: (= 100 im Jahr 2010) 
+	  		    Vorjahreswert $\cdot$ (1 + Inflationsrate (BIP-Deflator)).
+
+
+---
+name: PersInfl
+class: left
+
+# Persönliche Inflationsrate
+
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://service.destatis.de/inflationsrechner/',height='550px')
+```
+
+
+???
+
+* Durchschnittlicher Warenkorb vs. individuelle Gewichtung
 
 
 ---
@@ -1280,6 +1392,7 @@ class: inverse, center, middle
 
 ### "If you can’t measure it, you can’t improve it." (P. Drucker)
 
+.blockquote[Was messen wir?]
 
 .blockquote[Was wollen (sollten) wir messen?]
 
@@ -1298,6 +1411,29 @@ class: inverse, center, middle
     * Drucker bemühte sich in seinen Werken um Klarheit und Übersicht. Auf einen wissenschaftlichen Apparat und Mitarbeiterstab verzichtete er weitgehend. Seine 35 Bücher wurden über 5 Millionen Mal verkauft.
 
 
+
+
+---
+class: left
+
+# Wohlstandsmessung
+
+* Messen wir richtig? 
+    * Bewertung?
+    * Was wird (nicht) erfasst? 
+        + Ehrenamt
+        + Schattenwirtschaft
+        + VGR vs. [UGR](https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Umwelt/Publikationen/Umweltnutzung-Wirtschaft/umweltnutzung-und-wirtschaft-bericht-5850001147004.pdf?__blob=publicationFile)
+    
+
+* Bruttoinlandsprodukt (BIP) erfasst (bestenfalls) den **materiellen** Wohlstand
+
+* Immaterielle Aspekte und Lebenszufriedenheit?
+    * Lebensstandard, 
+    * Lebensqualität
+    * Lebenszufriedenheit
+
+* Messen wir das richtige? [Rede Robert F. Kennedy](https://www.core-econ.org/the-economy/book/text/01.html#exercise-13-what-should-we-measure)
 
 
 
@@ -1432,16 +1568,25 @@ knitr::include_graphics('images/unit13/NAWI-D_(Ipsos_2020).png')
 
 
 
+
+
 ---
 name: GDP-QLife
 class: left
 
 # Einkommen und subjektive Lebenszufriedenheit
 
-
+.panelset[
+.panel[.panel-name[Daten]
 <iframe src="https://ourworldindata.org/grapher/gdp-vs-happiness" loading="lazy" style="width: 100%; height: 550px; border: 0px none;"></iframe>
+]
 
-
+.panel[.panel-name[Erklärungsmodell]
+```{r, echo=FALSE,out.width = "100%"}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-13-flowchart-01.svg',height='550px')
+```
+]
+]
 
 
 ---
@@ -1463,24 +1608,6 @@ knitr::include_graphics('images/unit13/Inequality_beyond_GDP_small.PNG')
 * Spanischer Wirtschaftshistoriker Leandrow de la Escosura hat den Capabilities-Approach operationalisiert.
 * Ergebnisse zeigen, dass die soziale Ungleichheit im historischen Vergleich abgenommen hat.
 
-
----
-name: narrativeEcon
-class: left
-
-# Exkurs: Narrative Economics
-
-.center[
-<iframe width="800" height="550" src="https://www.youtube.com/embed/SCNzE3FbVEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-]
-
-???
-
-* Menschen sind narrative Wesen - Geschichten-Erzählen gehört schon seit den Höhlenmenschen
-zu unserer Kultur
-* Welche Geschichte erzählen wir? bzw. die Medien? die Sozialen Medien?
-* Fakten im Post-faktischen (Trump) Zeitalter? und Überforderung der Menschen?
-* Narrative und Erwartungen
 
 
 
@@ -1585,3 +1712,11 @@ knitr::include_graphics('images/unit13/Flattening_Recession_Curve_(Baldwin_2020)
 * Staatliche Reaktion
   * Fiskalpolitik (Kurzarbeitergeld, Hilfszahlungen, Konsumgutscheine in den USA...)
   * Geldpolitik
+
+
+---
+name: EndHanks
+class: center
+
+background-size: 75%
+background-image: url(https://media.giphy.com/media/KJ1f5iTl4Oo7u/giphy.gif)

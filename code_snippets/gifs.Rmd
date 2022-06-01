@@ -15,6 +15,14 @@ background-size: 75%
 background-image: url(https://media1.giphy.com/media/3o6UBiAQ9Ws8UWdmqA/giphy.gif?cid=ecf05e47ro6hu5pfdss2uwd9nop2vjqk8pybb8v4ydqywav7&rid=giphy.gif&ct=g)
 
 
+---
+name: Gier
+class: center
+
+background-size: 75%
+background-image: url(https://media.giphy.com/media/nzZW7kFYd3iqG6R4xQ/giphy.gif)
+
+
 
 ---
 name: DBowie

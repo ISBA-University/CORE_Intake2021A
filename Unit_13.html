@@ -16,7 +16,7 @@
     <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-scribble/scribble.js"></script>
     <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x9a1ab7fb8304c41b7735213348e865d","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"b8d8bebb7775458d8bb254cbe8835fbd","expires":1}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -270,64 +270,14 @@ class: inverse, center, middle
 
 
 
-
 ---
-name: Wachstum
+name: VGR
 class: left
 
-# Ausgangspunkt: Langfristige Wirtschaftsentwicklung
+# Volkswirtschaftliche Gesamtrechnungen
 
 
-.panelset[
-.panel[.panel-name[BIP pro Kopf]
-&lt;img src="images/unit13/bpb_langeReihe_BIP_(Metz_2015)_small.png" width="1404" style="display: block; margin: auto;" /&gt;
-]
-.panel[.panel-name[Wachstumsraten]
-&lt;img src="images/unit13/BIP-Wachstum_langeReihe_(BpB)_small.png" width="1135" style="display: block; margin: auto;" /&gt;
-]
-]
-.quelle[Quelle: [Bundeszentrale für Politische Bildung (2015)](https://www.bpb.de/system/files/dokument_pdf/4938_zb_dtindaten_gesamt.pdf)]
-
-
-
-
-???
-* Langfristige Betrachtung des realen BIP
-* Anstieg des Index von 3,6 (1850) auf 2643,9 (2012), das entspricht einer jährlichen Wachstumsrate von
-durchschnittlich 4,18 Prozent.
-
-* Aber die Grafik zeigt schon, dass wir im Zeitverlauf deutliche Schwankungen hatten, nicht 
-nur in den Kriegszeiten
-
-* Schauen wir uns die Schwankungen seit den 1970er Jahren genauer an
-
-
-
----
-name: Wachstumsraten
-class: left
-
-# Wachstumsraten seit 1970
-
-&lt;img src="images/unit13/Wachstumsraten_(destatis_2022_S10).png" width="1301" style="display: block; margin: auto;" /&gt;
-
-
-.quelle[[Statistisches Bundesamt (2022, S. 10)](https://www.destatis.de/DE/Themen/Wirtschaft/Volkswirtschaftliche-Gesamtrechnungen-Inlandsprodukt/Publikationen/Downloads-Inlandsprodukt/zusammenhaenge-pdf-0310100.pdf;jsessionid=9082E91CA5A2D0DAB3E72CBDA8DA25EA.live711?__blob=publicationFile)]
-
-
-???
-
-
-* Wir sehen auf Seite 10: 7 Jahre mit negativen Wachstumsraten seit 1970 
-
-* Lange Frist [BpB (2015)](http://www.deutschland-in-daten.de/wp-content/gallery/Abbildungen/13-abb-2.png)
-
-* Seit dem 2. Weltkrieg: Negative Wachstumsraten in **acht
-Kalenderjahren** (**1967**, 1975, 1982, 1993, 2002, 2003, 2009, 2020)!
-
-* Zunächst wollen wir ein paar Begriffe klären und wir beginnen mit der Unterscheidung
-von Konjunktur und Wachstum
-
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-13-06.svg" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
 
 
 ---
@@ -418,6 +368,9 @@ class: left
 * Panel 1: Schere nach Steuern deutlich kleiner. Umverteilung funktioniert
 * Panel 2: Mobilitätsforschung greift häufig auf Intergenerationelle Einkommenselastizität (IGE) zurück 
       * IGE misst, wie stark das Einkommen der Kinder vom Einkommen der Eltern abhängt. 
+      
+      `$$IGE=\frac{\mbox{relative Einkommensänderung Kind}}{\mbox{relative Einkommensänderung Eltern(teil)}}$$`
+        
            * Bei einer IGE von 0% wäre das Einkommen der Kinder komplett unabhängig (chancengerechten Gesellschaft)
            * bei einer IGE von 100% wäre das Einkommen der Kinder komplett vom Einkommen der Eltern determiniert
       * OECD berechnet für Deutschland eine IGE von 55,1%
@@ -435,6 +388,152 @@ class: left
 
 &lt;iframe src="https://service.destatis.de/DE/vgr-monitor-deutschland/investitionen.html
 " width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
+
+
+
+---
+name: WachstumKonj
+class: inverse,center,middle
+
+# Wachstum vs. Konjunktur
+
+
+---
+name: Log-scale
+class: left
+
+# Wachstumsprozesse und Logarihmische Skalen
+
+
+&lt;iframe src="https://ourworldindata.org/grapher/uk-real-gdp-per-capita-in-2011-us-dollars" loading="lazy" style="width: 100%; height: 550px; border: 0px none;"&gt;&lt;/iframe&gt;
+
+
+
+---
+name: Wachstum
+class: left
+
+# Langfristige Wirtschaftsentwicklung in D
+
+
+.panelset[
+.panel[.panel-name[BIP pro Kopf]
+&lt;img src="images/unit13/bpb_langeReihe_BIP_(Metz_2015)_small.png" width="1404" style="display: block; margin: auto;" /&gt;
+]
+.panel[.panel-name[Wachstumsraten]
+&lt;img src="images/unit13/BIP-Wachstum_langeReihe_(BpB)_small.png" width="1135" style="display: block; margin: auto;" /&gt;
+]
+]
+.quelle[Quelle: [Bundeszentrale für Politische Bildung (2015)](https://www.bpb.de/system/files/dokument_pdf/4938_zb_dtindaten_gesamt.pdf)]
+
+
+
+
+???
+* Langfristige Betrachtung des realen BIP
+* Anstieg des Index von 3,6 (1850) auf 2643,9 (2012), das entspricht einer jährlichen Wachstumsrate von
+durchschnittlich 4,18 Prozent.
+
+* Aber die Grafik zeigt schon, dass wir im Zeitverlauf deutliche Schwankungen hatten, nicht 
+nur in den Kriegszeiten
+
+* Schauen wir uns die Schwankungen seit den 1970er Jahren genauer an
+
+
+
+
+
+
+---
+name: Wachstumsraten
+class: left
+
+# Wachstumsraten seit 1970
+
+&lt;img src="images/unit13/Wachstumsraten_(destatis_2022_S10).png" width="1301" style="display: block; margin: auto;" /&gt;
+
+
+.quelle[[Statistisches Bundesamt (2022, S. 10)](https://www.destatis.de/DE/Themen/Wirtschaft/Volkswirtschaftliche-Gesamtrechnungen-Inlandsprodukt/Publikationen/Downloads-Inlandsprodukt/zusammenhaenge-pdf-0310100.pdf;jsessionid=9082E91CA5A2D0DAB3E72CBDA8DA25EA.live711?__blob=publicationFile)]
+
+
+???
+
+
+* Wir sehen auf Seite 10: 7 Jahre mit negativen Wachstumsraten seit 1970 
+
+* Lange Frist [BpB (2015)](http://www.deutschland-in-daten.de/wp-content/gallery/Abbildungen/13-abb-2.png)
+
+* Seit dem 2. Weltkrieg: Negative Wachstumsraten in **acht
+Kalenderjahren** (**1967**, 1975, 1982, 1993, 2002, 2003, 2009, 2020)!
+
+* Zunächst wollen wir ein paar Begriffe klären und wir beginnen mit der Unterscheidung
+von Konjunktur und Wachstum
+
+
+
+
+
+
+
+
+---
+name: WachstumKonjunktur
+class: left
+
+# Theorie: Wachstum vs. Konjunktur
+
+.panelset[
+.panel[.panel-name[Wachstum]
+![](Unit_13_files/figure-html/unnamed-chunk-25-1.png)&lt;!-- --&gt;
+.quellePan[Eigene Darstellung.]
+]
+.panel[.panel-name[PPF]
+* Transformationskurve (PPF - Production Possibilities Frontier)  
+  * Welche Güter können mit der aktuellen Technologie hergestellt werden
+  * Knappheit der Ressourcen und Trade-off (bspw. Autos vs. Beatmungsgeräte)
+  * Produktivitätswachstum als Verschiebung der Transformationskurve
+
+* Einflussfaktoren:
+  * Natürliche Ressourcen: Boden/Land, Rohstoffe (Aber: Curse of
+    natural resources, J. Sachs)
+  * Institutionen: Rechtsordnung und -durchsetzung, Kultur
+  * Technologie und Technologischer Fortschritt
+  * Physisches Kapital (K): Maschinen, Infrastruktur,. . .
+  * Arbeitskraft (L): Physische Tätigkeiten, Arbeitszeit
+  * Humankapital: Wissen, Bildung
+  * Sozialkapital: Vertrauen
+]
+.panel[.panel-name[Konjunktur]
+![](Unit_13_files/figure-html/unnamed-chunk-26-1.png)&lt;!-- --&gt;
+.quellePan[Eigene Darstellung.]
+]
+.panel[.panel-name[Outputlücke]
+&lt;img src="images/unit13/Outputgap_(SVR_2017_S131)_small.png" width="529" style="display: block; margin: auto;" /&gt;
+
+&lt;br&gt;
+.quellePan[Quelle: [Sachverständigenrat (2017, S. 131)](https://www.sachverstaendigenrat-wirtschaft.de/fileadmin/dateiablage/gutachten/jg201718/jg2017_06_de_konjunktur.pdf)]]
+]
+]
+
+
+???
+* **Produktionspotenzial**
+  * entspricht der gesamtwirtschaftlichen Produktion, wenn alle Produktionsfaktoren   
+  (a) maximal ausgelastet sind, ohne Inflationsdruck zu erzeugen.
+  (b) normal (96,75 Prozent) beschäftigt (ausgelastet) sind (Definition des
+  Sachverständigenrates).
+  * Problem: lässt sich schwer messen! Langfristiger BIP-Trend als eine (!) Möglichkeit zur Schätzung des PPs.
+
+* **Produktionslücke**
+  * Die Abweichung des tatsächlich realisierten Bruttoinlandsprodukts vom (geschätzten!) Produktionspotenzial wird als Produktionslücke (auch Outputlücke, Output Gap) bezeichnet
+
+  * Produktionslücke als Abweichung vom langfristigen BIP-Trend als eine (!)
+Möglichkeit zur Schätzung der Produktionslücke.
+
+Schätzungen anhand von Zeitreihenanalysen, bei denen aus der beobachtbaren
+Veränderung der Produktion konjunkturelle Effekte herausgefiltert
+werden, um so einen Wachstumstrend zu erhalten. Dieser wird als Veränderung
+des Produktionspotenzials interpretiert.
 
 
 
@@ -498,14 +597,11 @@ Vierteljahre in Folge rückläufig** sind (technische Rezession).
 
 
 
-
-
-
 ---
 name: Okun
 class: left
 
-# Wachstum und Beschäftigung (Okun's Gesetz)
+# Konjuntur und Beschäftigung
 
 .panelset[
 .panel[.panel-name[Entwicklung]
@@ -534,6 +630,8 @@ class: left
 * Aber dazu später mehr
 * Jetzt erstmal noch einige Grundbegriffe, damit wir eine gemeinsame Sprache finden,
 um die Phänomene zu beschreiben und die Probleme zu analysieren
+
+
 
 
 
@@ -574,68 +672,6 @@ class: left
   * 1926 von N.D. Kondratieff festgestellt. 
   * Interpretation als Basisinnovationen
 
-
-
-
-
----
-name: WachstumKonjunktur
-class: left
-
-# Theorie: Wachstum vs. Konjunktur
-
-.panelset[
-.panel[.panel-name[Wachstum]
-![](Unit_13_files/figure-html/unnamed-chunk-29-1.png)&lt;!-- --&gt;
-.quellePan[Eigene Darstellung.]
-]
-.panel[.panel-name[PPF]
-* Transformationskurve (PPF - Production Possibilities Frontier)  
-  * Welche Güter können mit der aktuellen Technologie hergestellt werden
-  * Knappheit der Ressourcen und Trade-off (bspw. Autos vs. Beatmungsgeräte)
-  * Produktivitätswachstum als Verschiebung der Transformationskurve
-
-* Einflussfaktoren:
-  * Natürliche Ressourcen: Boden/Land, Rohstoffe (Aber: Curse of
-    natural resources, J. Sachs)
-  * Institutionen: Rechtsordnung und -durchsetzung, Kultur
-  * Technologie und Technologischer Fortschritt
-  * Physisches Kapital (K): Maschinen, Infrastruktur,. . .
-  * Arbeitskraft (L): Physische Tätigkeiten, Arbeitszeit
-  * Humankapital: Wissen, Bildung
-  * Sozialkapital: Vertrauen
-]
-.panel[.panel-name[Konjunktur]
-![](Unit_13_files/figure-html/unnamed-chunk-30-1.png)&lt;!-- --&gt;
-.quellePan[Eigene Darstellung.]
-]
-.panel[.panel-name[Outputlücke]
-&lt;img src="images/unit13/Outputgap_(SVR_2017_S131)_small.png" width="529" style="display: block; margin: auto;" /&gt;
-
-&lt;br&gt;
-.quellePan[Quelle: [Sachverständigenrat (2017, S. 131)](https://www.sachverstaendigenrat-wirtschaft.de/fileadmin/dateiablage/gutachten/jg201718/jg2017_06_de_konjunktur.pdf)]]
-]
-]
-
-
-???
-* **Produktionspotenzial**
-  * entspricht der gesamtwirtschaftlichen Produktion, wenn alle Produktionsfaktoren   
-  (a) maximal ausgelastet sind, ohne Inflationsdruck zu erzeugen.
-  (b) normal (96,75 Prozent) beschäftigt (ausgelastet) sind (Definition des
-  Sachverständigenrates).
-  * Problem: lässt sich schwer messen! Langfristiger BIP-Trend als eine (!) Möglichkeit zur Schätzung des PPs.
-
-* **Produktionslücke**
-  * Die Abweichung des tatsächlich realisierten Bruttoinlandsprodukts vom (geschätzten!) Produktionspotenzial wird als Produktionslücke (auch Outputlücke, Output Gap) bezeichnet
-
-  * Produktionslücke als Abweichung vom langfristigen BIP-Trend als eine (!)
-Möglichkeit zur Schätzung der Produktionslücke.
-
-Schätzungen anhand von Zeitreihenanalysen, bei denen aus der beobachtbaren
-Veränderung der Produktion konjunkturelle Effekte herausgefiltert
-werden, um so einen Wachstumstrend zu erhalten. Dieser wird als Veränderung
-des Produktionspotenzials interpretiert.
 
 
 
@@ -741,11 +777,11 @@ class: left
 # Konsumverhalten und Lebenszyklushypothese
 
 .panelset[
-.panel[.panel-name[Optimum]
-&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-13-12-b.svg
+.panel[.panel-name[RCT-Modell]
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-10-04-a.svg
 " width="100%" height="480px" data-external="1"&gt;&lt;/iframe&gt;
 ]
-.panel[.panel-name[Konsumglättung]
+.panel[.panel-name[Lebenszyklusprofil]
 &lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-13-10-c.svg
 " width="100%" height="480px" data-external="1"&gt;&lt;/iframe&gt;
 ]
@@ -963,8 +999,16 @@ class: left
 ]
 
 
+---
+name: googleR-word
+class: left
+
+# Google R-Word 
+
+&lt;iframe src="https://trends.google.de/trends/explore?date=all&amp;amp;geo=DE&amp;amp;q=recession" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
 
   
+
 ---
 name: animalspirits
 class: left
@@ -977,6 +1021,25 @@ class: left
 
 
 
+---
+name: narrativeEcon
+class: left
+
+# Exkurs: Narrative Economics
+
+.center[
+&lt;iframe width="800" height="550" src="https://www.youtube.com/embed/SCNzE3FbVEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+]
+
+???
+
+* Menschen sind narrative Wesen - Geschichten-Erzählen gehört schon seit den Höhlenmenschen
+zu unserer Kultur
+* Welche Geschichte erzählen wir? bzw. die Medien? die Sozialen Medien?
+* Fakten im Post-faktischen (Trump) Zeitalter? und Überforderung der Menschen?
+* Narrative und Erwartungen
+
+
 
 
 ---
@@ -986,6 +1049,7 @@ class: inverse, center, middle
 # Teil 3
 
 ## Inflation und Arbeitslosigkeit
+
 
 
 .blockquote[Phillipskurve]
@@ -1043,11 +1107,16 @@ class: left
 .panel[.panel-name[Historisch]
 &lt;img src="images/unit13/verbraucherpreise_(BpB_S209)_small.png" width="100%" style="display: block; margin: auto;" /&gt;
 .quellePan[Quelle: [Bundeszentrale für Politische Bildung (2015)](https://www.bpb.de/system/files/dokument_pdf/4938_zb_dtindaten_gesamt.pdf)]
-
+]
+.panel[.panel-name[International]
+&lt;iframe src="https://ourworldindata.org/grapher/inflation-levels-and-volatility-in-high--and-low-income-economies-1960-2017" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"&gt;&lt;/iframe&gt;
 ]
 ]
 
+???
 
+* D: Hyperinflation 20er Jahre, Deflation 30er Jahre
+* International: Konvergenz der Inflationsraten auf niedrigem Niveau (Great Moderation)
 
 ---
 name: InfMess
@@ -1056,21 +1125,58 @@ class: left
 # Inflationsmessung
 
 .panelset[
-.panel[.panel-name[Warenkorb]
+.panel[.panel-name[BIP-Deflator]
+.blockquote[
+Der BIP-Deflator ist der implizite Preisindex des BIP und misst die Änderung des aggregierten Preisniveaus unter Berücksichtigung aller Güter
+]
+* Berechnung des BIP-Deflators:
+
+`$$P_t=\frac{\mbox{nominales BIP in Periode t}}{\mbox{reales BIP in Periode t}}=\frac{Y_t}{Y_t^r}$$`
+* Inflationsrate `\(\pi_t\)` gemessen am BIP-Deflator:
+	
+	`$$\pi_t=\frac{P_t-P_{t-1}}{P_{t-1}}=\frac{P_t}{P_{t-1}}-1$$`
+* Obs! Preise der im Inland hergestellten Güter
+]
+.panel[.panel-name[VPI]
 &lt;iframe src="https://service.destatis.de/Voronoi/PreisKaleidoskop.svg" width="100%" height="480px" data-external="1"&gt;&lt;/iframe&gt;
 ]
-.panel[.panel-name[Individuell]
-&lt;iframe src="https://service.destatis.de/inflationsrechner/" width="100%" height="480px" data-external="1"&gt;&lt;/iframe&gt;
+.panel[.panel-name[Vergleich]
+&lt;iframe src="https://www.wirtschaftsdienst.eu/files/journal-issues/wirtschaftsdienst/10.1007/s10273-020-2778-0/ZG-Weichen-abb-1.png" width="100%" height="480px" data-external="1"&gt;&lt;/iframe&gt;
 ]
 ]
-
-.quelle[Quelle: [Statistisches Bundesamt](https://www.destatis.de/DE/Themen/Wirtschaft/Preise/_inhalt.html).]
 
 
 ???
 
-BIP-Deflator vs. Warenkorb
+[Quelle: [Statistisches Bundesamt](https://www.destatis.de/DE/Themen/Wirtschaft/Preise/_inhalt.html).]
 
+
+???
+
+* BIP-Deflator vs. VPI
+  * BIP-Deflator - Preise der im Inland **produzierten** Güter
+  * VPI - Preise der im Inlande **konsumierten** Güter
+
+* Berechnung des BIP-Deflators: Division des zu einer Messzahl umgerechneten Ergebnis in jeweiligen Preisen (nominales BIP) dividiert durch die entsprechende preisbereinigte Größe (reales BIP).
+			* BIP-Deflator: nominales BIP-Wachstum abzüglich reales BIP-Wachstum (Näherungsformel!).
+			* BIP-Kettenindex: (= 100 im Jahr 2010)
+			      Vorjahreswert `\(\cdot\)` (1 + reales BIP-Wachstum).
+			* BIP-Deflator: (= 100 im Jahr 2010) 
+	  		    Vorjahreswert `\(\cdot\)` (1 + Inflationsrate (BIP-Deflator)).
+
+
+---
+name: PersInfl
+class: left
+
+# Persönliche Inflationsrate
+
+&lt;iframe src="https://service.destatis.de/inflationsrechner/" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
+
+
+???
+
+* Durchschnittlicher Warenkorb vs. individuelle Gewichtung
 
 
 ---
@@ -1103,6 +1209,7 @@ class: inverse, center, middle
 
 ### "If you can’t measure it, you can’t improve it." (P. Drucker)
 
+.blockquote[Was messen wir?]
 
 .blockquote[Was wollen (sollten) wir messen?]
 
@@ -1121,6 +1228,29 @@ class: inverse, center, middle
     * Drucker bemühte sich in seinen Werken um Klarheit und Übersicht. Auf einen wissenschaftlichen Apparat und Mitarbeiterstab verzichtete er weitgehend. Seine 35 Bücher wurden über 5 Millionen Mal verkauft.
 
 
+
+
+---
+class: left
+
+# Wohlstandsmessung
+
+* Messen wir richtig? 
+    * Bewertung?
+    * Was wird (nicht) erfasst? 
+        + Ehrenamt
+        + Schattenwirtschaft
+        + VGR vs. [UGR](https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Umwelt/Publikationen/Umweltnutzung-Wirtschaft/umweltnutzung-und-wirtschaft-bericht-5850001147004.pdf?__blob=publicationFile)
+    
+
+* Bruttoinlandsprodukt (BIP) erfasst (bestenfalls) den **materiellen** Wohlstand
+
+* Immaterielle Aspekte und Lebenszufriedenheit?
+    * Lebensstandard, 
+    * Lebensqualität
+    * Lebenszufriedenheit
+
+* Messen wir das richtige? [Rede Robert F. Kennedy](https://www.core-econ.org/the-economy/book/text/01.html#exercise-13-what-should-we-measure)
 
 
 
@@ -1253,16 +1383,23 @@ class: left
 
 
 
+
+
 ---
 name: GDP-QLife
 class: left
 
 # Einkommen und subjektive Lebenszufriedenheit
 
-
+.panelset[
+.panel[.panel-name[Daten]
 &lt;iframe src="https://ourworldindata.org/grapher/gdp-vs-happiness" loading="lazy" style="width: 100%; height: 550px; border: 0px none;"&gt;&lt;/iframe&gt;
+]
 
-
+.panel[.panel-name[Erklärungsmodell]
+&lt;iframe src="https://www.core-econ.org/the-economy/book/images/web/figure-13-flowchart-01.svg" width="100%" height="550px" data-external="1"&gt;&lt;/iframe&gt;
+]
+]
 
 
 ---
@@ -1282,24 +1419,6 @@ class:
 * Spanischer Wirtschaftshistoriker Leandrow de la Escosura hat den Capabilities-Approach operationalisiert.
 * Ergebnisse zeigen, dass die soziale Ungleichheit im historischen Vergleich abgenommen hat.
 
-
----
-name: narrativeEcon
-class: left
-
-# Exkurs: Narrative Economics
-
-.center[
-&lt;iframe width="800" height="550" src="https://www.youtube.com/embed/SCNzE3FbVEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-]
-
-???
-
-* Menschen sind narrative Wesen - Geschichten-Erzählen gehört schon seit den Höhlenmenschen
-zu unserer Kultur
-* Welche Geschichte erzählen wir? bzw. die Medien? die Sozialen Medien?
-* Fakten im Post-faktischen (Trump) Zeitalter? und Überforderung der Menschen?
-* Narrative und Erwartungen
 
 
 
@@ -1398,6 +1517,14 @@ class: left
 * Staatliche Reaktion
   * Fiskalpolitik (Kurzarbeitergeld, Hilfszahlungen, Konsumgutscheine in den USA...)
   * Geldpolitik
+
+
+---
+name: EndHanks
+class: center
+
+background-size: 75%
+background-image: url(https://media.giphy.com/media/KJ1f5iTl4Oo7u/giphy.gif)
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
