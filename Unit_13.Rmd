@@ -198,7 +198,7 @@ knitr::include_graphics('images/unit13/Wirtschaftskreislauf_500.png')
 			\draw[blue!50,rounded corners=10,thick,shift={(0.15,-0.15)},fill=blue!50]
 			(0,1) rectangle (3.25,2.5) node[black,pos=.5] {{\huge \textbf{\textsf{Geldmarkt}}}};
 			\draw[blue!50,rounded corners=10,thick,shift={(-0.15,-0.15)},fill=blue!50]
-			(3.75,1) rectangle (7,2.5) node[black,pos=.5] {{\huge \textbf{\textsf{Kapitalmarkt}}}};
+			(3.75,1) rectangle (7,2.5) node[black,pos=.5] {{\huge \textbf{\textsf{(Finanz-)\\Kapitalmarkt}}}};
 		\end{tikzpicture}
 ```
 ]
@@ -218,7 +218,8 @@ knitr::include_graphics('images/unit13/Wirtschaftskreislauf_500.png')
      * Der Gütermarkt (Gütermenge (BIP), Güterpreise und Inflation)
 		     * Unternehmen bieten Güter (Verbrauchs- und Investitions-) an,
 		     * Haushalte fragen Konsumgüter nach
-     *  Finanzmärkte (Transformation von Einkommen in Kapital, Zinsen und Inflation)
+     *  Finanzmärkte als "Markt für Ansprüche an Reale Vermögensgüter" 
+          * leisten eine Transformation von Einkommen in Real-Kapital
 			    * Geldmarkt: Makroökonomischer (Transaktionsmittel) vs. institutioneller Geldmarkt (kurzfristige Liquidität)
 					* Kapitalmarkt: langfristige Liquidität (Zins)
 					* Devisenmarkt (offene Volkswirtschaft)
@@ -259,6 +260,42 @@ knitr::include_url('images/unit13/Eckwerte_Arbeitsmarkt_(Destatis_2022).png',hei
 
 
 ???
+
+* ILO-Definitionen
+    * Erwerbsfähige Personen (alle zwischen 15 und 74) - Population of working age
+        * 2018 ungefähr drei Viertel der Gesamtbevölkerung beziehungsweise 62 Millionen Frauen und Männer im erwerbsfähigen Alter.
+    *  Erwerbspersonen - Labor Force
+    *  Nicht-Erwerbspersonen - Out of Labor force (inactive)
+        * 2018 knapp 30 Prozent der Personen im dem Erwerbsfähigen Alter (zum Beispiel viele Schüler, Studenten (ab Klasse 10), Hausfrauen und Rentner (nicht nur Frührentner, da bis 74 erwerbsfähig)). 
+        * davon ein Teil sog. stille Reserve
+              * Nichterwerbspersonen, die gerne arbeiten würden, dem Arbeitsmarkt aber nicht kurzfristig zur Verfügung stehen.
+              * Gründe:
+                      * persönliche und familiäre Verpflichtungen (zum Beispiel Kinderbetreuung und Pflege),
+                      * Fortbildung oder 
+                      * Krankheit sowie
+                      * Personen, die aufgrund fehlender Erfolgsaussichten nicht aktiv eine Beschäftigung suchen
+* unemployed
+    * (a) persons who during the reference week **worked for at least one hour for pay** or profit or family gain.
+    * (b) persons who were **not at work during** the reference week **but had a job or business** from which they were **temporarily absent**.
+* underemployed
+    * (1) not employed according to the definition of employment above;
+    
+    * oder stille Reserve
+          * (2) (verfügbar aber nicht suchend?) currently available for work, i.e. were available for paid employment or self-employment before the end of the two weeks following the reference week;
+          * (3) (suchend, aber nicht verfügbar) actively seeking work, i.e. had taken specific steps in the four week period ending with the reference week to seek paid employment or self-employment or who found a job to start later, i.e. within a period of at most three months from the end of the reference week.
+    
+* Unterbeschäftigung
+      * liegt vor, wenn Erwerbstätige den Wunsch nach zusätzlichen Arbeitsstunden haben und dafür auch kurzfristig verfügbar sind.
+      * verbreitete Motivation: durch Mehrarbeit ein höheres Einkommen erzielen. 
+      * betrifft mehrheitlich Teilzeitbeschäftigte, 
+      * aber auch viele Vollzeitbeschäftigte (überwiegend Männer) würden gerne länger arbeiten. 
+      * Unterbeschäftigte Erwerbstätige machen zahlenmäßig fast die Hälfte des verfügbaren Potenzials am Arbeitsmarkt aus.
+
+* Verfügbares (ungenutztes) Potenzial, insgesamt etwa 5 Mio Menschen
+    * stille Reserve (1 Mio)
+    * Erwerbslose (1,6 Mio)
+    * Unterbeschäftigte (2,4 Mio bzw. ~50%)
+
 
 * ALQ vs. ELQ (ILO-Def)
 * ALQ erhält in der Öffentlichkeit mehr Aufmerksamkeit, für Ökonomen ist die ELQ aussagekräftiger, weil sie eine ökonomische Perspektive einnimmt (s.u.). 
@@ -1149,6 +1186,7 @@ class: left
 * [FAZ-Konjunkturindikator](http://www.faz.net/-gqe-rfsb)
 * [GfK-Konsumklimaindex](http://www.gfk.com/de/insights/press-release/konsumklima-nimmt-wieder-fahrt-auf/)
 * [Einkaufsmanager-Index (EMI)](http://www.bme.de/services/einkaufsmanager-index/)
+* [Google R-Word](https://trends.google.com/trends/explore?date=all&geo=DE&q=rezession)
 ]
 .panel[.panel-name[Vorlaufeigenschaften]
 ```{r, echo=FALSE,fig.align='center'}
@@ -1162,17 +1200,8 @@ knitr::include_graphics('images/unit13/Konjunkturindikatoren_(Breitung&Jag_2002)
 ]
 
 
----
-name: googleR-word
-class: left
 
-# Google R-Word 
 
-```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://trends.google.de/trends/explore?date=all&geo=DE&q=recession',height='550px')
-```
-
-  
 
 ---
 name: animalspirits
