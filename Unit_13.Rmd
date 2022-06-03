@@ -533,7 +533,8 @@ class: left
 # Reales vs. nominales BIP
 
 .blockquote[
-Nominales BIP
+**Nominales BIP**
+
 Wert der innerhalb eines festgelegten Zeitraums im Inland hergestellten Güter (Waren und Dienstleistungen) zu laufenden Preisen abzüglich des Werts importierter Vorleistungen.
 ]
 
@@ -542,7 +543,8 @@ Anstieg des nominalen BIP durch:
 * Anstieg der Menge (reale Produktion)
 
 .blockquote[
-Reales BIP
+**Reales BIP**
+
 Wert der innerhalb eines festgelegten Zeitraums im Inland hergestellten Güter und Dienstleistungen zu Vorjahrespreisen abzüglich des Werts importierter Vorleistungen.
 ]
 `r fa("arrow-alt-circle-right")` Ziel: Abbildung des (reinen) Mengeneffekts
@@ -922,27 +924,43 @@ class: left
 
 # Konjunkturtheorien
 
+
+.panelset[
+.panel[.panel-name[Kreislaufbetrachtung]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('images/Covid_Kreislauf_(Baldwin_2020).png',height='480px')
+```
+.quellePan[Quelle: [Baldwin (2020)](https://voxeu.org/article/how-should-we-think-about-containing-covid-19-economic-crisis).]
+]
+.panel[.panel-name[Theorien]
 * **Angebotstheoretische Erklärungen**
 
---
   * am Beispiel der Real-Business-Cycles-Theorie (modifiziertes Solow-Modell)
       * technisches Wissen wächst mit schwankenden (durchschnittlich positiven) Raten
       * wechselseitige Beeinflussung der Produktionsfaktoren
   * Konjunktur als amplifizierte **Produktivitätsschocks** (Arnold 2016, S.
 140f).
 
---
+
 * **Nachfragetheoretische Erklärungen**
 
---
+
   * Langfristig: Produktion durch die Angebotsseite (Wachstum der Produktionsfaktoren und technischen Fortschritt) bestimmt.
   * Kurzfristig: Produktion entscheidend durch die gesamtwirtschaftliche Nachfrage beeinflusst!
   * vgl. Unit 14 (Keynesianisches Kreuz)
 
---
+
 * **Politökonomische Erklärungen**
 
 * u.a.m.
+
+
+]
+]
+
+
+
+
 
 
 ???
@@ -1324,24 +1342,55 @@ Eine über einen längeren Zeitraum anhaltende Zunahme des Preisniveaus bzw. sin
       * Preis als objektiver Tauschwert eines Gutes in Marktwirtschaften.
       * Preisniveau als durschnittlicher Preis aller (produzierten) Güter.
 
-* Kaufkraft und Geldwert
+* Inflation vs. Disinflation vs. [Deflation vs. Stagflation](#Deflation)
+
 
 .blockquote[
-Die Kaufkraft...
+Die **Kaufkraft**...
 
 ...gibt an, welche Gütermenge mit einer gegebenen Geldsumme erworben
-werden kann (Geldwert).
+werden kann (**Geldwert**).
 ]
 
 * Obs! **Den** Geldwert gibt es nicht (`r fa("arrow-alt-circle-right")` [individueller Verwendungszweck](#PersInf)).
 
-* Inflation vs. Disinflation vs. [Deflation vs. Stagflation](#Deflation)
 
 
 ???
 
 * Disinflation: Abnehmende/rückläufige Inflationsraten. 
 * Deflation: Gegenteil von Inflation, also fallende Preise (negative Inflationsraten)
+
+
+---
+name: Deflation
+class: left
+
+
+# Stagflation vs. Deflation
+
+
+.panelset[
+.panel[.panel-name[Stagflation]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.boersen-zeitung.de/img/pdf/91d/91da2e80-1483-11ec-9992-c879d4511d99/ff85530beff72d2f81ad487c4657a0a1/wusinflationarbeitslosenquotems2sp.webp',height='480px')
+```
+.quellePan[Quelle: [Börsen-Zeitung (14.09.2021).](https://www.boersen-zeitung.de/konjunktur-politik/debatte-ueber-drohende-stagflation-91da2e80-1483-11ec-9992-c879d4511d99).]
+]
+.panel[.panel-name[Deflation]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('images/unit13/comic_deflation_(Bauman_S55).png',height='480px')
+```
+
+.quellePan[Quelle: [Bauman (2011, S. 48)](https://www.amazon.de/dp/0809033615/ref=cm_sw_em_r_mt_dp_5WNEX8X23YD4AVNFM9Y9).]
+]
+]
+
+
+???
+
+* Inflation im Boom vs. Stagflation
+
 
 ---
 name: Geld
@@ -1351,6 +1400,13 @@ class: left
 
 
 .panelset[
+.panel[.panel-name[Etymologie]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('images/unit13/Vieh.png',height='480px')
+```
+.quellePan[Bildquelle: [Pixabay.com](pixabay.com)]
+]
+
 .panel[.panel-name[Definition]
 
 .blockquote[
@@ -1374,8 +1430,6 @@ In der Volkswirtschaftslehre wird der Geldbegriff heute überwiegend über die G
 ]
 .panel[.panel-name[Verwechslungsgefahr]
 
-* Geld ist wie Einkommen eine Stromgröße
-
 * **Einkommen** entsteht im Wege der Produktion **realer Güter**, 
     * deren Wert den Produktionsfaktoren als Entlohnung zukommt 
     * auch Naturalleistungen sind demnach Einkommen, aber nicht Geld.
@@ -1388,6 +1442,9 @@ In der Volkswirtschaftslehre wird der Geldbegriff heute überwiegend über die G
     * verbrieft Rechte an realen Vermögensgegenständen (Sach-/Realkapital)
     * dient der Finanzierung von Realkapital
     * erhält eine Faktorentlohnung in Form des Zinses (nominale Rendite)
+    
+* Geld ist wie Einkommen eine Stromgröße, Kapital/Finanzkapital ist eine Bestandsgröße
+
 ]
 ]
 
@@ -1438,34 +1495,6 @@ knitr::include_graphics('images/unit13/verbraucherpreise_(BpB_S209)_small.png')
 
 
 
----
-name: Deflation
-class: left
-
-
-# Stagflation vs. Deflation
-
-
-.panelset[
-.panel[.panel-name[Stagflation]
-```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.boersen-zeitung.de/img/pdf/91d/91da2e80-1483-11ec-9992-c879d4511d99/ff85530beff72d2f81ad487c4657a0a1/wusinflationarbeitslosenquotems2sp.webp',height='480px')
-```
-.quellePan[Quelle: [Börsen-Zeitung (14.09.2021).](https://www.amazon.de/dp/0809033615/ref=cm_sw_em_r_mt_dp_5WNEX8X23YD4AVNFM9Y9).]
-]
-.panel[.panel-name[Deflation]
-```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('images/unit13/comic_deflation_(Bauman_S55).png',height='480px')
-```
-
-.quellePan[Quelle: [Bauman (2011, S. 48)](https://www.amazon.de/dp/0809033615/ref=cm_sw_em_r_mt_dp_5WNEX8X23YD4AVNFM9Y9).]
-]
-]
-
-
-???
-
-* Inflation im Boom vs. Stagflation
 
 ---
 name: InfMess
@@ -1509,6 +1538,7 @@ $$P_t=\frac{\mbox{nominales BIP in Periode t}}{\mbox{reales BIP in Periode t}}=\
 knitr::include_url('https://service.destatis.de/Voronoi/PreisKaleidoskop.svg',height='480px')
 ```
 ]
+
 .panel[.panel-name[Vergleich]
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
 knitr::include_url('https://www.wirtschaftsdienst.eu/files/journal-issues/wirtschaftsdienst/10.1007/s10273-020-2778-0/ZG-Weichen-abb-1.png',height='480px')
@@ -1516,15 +1546,18 @@ knitr::include_url('https://www.wirtschaftsdienst.eu/files/journal-issues/wirtsc
 
 .quellePan[Quelle: [Weichenrieder/Gürer (2020)](https://www.wirtschaftsdienst.eu/inhalt/jahr/2020/heft/11/beitrag/inflation-inflationsmessung-und-zentralbankpolitik.html).]
 ]
+
 ]
 
 
 ???
 
-[Quelle: [Statistisches Bundesamt](https://www.destatis.de/DE/Themen/Wirtschaft/Preise/_inhalt.html).]
+* [Quelle: [Statistisches Bundesamt](https://www.destatis.de/DE/Themen/Wirtschaft/Preise/_inhalt.html).]
 
+* [Methodik](https://www.destatis.de/DE/Methoden/Qualitaet/Qualitaetsberichte/Preise/verbraucherpreis.pdf?__blob=publicationFile)
 
-???
+* [Güterkategorien im Detail](https://www.destatis.de/DE/Themen/Wirtschaft/Preise/Verbraucherpreisindex/Methoden/Downloads/waegungsschema-2015.pdf?__blob=publicationFile)
+
 
 * BIP-Deflator vs. VPI
   * BIP-Deflator - Preise der im Inland **produzierten** Güter
@@ -1594,7 +1627,7 @@ knitr::include_url('images/unit13/Ursachen_Inflation_small.png',height='480px')
 ]
 .panel[.panel-name[Quantitätstheorie]
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('images/unit13/Q-Theory.png',height='480px')
+knitr::include_url('images/unit13/QTheory.png',height='480px')
 ```
 .quellePan[Quelle: [Bauman (2011, S. 48)](https://www.amazon.de/dp/0809033615/ref=cm_sw_em_r_mt_dp_5WNEX8X23YD4AVNFM9Y9).]
 ]
@@ -1608,27 +1641,63 @@ class: left
 
 # Arbeitsmarkt und Inflation: die Phillips-Kurve
 
-
+.panelset[
+.panel[.panel-name[Original]
 ```{r, echo=FALSE,fig.align='center',out.width='100%'}
-knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-15-04-a.svg',height='550px')
+knitr::include_url('images/unit13/phillips_mod_(Issing_S229).png',height='480px')
 ```
+.quellePan[Quelle: Issing (2011, S. 227).]
+]
+.panel[.panel-name[Modell]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-15-04-a.svg',height='480px')
+```
+.quellePan[[CORE - The Economy (Unit 15)](https://www.core-econ.org/the-economy/book/text/15.html#153-inflation-the-business-cycle-and-the-phillips-curve).]
+]
+.panel[.panel-name[Modifikation]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('images/unit13/phillips_mod_(Issing_S229).png',height='480px')
+```
+.quellePan[Quelle: Issing (2011, S. 229).]
+]
+.panel[.panel-name[Instabilität]
+<iframe src="https://ourworldindata.org/grapher/phillips-curves-in-the-us" loading="lazy" style="width: 100%; height: 480px; border: 0px none;"></iframe>
+]
+.panel[.panel-name[Zusammenfassung]
+```{r, echo=FALSE,fig.align='center',out.width='100%'}
+knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure-15-box-a.svg',height='480px')
+```
+.quellePan[[CORE - The Economy (Unit 15)](https://www.core-econ.org/the-economy/book/text/15.html#153-inflation-the-business-cycle-and-the-phillips-curve).]
+]
 
-.quelle[[CORE - The Economy (Unit 15)](https://www.core-econ.org/the-economy/book/text/15.html#153-inflation-the-business-cycle-and-the-phillips-curve).]
+]
+]
+
+
 
 
 ???
 
-* In Figure 15.4a, it is only at point (A), where the real wage on the wage-setting curve coincides with the real wage on the price-setting curve, that the labour market is at a **Nash equilibrium**.
-    * As we saw in Unit 9, at this point both workers and firms are doing the best that they can, given the actions of the other. 
-    * At A, the **claims** of owners for profits and of workers for wages **add up exactly to the size of the pie** (the sum of the double-headed arrows showing the profits per worker and real wages is equal to output per worker, which is shown by the red dashed line). 
+
+* Original: Empirisches Paper von Arthur William Phillips (1958)
+
+* Modell: Verhandlungsmacht und Lohnerhöhungen
+    * **Bargaining Gap**
+    * In Figure 15.4a, it is only at point (A), where the real wage on the wage-setting curve coincides with the real wage on the price-setting curve, that the labour market is at a **Nash equilibrium**.
+         * As we saw in Unit 9, at this point both workers and firms are doing the best that they can, given the actions of the other. 
+         * At A, the **claims** of owners for profits and of workers for wages **add up exactly to the size of the pie** (the sum of the double-headed arrows showing the profits per worker and real wages is equal to output per worker, which is shown by the red dashed line). 
   
-* This means that the 
-  * HR department will have no reason to raise wages, 
-  * and with no increase in costs, the marketing department will keep prices unchanged.
+    * This means that the 
+           * HR department will have no reason to raise wages, 
+          * and with no increase in costs, the marketing department will keep prices unchanged.
   
-* The real wage will remain constant and no one will be disappointed.
+    * The real wage will remain constant and no one will be disappointed.
 
 
+* Modifikation (Samuelson/Solow, Jahr?)
+    * Modell der Zuschlagskalkulation
+    * Löhne als Kostenfaktor
+    * Produktivität und Lohnerhöhungsspielraum (ToDo - Tabelle ergänzen)
 
 
 
