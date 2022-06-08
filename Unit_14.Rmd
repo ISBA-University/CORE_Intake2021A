@@ -745,6 +745,7 @@ knitr::include_url('https://www.core-econ.org/the-economy/book/images/web/figure
 .small[
 **Wirkungskette:** Kürzung von Investitionsausgaben $\Rightarrow$ Rückgang AD $\Rightarrow$ Rückgang von Produktion und Einkommen $\Rightarrow$ weitere Rückgänge von Nachfrage und Einkommen $\Rightarrow$ Neues Gleichgewicht
 ]
+
 ]
 ]
 .quelle[Quelle: [The Economy](https://www.core-econ.org/the-economy/book/text/14.html#142-the-multiplier-model)]
